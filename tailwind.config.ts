@@ -9,47 +9,39 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Figma Design Colors
+        'Brand-Black': '#0D0D0D',
+        'Brand-White': '#FFFFFF',
+        'Brand-Gold-(Drk-BG)': '#D3A737',
+        'Secondary-CTA-Gold-(Drk-BG)': '#E5C1A0',
+        'Secondary-Light-Gold-(Drk-BG)': '#EFE5DA',
+        'UI-Lightest-Grey': '#F4F4F4',
+        
+        // Legacy colors (keeping for compatibility)
         'lewis-gold': '#D4AF37',
         'lewis-gold-hover': '#E5C158',
         'lewis-black': '#000000',
         'lewis-gray': '#1a1a1a',
-        gold: {
-          50: '#fefdf8',
-          100: '#fef9e7',
-          200: '#fdf2d1',
-          300: '#fce7b0',
-          400: '#f9d571',
-          500: '#D4AF37',
-          600: '#b8941f',
-          700: '#9a7a1a',
-          800: '#7d6116',
-          900: '#664d13',
-        },
-        dark: {
-          50: '#f8f8f8',
-          100: '#e8e8e8',
-          200: '#d1d1d1',
-          300: '#b4b4b4',
-          400: '#979797',
-          500: '#808080',
-          600: '#6a6a6a',
-          700: '#5a5a5a',
-          800: '#4a4a4a',
-          900: '#1a1a1a',
-        }
       },
       fontFamily: {
         'heading': ['Playfair Display', 'serif'],
         'body': ['Inter', 'sans-serif'],
         'playfair': ['Playfair Display', 'serif'],
         'inter': ['Inter', 'sans-serif'],
+        'neue-haas': ['Neue Haas Grotesk Display Std', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'figma-gradient': 'linear-gradient(to bottom, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0.6) 100%)',
       },
       animation: {
-        'fade-in': 'fadeIn 0.8s ease-out forwards',
-        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-        'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
-        'slide-in-right': 'slideInRight 0.8s ease-out forwards',
-        'scale-in': 'scaleIn 0.6s ease-out forwards',
+        'fade-in': 'fadeIn 0.8s ease-out',
+        'fade-in-up': 'fadeInUp 0.8s ease-out',
+        'slide-in-left': 'slideInLeft 0.8s ease-out',
+        'slide-in-right': 'slideInRight 0.8s ease-out',
+        'scale-hover': 'scaleHover 0.3s ease-out',
+        'parallax': 'parallax 20s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -61,24 +53,25 @@ const config: Config = {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         slideInLeft: {
-          '0%': { opacity: '0', transform: 'translateX(-30px)' },
+          '0%': { opacity: '0', transform: 'translateX(-50px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
         slideInRight: {
-          '0%': { opacity: '0', transform: 'translateX(30px)' },
+          '0%': { opacity: '0', transform: 'translateX(50px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
-        scaleIn: {
-          '0%': { opacity: '0', transform: 'scale(0.9)' },
-          '100%': { opacity: '1', transform: 'scale(1)' },
+        scaleHover: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.05)' },
         },
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        parallax: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
       },
     },
   },
   plugins: [],
 }
+
 export default config
