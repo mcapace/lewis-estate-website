@@ -9,6 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        'lewis-gold': '#D4AF37',
+        'lewis-gold-hover': '#E5C158',
+        'lewis-black': '#000000',
+        'lewis-gray': '#1a1a1a',
         gold: {
           50: '#fefdf8',
           100: '#fef9e7',

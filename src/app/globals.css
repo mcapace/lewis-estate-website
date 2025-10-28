@@ -3,16 +3,51 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Color Palette */
+  --color-black: #000000;
+  --color-dark-gray: #1a1a1a;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #E5C158;
+  --color-white: #FFFFFF;
+  --color-gray-light: #CCCCCC;
+  --color-overlay: rgba(0, 0, 0, 0.4);
+  
+  /* Typography Scale */
+  --text-hero: 64px;
+  --text-hero-mobile: 40px;
+  --text-section: 48px;
+  --text-section-mobile: 32px;
+  --text-body: 18px;
+  --text-small: 12px;
+  
+  /* Letter Spacing */
+  --tracking-headline: -0.02em;
+  --tracking-small: 0.1em;
+  --tracking-button: 0.05em;
+  
+  /* Spacing System */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 128px;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   
   body {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--color-black);
+    color: var(--color-white);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    line-height: 1.6;
   }
 }
 
@@ -22,43 +57,51 @@
     color: #000000;
     padding: 1rem 2rem;
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 14px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    border-radius: 0.125rem;
+    border-radius: 0;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+    font-family: 'Inter', sans-serif;
   }
   
   .btn-primary:hover {
-    background-color: #e6c547;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    background-color: #E5C158;
+    transform: scale(1.02);
+  }
+  
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--text-hero);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: var(--tracking-headline);
+    margin-bottom: var(--space-md);
   }
   
   .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
+    font-size: var(--text-section);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
   }
   
   .section-subtitle {
     font-family: 'Inter', sans-serif;
-    font-size: 0.875rem;
+    font-size: var(--text-small);
     font-weight: 500;
-    letter-spacing: 0.1em;
+    letter-spacing: var(--tracking-small);
     text-transform: uppercase;
-    color: #cccccc;
-    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: var(--space-sm);
   }
   
   .section-description {
-    font-size: 1.125rem;
-    color: #cccccc;
+    font-size: var(--text-body);
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-xl);
   }
   
   .glass-effect {

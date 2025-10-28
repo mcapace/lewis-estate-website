@@ -38,7 +38,7 @@ export default function Home() {
     <main className="min-h-screen bg-black text-white">
       <Navigation />
       
-      {/* Hero Section */}
+      {/* Hero Section - Exact Figma Specifications */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <motion.div 
           className="absolute inset-0 z-0"
@@ -54,19 +54,19 @@ export default function Home() {
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </motion.div>
         
-        <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="section-subtitle mb-6">
+            <h2 className="text-xs uppercase tracking-widest text-white/80 mb-4 font-inter">
               THE HOME OF BIG REDS AND SEXY CHARDONNAYS
             </h2>
-            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-semibold text-white mb-8 leading-tight">
+            <h1 className="hero-title text-white mb-6">
               Napa Valley's Ultimate Experience Awaits
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed mb-10 max-w-4xl mx-auto">
+            <p className="text-lg text-white/90 leading-relaxed mb-10 max-w-3xl mx-auto">
               With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, 
               evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a 
               tasting room. It's Napa Valley's ultimate indulgence.
@@ -74,20 +74,25 @@ export default function Home() {
           </motion.div>
         </div>
         
-        {/* Scroll Indicator */}
+        {/* Pagination - Bottom Center */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
         >
-          <div className="text-sm text-gray-400 mb-2">1/9</div>
-          <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-            <motion.div
-              animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="w-1 h-3 bg-gray-400 rounded-full mt-2"
-            />
+          <div className="text-sm text-white/60 mb-2">1 / 9</div>
+          <div className="flex items-center space-x-4">
+            <button className="text-white/60 hover:text-white transition-colors">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button className="text-white/60 hover:text-white transition-colors">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </motion.div>
       </section>
