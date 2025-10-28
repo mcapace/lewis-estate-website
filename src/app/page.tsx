@@ -4,288 +4,282 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-neutral-200">
-      <div className="max-w-[1440px] mx-auto">
+    <div style={{width: '1640px', height: '6328px', position: 'relative', background: '#DDDDDD'}}>
+      <div style={{width: '1440px', left: '100px', top: '100px', position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
         
         {/* Hero Section */}
-        <div className="relative h-[850px] bg-black overflow-hidden">
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <Image
+        <div style={{width: '1440px', height: '850px', paddingLeft: '155px', paddingRight: '155px', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex'}}>
+          <div style={{width: '1440px', height: '849px', left: '0px', top: '1px', position: 'absolute', overflow: 'hidden'}}>
+          <Image
+              style={{width: '1440px', height: '850px', left: '0px', top: '0px', position: 'absolute'}}
               src="/_Assets/ws_lewis_hero.png"
               alt="Lewis Estate Hero"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
+              width={1440}
+              height={850}
+            priority
+          />
+            <div style={{width: '1440px', height: '849px', left: '0px', top: '0px', position: 'absolute', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0.65) 100%)'}}></div>
           </div>
-          
-          {/* Fixed Header */}
-          <div className="absolute top-0 left-0 right-0 z-20 px-10 py-8">
-            <div className="flex justify-between items-center">
-              <div className="text-white text-xl font-medium">
-                Wine Spectator
+          <div style={{alignSelf: 'stretch', flex: '1 1 0', position: 'relative', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', gap: '32px', display: 'flex'}}>
+            <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '24px', display: 'flex'}}>
+              <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', wordWrap: 'break-word'}}>
+                The Home of Big Reds and Sexy Chardonnays
               </div>
-              <nav className="flex gap-10">
-                <a href="#wine-tastings" className="text-white text-sm uppercase tracking-wider hover:text-orange-200 transition-colors">
-                  WINE TASTINGS
-                </a>
-                <a href="#culinary" className="text-white text-sm uppercase tracking-wider hover:text-orange-200 transition-colors">
-                  CULINARY EXPERIENCES
-                </a>
-                <a href="#salon-prive" className="text-white text-sm uppercase tracking-wider hover:text-orange-200 transition-colors">
-                  SALON PRIVÉ
-                </a>
-                <a href="#wines" className="text-white text-sm uppercase tracking-wider hover:text-orange-200 transition-colors">
-                  WINES
-                </a>
-              </nav>
+              <div style={{alignSelf: 'stretch', textAlign: 'center', color: '#E5C1A0', fontSize: '54px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '64px', letterSpacing: '1.08px', wordWrap: 'break-word'}}>
+              Napa Valley's Ultimate Experience Awaits
+              </div>
             </div>
-          </div>
-
-          {/* Hero Content - Centered */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center max-w-4xl px-20">
-              <p className="text-white text-base uppercase tracking-[5.12px] mb-6 font-sans">
-                THE HOME OF BIG REDS AND SEXY CHARDONNAYS
-              </p>
-              <h1 className="text-orange-200 text-5xl font-light leading-[64px] tracking-wide mb-8 font-serif">
-                Napa Valley's Ultimate Experience Awaits
-              </h1>
-              <p className="text-white text-xl leading-8 tracking-wide font-sans">
+            <div style={{alignSelf: 'stretch', paddingLeft: '80px', paddingRight: '80px', justifyContent: 'center', alignItems: 'flex-start', gap: '10px', display: 'inline-flex'}}>
+              <div style={{flex: '1 1 0', textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '20px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '32px', letterSpacing: '0.50px', wordWrap: 'break-word'}}>
                 With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a tasting room. It's Napa Valley's ultimate indulgence.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Quote Section */}
-        <div className="h-[500px] bg-stone-950 flex flex-col justify-center items-center px-64">
-          <div className="text-center max-w-4xl">
-            <blockquote className="text-orange-200 text-6xl font-light tracking-tight leading-tight mb-16 font-serif italic">
-              "A record of excellence that few<br/>California wineries can rival."
-            </blockquote>
-            <cite className="text-orange-200 text-lg uppercase tracking-[5.76px] font-sans">
-              -James Laube, wine spectator
-            </cite>
-          </div>
-        </div>
-
-        {/* Wine Tastings Section */}
-        <div className="bg-stone-950 px-40 py-20">
-          <div className="flex items-center gap-36 mb-32">
-            <div className="w-96">
-              <div className="mb-8">
-                <p className="text-orange-200 text-sm uppercase tracking-[4.48px] mb-6 font-sans">
-                  A SENSORY EXPERIENCE
-                </p>
-                <h2 className="text-white text-5xl font-light leading-[64px] tracking-widest mb-8 font-serif">
-                  Wine Tastings
-                </h2>
-                <p className="text-white text-xl leading-8 tracking-wide mb-8 font-sans">
-                  Explore the passion and craftsmanship of Lewis award-winning wines. Our unique experiences are designed to delight your senses.
-                </p>
-                <button className="bg-orange-200 text-black px-6 py-4 text-base uppercase tracking-wide font-medium">
-                  BOOK A WINE TASTING
-                </button>
               </div>
             </div>
-            <div className="w-[553px] h-[672px] relative">
-              <Image
-                src="/_Assets/ws_lewis_wine_tastings.png"
-                alt="Wine Tastings"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Culinary Experiences Section */}
-        <div className="bg-stone-950 px-40 py-20">
-          <div className="flex items-center gap-36">
-            <div className="w-[481px] h-[639px] relative">
-              <Image
-                src="/_Assets/ws_lewis_culinary_exp.png"
-                alt="Culinary Experience"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="w-96">
-              <div className="mb-8">
-                <p className="text-orange-200 text-sm uppercase tracking-[4.48px] mb-6 font-sans">
-                  A MAGICAL INTERPLAY
-                </p>
-                <h2 className="text-white text-5xl font-light leading-[54px] tracking-widest mb-8 font-serif">
-                  Culinary Experiences
-                </h2>
-                <p className="text-white text-xl leading-8 tracking-wide mb-8 font-sans">
-                  Indulge in the art of Lewis Estate's culinary excellence, an ode to heighten your senses.
-                </p>
-                <button className="bg-orange-200 text-black px-6 py-4 text-base uppercase tracking-wide font-medium">
-                  BOOK A TASTE OF LEWIS
-                </button>
-              </div>
-              
-              {/* Small Image */}
-              <div className="w-96 h-80 relative">
+            <div data-property-1="Main" style={{width: '121.88px', height: '74px', left: '565px', top: '850px', position: 'absolute', overflow: 'hidden'}}>
+              <div style={{width: '122px', height: '74px', left: '0px', top: '0px', position: 'absolute', overflow: 'hidden'}}>
                 <Image
-                  src="/_Assets/ws_lewis_hallway.png"
-                  alt="Hallway"
-                  fill
-                  className="object-cover"
+                  style={{width: '61px', height: '74px', left: '0px', top: '0px', position: 'absolute'}}
+                  src="/_Assets/ws_lewis_product_showcase.png"
+                  alt="Wine Bottle"
+                  width={61}
+                  height={74}
                 />
               </div>
             </div>
           </div>
+          <div style={{width: '1440px', height: '128px', paddingLeft: '40px', paddingRight: '40px', paddingTop: '32px', paddingBottom: '32px', left: '0px', top: '0px', position: 'absolute', overflow: 'hidden', justifyContent: 'flex-start', alignItems: 'center', gap: '186px', display: 'inline-flex'}}>
+            <div style={{width: '193px', height: '58px', position: 'relative'}}>
+              <div style={{width: '168.88px', height: '45.92px', left: '12.06px', top: '6.04px', position: 'absolute', background: 'black'}}></div>
+            </div>
+            <div style={{left: '412px', top: '40px', position: 'absolute', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '40px', display: 'flex'}}>
+              <div style={{height: '48px', paddingTop: '16px', paddingBottom: '16px', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'flex'}}>
+                <div style={{textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
+                  wine tastings
+                </div>
+              </div>
+              <div style={{height: '48px', paddingTop: '16px', paddingBottom: '16px', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'flex'}}>
+                <div style={{textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
+                  culinary experiences
+                </div>
+              </div>
+              <div style={{height: '48px', paddingTop: '16px', paddingBottom: '16px', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'flex'}}>
+                <div style={{textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
+                  salon privé
+                </div>
+              </div>
+              <div style={{height: '48px', paddingTop: '16px', paddingBottom: '16px', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'flex'}}>
+                <div style={{textAlign: 'center', color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
+                  wines
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Quote Section */}
+        <div style={{width: '1440px', height: '500px', paddingTop: '135px', paddingLeft: '271px', paddingRight: '271px', background: '#0D0D0D', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '64px', display: 'flex'}}>
+          <div style={{alignSelf: 'stretch', textAlign: 'center', color: '#E5C1A0', fontSize: '64px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', letterSpacing: '0.32px', wordWrap: 'break-word'}}>
+            "A record of excellence that few<br/>California wineries can rival."
+          </div>
+          <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', fontSize: '18px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '20px', letterSpacing: '5.76px', wordWrap: 'break-word'}}>
+            -James Laube, wine spectator
+          </div>
+          <div style={{width: '213.33px', height: '64px', position: 'relative'}}></div>
         </div>
 
-        {/* Salon Privé Section */}
-        <div className="relative h-[900px] bg-stone-950 overflow-hidden">
+        {/* Wine Tastings & Culinary Section */}
+        <div style={{alignSelf: 'stretch', height: '1858px', paddingTop: '40px', paddingLeft: '155px', paddingRight: '155px', background: '#0D0D0D', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+          <div style={{height: '1363px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+            <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: '139px', display: 'inline-flex'}}>
+              <div style={{width: '438px', paddingTop: '128px', paddingBottom: '256px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '32px', display: 'inline-flex'}}>
+                <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '24px', display: 'flex'}}>
+                  <div style={{alignSelf: 'stretch', color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', wordWrap: 'break-word'}}>
+                    A Sensory Experience
+                  </div>
+                  <div style={{color: '#E5C1A0', fontSize: '54px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '64px', letterSpacing: '2.16px', wordWrap: 'break-word'}}>
+                    Wine Tastings
+                  </div>
+                </div>
+                <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '10px', display: 'inline-flex'}}>
+                  <div style={{flex: '1 1 0', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '20px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '32px', letterSpacing: '0.50px', wordWrap: 'break-word'}}>
+                    Explore the passion and craftsmanship of Lewis' winemaking with unique experiences designed to delight your every sense.
+                  </div>
+                </div>
+                <div style={{height: '55px', paddingTop: '18px', paddingBottom: '19px', paddingLeft: '24px', paddingRight: '24px', background: '#D3A737', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
+                  <div style={{textAlign: 'center', color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '450', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '0.64px', wordWrap: 'break-word'}}>
+                    Book A wine tasting
+                  </div>
+                </div>
+              </div>
+              <div style={{width: '553px', alignSelf: 'stretch', position: 'relative'}}>
+                <div style={{width: '553px', height: '672px', left: '0px', top: '0px', position: 'absolute', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
+                  <Image
+                    style={{width: '1136px', height: '758px', left: '-310px', top: '-74px', position: 'absolute'}}
+                    src="/_Assets/ws_lewis_wine_tastings.png"
+                    alt="Wine Tastings"
+                    width={1136}
+                    height={758}
+                  />
+                </div>
+              </div>
+            </div>
+            <div style={{width: '1130px', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '139px', display: 'inline-flex'}}>
+              <div style={{width: '438px', alignSelf: 'stretch', position: 'relative'}}>
+                <div style={{width: '481px', height: '639px', left: '0px', top: '0px', position: 'absolute', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
+                  <Image
+                    style={{width: '513px', height: '651px', left: '-17px', top: '0px', position: 'absolute'}}
+                    src="/_Assets/ws_lewis_culinary_exp.png"
+                    alt="Culinary Experience"
+                    width={513}
+                    height={651}
+                  />
+                </div>
+              </div>
+              <div style={{width: '438px', paddingTop: '201px', paddingBottom: '256px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '32px', display: 'inline-flex'}}>
+                <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '24px', display: 'flex'}}>
+                  <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', wordWrap: 'break-word'}}>
+                    A Magical Interplay
+                  </div>
+                  <div style={{alignSelf: 'stretch', color: 'var(--Secondary-Light-Gold-(Drk-BG), #E5C1A0)', fontSize: '54px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '54px', letterSpacing: '2.16px', wordWrap: 'break-word'}}>
+                    Culinary Experiences
+                  </div>
+                </div>
+                <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '10px', display: 'inline-flex'}}>
+                  <div style={{flex: '1 1 0', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '20px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '32px', letterSpacing: '0.50px', wordWrap: 'break-word'}}>
+                    Indulge in their MICHELIN-Starred chef's culinary experiences curated to heighten your every sensation.
+                  </div>
+                </div>
+                <div style={{height: '55px', paddingTop: '18px', paddingBottom: '19px', paddingLeft: '24px', paddingRight: '24px', background: '#D3A737', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
+                  <div style={{textAlign: 'center', color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '450', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '0.64px', wordWrap: 'break-word'}}>
+                    book a taste of lewis
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{width: '357px', height: '406px', position: 'relative'}}>
+            <div style={{width: '357px', height: '310px', left: '-196px', top: '-40px', position: 'absolute', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
+              <Image
+                style={{width: '357px', height: '536px', left: '0px', top: '-185px', position: 'absolute'}}
+                src="/_Assets/ws_lewis_hallway.png"
+                alt="Hallway"
+                width={357}
+                height={536}
+              />
+            </div>
+          </div>
+        </div>
+
+      {/* Salon Privé Section */}
+        <div style={{alignSelf: 'stretch', height: '900px', position: 'relative', background: '#0D0D0D', overflow: 'hidden', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '10px', display: 'flex'}}>
           <Image
+            style={{width: '1440px', height: '850px', left: '0px', top: '-10px', position: 'absolute'}}
             src="/_Assets/ws_lewis_salon_prive.png"
             alt="Salon Privé"
-            fill
-            className="object-cover"
+            width={1440}
+            height={850}
           />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center max-w-4xl px-20">
-              <div className="mb-8">
-                <p className="text-orange-200 text-base uppercase tracking-[5.12px] mb-6 font-sans">
-                  ENTER A SECLUDED WORLD
-                </p>
-                <h2 className="text-white text-5xl font-light leading-[64px] tracking-widest mb-8 font-serif italic">
-                  Salon Privé
-                </h2>
-                <p className="text-white text-xl leading-8 tracking-wide mb-12 font-sans">
-                  Indulge in the ultimate luxury with Lewis Estate's exclusive Salon Privé. This intimate space offers a bespoke experience, perfect for private events or romantic evenings.
-                </p>
-                <button className="bg-orange-200 text-black px-6 py-4 text-base uppercase tracking-wide font-medium">
-                  EXPLORE THE SALON PRIVÉ
-                </button>
+          <div style={{width: '1130px', left: '155px', top: '560px', position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '32px', display: 'flex'}}>
+            <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '32px', display: 'flex'}}>
+              <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '24px', display: 'flex'}}>
+                <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', wordWrap: 'break-word'}}>
+                  enter A Secluded World
+                </div>
+                <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'var(--Secondary-Light-Gold-(Drk-BG), #E5C1A0)', fontSize: '54px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '64px', letterSpacing: '2.16px', wordWrap: 'break-word'}}>
+              Salon Privé
+                </div>
+              </div>
+              <div style={{alignSelf: 'stretch', paddingLeft: '80px', paddingRight: '80px', justifyContent: 'flex-start', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
+                <div style={{flex: '1 1 0', textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '20px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '32px', letterSpacing: '0.50px', wordWrap: 'break-word'}}>
+                  Luxuriate in the intimacy of your own private enclave for two. You and one guest will enjoy white glove,<br/>on-call concierge service, customizable menus, access to both indoor and outdoor Salons Privés,<br/>access to their private cellar, private car service, and more.
+                </div>
+              </div>
+            </div>
+            <div style={{height: '55px', paddingTop: '18px', paddingBottom: '19px', paddingLeft: '24px', paddingRight: '24px', background: '#D3A737', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
+              <div style={{textAlign: 'center', color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '450', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '0.64px', wordWrap: 'break-word'}}>
+                Explore the salon privé
               </div>
             </div>
           </div>
         </div>
 
         {/* Discover Wines Section */}
-        <div className="bg-stone-950 px-40 py-20">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="mb-16">
-              <p className="text-orange-200 text-base uppercase tracking-[5.12px] mb-6 font-sans">
-                THE CELLAR AWAITS
-              </p>
-              <h2 className="text-white text-5xl font-light leading-[64px] tracking-widest mb-8 font-serif">
-                Discover Lewis Wines
-              </h2>
-              <p className="text-white text-xl leading-8 tracking-wide mb-12 font-sans">
-                Explore Lewis Estate's legendary wines and discover your favorite reds and sexy chardonnays.
-              </p>
-              <button className="bg-orange-200 text-black px-6 py-4 text-base uppercase tracking-wide font-medium">
-                EXPLORE WINES
-              </button>
+        <div style={{width: '1440px', height: '900px', paddingLeft: '155px', paddingRight: '155px', position: 'relative', background: '#0D0D0D', justifyContent: 'center', alignItems: 'flex-start', display: 'inline-flex'}}>
+              <Image
+            style={{width: '1440px', height: '850px', left: '0px', top: '0px', position: 'absolute'}}
+            src="/_Assets/ws_lewis_product_showcase.png"
+            alt="Wine Showcase"
+            width={1440}
+            height={850}
+          />
+          <div style={{width: '1130px', left: '155px', top: '603px', position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '32px', display: 'inline-flex'}}>
+            <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '32px', display: 'flex'}}>
+              <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '24px', display: 'flex'}}>
+                <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', wordWrap: 'break-word'}}>
+                  the Cellar Awaits
+                </div>
+                <div style={{textAlign: 'center', color: 'var(--Secondary-Light-Gold-(Drk-BG), #E5C1A0)', fontSize: '54px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '64px', letterSpacing: '2.16px', wordWrap: 'break-word'}}>
+                  Discover Lewis Wines
+                </div>
+              </div>
+              <div style={{alignSelf: 'stretch', paddingLeft: '80px', paddingRight: '80px', justifyContent: 'flex-start', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
+                <div style={{flex: '1 1 0', textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '20px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '32px', letterSpacing: '0.50px', wordWrap: 'break-word'}}>
+                  Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
+                </div>
+              </div>
             </div>
-            
-            {/* Wine Bottles */}
-            <div className="flex justify-center items-end gap-16">
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-80 relative mb-4">
-                  <Image
-                    src="/_Assets/ws_lewis_product_showcase.png"
-                    alt="Chardonnay"
-                    width={80}
-                    height={320}
-                    className="object-contain"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="text-white font-medium text-sm mb-1">LEWIS CELLARS</h3>
-                  <p className="text-orange-200 text-sm mb-1">CHARDONNAY</p>
-                  <p className="text-white/60 text-xs uppercase tracking-widest">NAPA VALLEY</p>
-                </div>
-              </div>
-              
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-80 relative mb-4">
-                  <Image
-                    src="/_Assets/ws_lewis_product_showcase.png"
-                    alt="Cabernet"
-                    width={80}
-                    height={320}
-                    className="object-contain"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="text-white font-medium text-sm mb-1">LEWIS CELLARS</h3>
-                  <p className="text-orange-200 text-sm mb-1">CABERNET SAUVIGNON</p>
-                  <p className="text-white/60 text-xs uppercase tracking-widest">NAPA VALLEY</p>
-                </div>
-              </div>
-              
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-80 relative mb-4">
-                  <Image
-                    src="/_Assets/ws_lewis_product_showcase.png"
-                    alt="Rosé"
-                    width={80}
-                    height={320}
-                    className="object-contain"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="text-white font-medium text-sm mb-1">LEWIS CELLARS</h3>
-                  <p className="text-orange-200 text-sm mb-1">ROSÉ</p>
-                  <p className="text-white/60 text-xs uppercase tracking-widest">NAPA VALLEY</p>
-                </div>
+            <div style={{height: '55px', paddingTop: '18px', paddingBottom: '19px', paddingLeft: '24px', paddingRight: '24px', background: '#D3A737', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
+              <div style={{textAlign: 'center', color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '450', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '0.64px', wordWrap: 'break-word'}}>
+                Explore wines
               </div>
             </div>
           </div>
         </div>
 
         {/* Footer Section */}
-        <div className="relative bg-neutral-400 py-20">
-          <div className="max-w-[1440px] mx-auto px-40">
-            <div className="flex justify-end">
-              <div className="w-96 bg-black px-8 py-10">
-                <div className="mb-6">
-                  <h3 className="text-orange-200 text-3xl font-medium leading-8 tracking-wide mb-4">
-                    Lewis Cellars
-                  </h3>
-                  <p className="text-white/80 text-xl leading-8 tracking-wide">
-                    Monday–Sunday, 10:00 a.m.–4:30 p.m.<br/>6320 Silverado Trail Napa, CA 94558<br/>707.255.3400
-                  </p>
+        <div style={{width: '1440px', paddingTop: '80px', paddingBottom: '80px', position: 'relative', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '10px', display: 'flex'}}>
+              <Image
+            style={{width: '1440px', height: '478px', left: '0px', top: '0px', position: 'absolute', background: 'linear-gradient(0deg, #AAAAAA 0%, #AAAAAA 100%)', backgroundBlendMode: 'overlay, normal'}}
+            src="/_Assets/ws_lewis_hero.png"
+            alt="Footer Background"
+            width={1440}
+            height={478}
+          />
+          <div style={{paddingLeft: '848px', paddingRight: '155px', position: 'relative', overflow: 'hidden', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+            <div style={{width: '437px', paddingTop: '32px', paddingBottom: '40px', paddingLeft: '32px', paddingRight: '32px', background: 'var(--Brand-Black, #0D0D0D)', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '24px', display: 'flex'}}>
+              <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '16px', display: 'flex'}}>
+                <div style={{width: '389px', color: '#E5C1A0', fontSize: '32px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '350', lineHeight: '32px', letterSpacing: '0.64px', wordWrap: 'break-word'}}>
+                  Lewis Cellars
                 </div>
-                <button className="bg-orange-200 text-black px-6 py-4 text-base uppercase tracking-wide font-medium">
-                  REQUEST A RESERVATION
-                </button>
+                <div style={{width: '389px', opacity: '0.80', color: '#F4F4F4', fontSize: '20px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '32px', letterSpacing: '0.50px', wordWrap: 'break-word'}}>
+                  Monday–Sunday, 10:00 a.m.–4:30 p.m.<br/>6320 Silverado Trail Napa, CA 94558<br/>707.255.3400
+                </div>
+              </div>
+              <div style={{height: '55px', paddingTop: '18px', paddingBottom: '19px', paddingLeft: '24px', paddingRight: '24px', background: '#D3A737', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
+                <div style={{textAlign: 'center', color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '450', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '0.64px', wordWrap: 'break-word'}}>
+                  Visitor Information
+                </div>
               </div>
             </div>
-          </div>
-          
-          {/* Wine Bottle */}
-          <div className="absolute right-[394px] top-[99px] w-16 h-20">
             <Image
+              style={{width: '61.11px', height: '74px', left: '394px', top: '99px', position: 'absolute'}}
               src="/_Assets/ws_lewis_product_showcase.png"
               alt="Wine Bottle"
               width={61}
               height={74}
-              className="object-contain"
             />
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="relative h-[520px] bg-black overflow-hidden">
+        <div style={{width: '1440px', height: '520px', position: 'relative', background: '#020202', overflow: 'hidden'}}>
           <Image
+            style={{width: '2048px', height: '540.50px', left: '-304px', top: '-10px', position: 'absolute'}}
             src="/_Assets/ws_lewis_hero.png"
             alt="Background"
-            fill
-            className="object-cover"
+            width={2048}
+            height={540}
           />
-          <div className="absolute left-[618px] top-[13px] w-52 h-16 bg-black" />
+          <div style={{width: '201px', height: '65px', left: '618px', top: '13px', position: 'absolute', background: '#040404'}}></div>
         </div>
       </div>
     </div>
