@@ -1,34 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import Navigation from '@/components/layout/Navigation'
+import Footer from '@/components/layout/Footer'
 import WineBottle from '@/components/sections/WineBottle'
-
-const wines = [
-  {
-    name: 'LEWIS CELLARS',
-    type: 'CHARDONNAY',
-    region: 'NAPA VALLEY',
-    bottleType: 'chardonnay' as const,
-    emblemColor: 'gold' as const
-  },
-  {
-    name: 'LEWIS CELLARS',
-    type: 'CABERNET SAUVIGNON',
-    region: 'NAPA VALLEY',
-    bottleType: 'cabernet' as const,
-    emblemColor: 'gold' as const
-  },
-  {
-    name: 'LEWIS CELLARS',
-    type: 'THE BIG BLEND',
-    region: 'NAPA VALLEY',
-    bottleType: 'big-blend' as const,
-    emblemColor: 'bronze' as const
-  }
-]
+import { WINE_COLLECTION, IMAGE_PATHS } from '@/lib/constants'
+import { fadeIn, fadeInUp, staggerContainer, staggerItem } from '@/lib/animations'
 
 export default function Home() {
   const { scrollYProgress } = useScroll()
@@ -45,11 +23,12 @@ export default function Home() {
           style={{ y }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-            alt="Luxury wine tasting experience"
+            src={IMAGE_PATHS.hero.homepage}
+            alt="Lewis Estate luxury wine experience"
             fill
             className="object-cover"
             priority
+            quality={90}
           />
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </motion.div>
@@ -101,14 +80,16 @@ export default function Home() {
       <section className="min-h-screen bg-black flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         {/* Wine Bottles - Centered horizontally */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           className="flex justify-center items-center space-x-12 md:space-x-20 mb-20"
         >
-          {wines.map((wine, index) => (
-            <WineBottle key={wine.type} wine={wine} index={index} />
+          {WINE_COLLECTION.map((wine, index) => (
+            <motion.div key={wine.type} variants={staggerItem}>
+              <WineBottle wine={wine} index={index} />
+            </motion.div>
           ))}
         </motion.div>
 
@@ -142,10 +123,11 @@ export default function Home() {
           style={{ y }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            src={IMAGE_PATHS.salonPrive.couple}
             alt="Intimate couple in luxury wine setting"
             fill
             className="object-cover"
+            quality={90}
           />
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </motion.div>
@@ -189,18 +171,20 @@ export default function Home() {
           >
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-                alt="Gourmet plated dish"
+                src={IMAGE_PATHS.culinary.platedDish}
+                alt="Gourmet plated dish from MICHELIN-Starred chef"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
+                quality={90}
               />
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                alt="Elegant dining room"
+                src={IMAGE_PATHS.culinary.diningRoom}
+                alt="Elegant dining room at Lewis Estate"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
+                quality={90}
               />
             </div>
           </motion.div>
@@ -234,10 +218,11 @@ export default function Home() {
           style={{ y }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            src={IMAGE_PATHS.tastings.couple}
             alt="Wine tasting experience with couple"
             fill
             className="object-cover"
+            quality={90}
           />
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </motion.div>
@@ -266,6 +251,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      <Footer />
     </main>
   )
 }

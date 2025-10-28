@@ -14,6 +14,11 @@ const playfair = Playfair_Display({
   display: 'swap',
 })
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export const metadata: Metadata = {
   title: 'Lewis Estate - Napa Valley\'s Ultimate Wine Experience',
   description: 'Discover Lewis Estate\'s legendary wines and experience Napa Valley\'s ultimate indulgence with exquisite wines, MICHELIN-Starred cuisine, and exclusive Salon Privé.',
@@ -32,7 +37,6 @@ export const metadata: Metadata = {
     description: 'Discover Lewis Estate\'s legendary wines and experience Napa Valley\'s ultimate indulgence.',
   },
   robots: 'index, follow',
-  viewport: 'width=device-width, initial-scale=1',
 }
 
 export default function RootLayout({

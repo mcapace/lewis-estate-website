@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { NAVIGATION_ITEMS } from '@/lib/constants'
+import { scrollToSection } from '@/lib/utils'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -16,13 +18,6 @@ const Navigation = () => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  const navItems = [
-    { name: 'WINE TASTINGS', href: '/tastings' },
-    { name: 'CULINARY EXPERIENCES', href: '/culinary' },
-    { name: 'SALON PRIVÉ', href: '/salon-prive' },
-    { name: 'WINES', href: '/wines' },
-  ]
 
   return (
     <motion.nav
@@ -51,17 +46,17 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map((item, index) => (
+              {NAVIGATION_ITEMS.map((item, index) => (
                 <motion.a
                   key={item.name}
                   href={item.href}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 + index * 0.1 }}
-                  className="text-white hover:text-gold-500 px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors duration-300 relative group"
+                  className="text-white hover:text-lewis-gold px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors duration-300 relative group"
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-500 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-lewis-gold transition-all duration-300 group-hover:w-full"></span>
                 </motion.a>
               ))}
             </div>
@@ -71,7 +66,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white hover:text-gold-500 focus:outline-none focus:text-gold-500 transition-colors duration-300"
+              className="text-white hover:text-lewis-gold focus:outline-none focus:text-lewis-gold transition-colors duration-300"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -93,14 +88,14 @@ const Navigation = () => {
             className="md:hidden glass-effect border-t border-gray-800"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navItems.map((item, index) => (
+              {NAVIGATION_ITEMS.map((item, index) => (
                 <motion.a
                   key={item.name}
                   href={item.href}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="text-white hover:text-gold-500 block px-3 py-2 text-base font-medium uppercase tracking-wider transition-colors duration-300"
+                  className="text-white hover:text-lewis-gold block px-3 py-2 text-base font-medium uppercase tracking-wider transition-colors duration-300"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
