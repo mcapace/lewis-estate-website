@@ -21,13 +21,10 @@ export default function Home() {
           className="absolute inset-0 z-0"
           style={{ y }}
         >
-          <Image
-            src={IMAGE_PATHS.tastings.couple}
+          <img
+            src="/images/wine-tasting/wine-tasting-couple.png"
             alt="Lewis Estate luxury wine tasting experience"
-            fill
-            className="object-cover"
-            priority
-            quality={90}
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         </motion.div>
@@ -78,12 +75,10 @@ export default function Home() {
                 }}
               >
                 <div className="relative w-32 h-80 lg:w-40 lg:h-96">
-                  <Image
+                  <img
                     src="/images/wine-bottles/product-showcase.png"
                     alt="Lewis Cellars Chardonnay"
-                    fill
-                    className="object-contain drop-shadow-2xl"
-                    quality={90}
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </motion.div>
@@ -114,12 +109,10 @@ export default function Home() {
                 }}
               >
                 <div className="relative w-32 h-80 lg:w-40 lg:h-96">
-                  <Image
+                  <img
                     src="/images/wine-bottles/product-showcase.png"
                     alt="Lewis Cellars Cabernet Sauvignon"
-                    fill
-                    className="object-contain drop-shadow-2xl"
-                    quality={90}
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </motion.div>
@@ -150,12 +143,10 @@ export default function Home() {
                 }}
               >
                 <div className="relative w-32 h-80 lg:w-40 lg:h-96">
-                  <Image
+                  <img
                     src="/images/wine-bottles/product-showcase.png"
                     alt="Lewis Cellars The Big Blend"
-                    fill
-                    className="object-contain drop-shadow-2xl"
-                    quality={90}
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </motion.div>
@@ -207,12 +198,10 @@ export default function Home() {
           className="absolute inset-0 z-0"
           style={{ y }}
         >
-          <Image
-            src={IMAGE_PATHS.salonPrive.couple}
+          <img
+            src="/images/salon-prive/couple-luxury.png"
             alt="Intimate couple in luxury wine setting"
-            fill
-            className="object-cover"
-            quality={90}
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </motion.div>
@@ -266,12 +255,10 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="relative h-80 lg:h-96 rounded-lg overflow-hidden group"
               >
-                <Image
-                  src={IMAGE_PATHS.culinary.platedDish}
+                <img
+                  src="/images/culinary/plated-dish.png"
                   alt="Gourmet plated dish from MICHELIN-Starred chef"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  quality={90}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </motion.div>
               
@@ -283,12 +270,10 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="relative h-80 lg:h-96 rounded-lg overflow-hidden group"
               >
-                <Image
-                  src={IMAGE_PATHS.culinary.diningRoom}
+                <img
+                  src="/images/culinary/dining-room.jpg"
                   alt="Elegant dining room at Lewis Estate"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  quality={90}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </motion.div>
             </motion.div>
@@ -325,12 +310,10 @@ export default function Home() {
           className="absolute inset-0 z-0"
           style={{ y }}
         >
-          <Image
-            src={IMAGE_PATHS.tastings.couple}
+          <img
+            src="/images/wine-tasting/wine-tasting-couple.png"
             alt="Wine tasting experience with couple"
-            fill
-            className="object-cover"
-            quality={90}
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         </motion.div>
