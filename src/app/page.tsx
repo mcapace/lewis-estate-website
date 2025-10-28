@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import Navigation from '@/components/layout/Navigation'
 import Footer from '@/components/layout/Footer'
-import WineBottle from '@/components/sections/WineBottle'
 import { WINE_COLLECTION, IMAGE_PATHS } from '@/lib/constants'
 import { fadeIn, fadeInUp, staggerContainer, staggerItem } from '@/lib/animations'
 
@@ -16,108 +15,194 @@ export default function Home() {
     <main className="min-h-screen bg-black text-white">
       <Navigation />
       
-      {/* Hero Section - Exact Figma Specifications */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Hero Section - Full Screen with Wine Tasting Photo */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <motion.div 
           className="absolute inset-0 z-0"
           style={{ y }}
         >
           <Image
-            src={IMAGE_PATHS.hero.homepage}
-            alt="Lewis Estate luxury wine experience"
+            src={IMAGE_PATHS.tastings.couple}
+            alt="Lewis Estate luxury wine tasting experience"
             fill
             className="object-cover"
             priority
             quality={90}
           />
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         </motion.div>
         
-        <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-20 text-center max-w-6xl mx-auto px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-xs lg:text-sm uppercase tracking-[0.2em] text-white/70 mb-6 font-inter font-semibold">
+            <h2 className="text-xs lg:text-sm uppercase tracking-[0.3em] text-white/80 mb-8 font-inter font-medium">
               THE HOME OF BIG REDS AND SEXY CHARDONNAYS
             </h2>
-            <h1 className="text-5xl lg:text-7xl font-playfair font-normal leading-[1.1] text-white mb-8">
+            <h1 className="text-6xl lg:text-8xl font-playfair font-normal leading-[0.9] text-white mb-10">
               Napa Valley's Ultimate Experience Awaits
             </h1>
-            <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-12 max-w-3xl mx-auto">
+            <p className="text-xl lg:text-2xl text-white/95 leading-relaxed mb-16 max-w-4xl mx-auto font-light">
               With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, 
               evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a 
               tasting room. It's Napa Valley's ultimate indulgence.
             </p>
           </motion.div>
         </div>
-        
-        {/* Pagination - Bottom Center */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
-        >
-          <div className="text-sm text-white/60 mb-2">1 / 9</div>
-          <div className="flex items-center space-x-4">
-            <button className="text-white/60 hover:text-white transition-colors">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button className="text-white/60 hover:text-white transition-colors">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        </motion.div>
       </section>
 
-      {/* Wine Cellar Section */}
-      <section className="min-h-screen bg-black flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-        {/* Wine Bottles - Centered horizontally */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="flex justify-center items-center space-x-12 md:space-x-20 mb-20"
-        >
-          {WINE_COLLECTION.map((wine, index) => (
-            <motion.div key={wine.type} variants={staggerItem}>
-              <WineBottle wine={wine} index={index} />
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Hero Text - Centered below bottles */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center max-w-4xl mx-auto"
-        >
-          <h2 className="text-xs lg:text-sm uppercase tracking-[0.2em] text-white/60 mb-6 font-inter font-semibold">THE CELLAR AWAITS</h2>
-          <h1 className="text-4xl lg:text-6xl font-playfair font-normal leading-[1.2] text-white mb-8">Discover Lewis Wines</h1>
-          <p className="text-lg lg:text-xl text-white/90 leading-relaxed mx-auto mb-12 max-w-2xl">
-            Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
-          </p>
-          <motion.button
-            className="btn-primary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+      {/* Wine Cellar Section - Black Background with Wine Bottles */}
+      <section className="relative min-h-screen bg-black flex flex-col justify-center items-center py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+          {/* Wine Bottles - Three distinct bottles */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="flex justify-center items-end space-x-16 lg:space-x-24 mb-24"
           >
-            EXPLORE WINES
-          </motion.button>
-        </motion.div>
+            {/* Chardonnay Bottle */}
+            <motion.div
+              variants={staggerItem}
+              className="flex flex-col items-center group"
+            >
+              <motion.div
+                className="relative mb-8"
+                whileHover={{ 
+                  scale: 1.05,
+                  y: -10,
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <div className="relative w-32 h-80 lg:w-40 lg:h-96">
+                  <Image
+                    src="/images/wine-bottles/product-showcase.png"
+                    alt="Lewis Cellars Chardonnay"
+                    fill
+                    className="object-contain drop-shadow-2xl"
+                    quality={90}
+                  />
+                </div>
+              </motion.div>
+              <div className="text-center">
+                <h3 className="font-playfair text-lg lg:text-xl font-semibold text-white mb-2">
+                  LEWIS CELLARS
+                </h3>
+                <p className="text-sm lg:text-base text-lewis-gold font-medium mb-1">
+                  CHARDONNAY
+                </p>
+                <p className="text-xs text-white/60 uppercase tracking-wider">
+                  NAPA VALLEY
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Cabernet Bottle */}
+            <motion.div
+              variants={staggerItem}
+              className="flex flex-col items-center group"
+            >
+              <motion.div
+                className="relative mb-8"
+                whileHover={{ 
+                  scale: 1.05,
+                  y: -10,
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <div className="relative w-32 h-80 lg:w-40 lg:h-96">
+                  <Image
+                    src="/images/wine-bottles/product-showcase.png"
+                    alt="Lewis Cellars Cabernet Sauvignon"
+                    fill
+                    className="object-contain drop-shadow-2xl"
+                    quality={90}
+                  />
+                </div>
+              </motion.div>
+              <div className="text-center">
+                <h3 className="font-playfair text-lg lg:text-xl font-semibold text-white mb-2">
+                  LEWIS CELLARS
+                </h3>
+                <p className="text-sm lg:text-base text-lewis-gold font-medium mb-1">
+                  CABERNET SAUVIGNON
+                </p>
+                <p className="text-xs text-white/60 uppercase tracking-wider">
+                  NAPA VALLEY
+                </p>
+              </div>
+            </motion.div>
+
+            {/* The Big Blend Bottle */}
+            <motion.div
+              variants={staggerItem}
+              className="flex flex-col items-center group"
+            >
+              <motion.div
+                className="relative mb-8"
+                whileHover={{ 
+                  scale: 1.05,
+                  y: -10,
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <div className="relative w-32 h-80 lg:w-40 lg:h-96">
+                  <Image
+                    src="/images/wine-bottles/product-showcase.png"
+                    alt="Lewis Cellars The Big Blend"
+                    fill
+                    className="object-contain drop-shadow-2xl"
+                    quality={90}
+                  />
+                </div>
+              </motion.div>
+              <div className="text-center">
+                <h3 className="font-playfair text-lg lg:text-xl font-semibold text-white mb-2">
+                  LEWIS CELLARS
+                </h3>
+                <p className="text-sm lg:text-base text-lewis-gold font-medium mb-1">
+                  THE BIG BLEND
+                </p>
+                <p className="text-xs text-white/60 uppercase tracking-wider">
+                  NAPA VALLEY
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* Text Content Below Bottles */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center max-w-4xl mx-auto"
+          >
+            <h2 className="text-xs lg:text-sm uppercase tracking-[0.3em] text-white/70 mb-8 font-inter font-medium">
+              THE CELLAR AWAITS
+            </h2>
+            <h1 className="text-5xl lg:text-7xl font-playfair font-normal leading-[1.1] text-white mb-10">
+              Discover Lewis Wines
+            </h1>
+            <p className="text-xl lg:text-2xl text-white/90 leading-relaxed mx-auto mb-16 max-w-3xl font-light">
+              Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
+            </p>
+            <motion.button
+              className="btn-primary text-lg px-12 py-4"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              EXPLORE WINES
+            </motion.button>
+          </motion.div>
+        </div>
       </section>
 
-      {/* Salon Privé Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Salon Privé Section - Full Screen with Couple Photo */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <motion.div 
           className="absolute inset-0 z-0"
           style={{ y }}
@@ -129,28 +214,30 @@ export default function Home() {
             className="object-cover"
             quality={90}
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </motion.div>
         
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-xs lg:text-sm uppercase tracking-[0.2em] text-white/70 mb-6 font-inter font-semibold">ENTER A SECLUDED WORLD</h2>
-            <h1 className="text-5xl lg:text-7xl font-playfair font-normal text-white mb-8 leading-[1.1]">
+            <h2 className="text-xs lg:text-sm uppercase tracking-[0.3em] text-white/80 mb-8 font-inter font-medium">
+              ENTER A SECLUDED WORLD
+            </h2>
+            <h1 className="text-6xl lg:text-8xl font-playfair font-normal text-white mb-10 leading-[0.9]">
               Salon Privé
             </h1>
-            <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-12 max-w-4xl mx-auto">
+            <p className="text-xl lg:text-2xl text-white/95 leading-relaxed mb-16 max-w-4xl mx-auto font-light">
               Luxuriate in the intimacy of your own private enclave for two. You and one guest will enjoy 
               white glove, on-call concierge service, customizable menus, access to both indoor and outdoor 
               Salons Privés, access to their private cellar, private car service, and more.
             </p>
             <motion.button
-              className="btn-primary"
-              whileHover={{ scale: 1.05 }}
+              className="btn-primary text-lg px-12 py-4"
+              whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
               EXPLORE THE SALON PRIVÉ
@@ -159,60 +246,81 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Culinary Experiences Section */}
-      <section className="min-h-screen bg-black flex items-center px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <div className="relative h-64 rounded-lg overflow-hidden">
-              <Image
-                src={IMAGE_PATHS.culinary.platedDish}
-                alt="Gourmet plated dish from MICHELIN-Starred chef"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-                quality={90}
-              />
-            </div>
-            <div className="relative h-64 rounded-lg overflow-hidden">
-              <Image
-                src={IMAGE_PATHS.culinary.diningRoom}
-                alt="Elegant dining room at Lewis Estate"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-                quality={90}
-              />
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center lg:text-left"
-          >
-            <h1 className="text-4xl lg:text-6xl font-playfair font-normal text-white mb-6 leading-[1.2]">Culinary Experiences</h1>
-            <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">
-              Indulge in their MICHELIN-Starred chef's culinary experiences curated to heighten your every sensation.
-            </p>
-            <motion.button
-              className="btn-primary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+      {/* Culinary Experiences Section - Black Background with Two Images */}
+      <section className="relative min-h-screen bg-black flex items-center py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+            {/* Left Column - Two Images Stacked */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
+              viewport={{ once: true }}
+              className="space-y-8"
             >
-              BOOK A TASTE OF LEWIS
-            </motion.button>
-          </motion.div>
+              {/* Top Image - Plated Dish */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+                viewport={{ once: true }}
+                className="relative h-80 lg:h-96 rounded-lg overflow-hidden group"
+              >
+                <Image
+                  src={IMAGE_PATHS.culinary.platedDish}
+                  alt="Gourmet plated dish from MICHELIN-Starred chef"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  quality={90}
+                />
+              </motion.div>
+              
+              {/* Bottom Image - Dining Room */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                viewport={{ once: true }}
+                className="relative h-80 lg:h-96 rounded-lg overflow-hidden group"
+              >
+                <Image
+                  src={IMAGE_PATHS.culinary.diningRoom}
+                  alt="Elegant dining room at Lewis Estate"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  quality={90}
+                />
+              </motion.div>
+            </motion.div>
+            
+            {/* Right Column - Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4, duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center lg:text-left"
+            >
+              <h1 className="text-5xl lg:text-7xl font-playfair font-normal text-white mb-8 leading-[1.1]">
+                Culinary Experiences
+              </h1>
+              <p className="text-xl lg:text-2xl text-white/90 leading-relaxed mb-12 max-w-2xl font-light">
+                Indulge in their MICHELIN-Starred chef's culinary experiences curated to heighten your every sensation.
+              </p>
+              <motion.button
+                className="btn-primary text-lg px-12 py-4"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                BOOK A TASTE OF LEWIS
+              </motion.button>
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* Wine Tasting Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Wine Tasting Section - Full Screen with Couple Photo */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <motion.div 
           className="absolute inset-0 z-0"
           style={{ y }}
@@ -224,26 +332,28 @@ export default function Home() {
             className="object-cover"
             quality={90}
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         </motion.div>
         
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-xs lg:text-sm uppercase tracking-[0.2em] text-white/70 mb-6 font-inter font-semibold">A SENSORY EXPERIENCE</h2>
-            <h1 className="text-5xl lg:text-7xl font-playfair font-normal text-white mb-8 leading-[1.1]">
+            <h2 className="text-xs lg:text-sm uppercase tracking-[0.3em] text-white/80 mb-8 font-inter font-medium">
+              A SENSORY EXPERIENCE
+            </h2>
+            <h1 className="text-6xl lg:text-8xl font-playfair font-normal text-white mb-10 leading-[0.9]">
               Wine Tastings
             </h1>
-            <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-12 max-w-4xl mx-auto">
+            <p className="text-xl lg:text-2xl text-white/95 leading-relaxed mb-16 max-w-4xl mx-auto font-light">
               Explore the passion and craftsmanship of Lewis' winemaking with unique experiences designed to delight your every sense.
             </p>
             <motion.button
-              className="btn-primary"
-              whileHover={{ scale: 1.05 }}
+              className="btn-primary text-lg px-12 py-4"
+              whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
               BOOK A WINE TASTING
