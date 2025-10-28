@@ -1,26 +1,170 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    background-color: #D4AF37;
+    color: #000000;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 0.125rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  }
+  
+  .btn-primary:hover {
+    background-color: #e6c547;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+  }
+  
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #cccccc;
+    margin-bottom: 1rem;
+  }
+  
+  .section-description {
+    font-size: 1.125rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .wine-bottle {
+    position: relative;
+    width: 120px;
+    height: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+  }
+  
+  .wine-bottle:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+  
+  .bottle-chardonnay {
+    background: linear-gradient(180deg, #fefdf8 0%, #f5f5dc 50%, #e6e6b8 100%);
+    border: 2px solid #d4d4a8;
+  }
+  
+  .bottle-cabernet, .bottle-big-blend {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 50%, #000000 100%);
+    border: 2px solid #333333;
+  }
+  
+  .label-emblem {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .emblem-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #b8941f 100%);
+  }
+  
+  .emblem-bronze {
+    background: linear-gradient(135deg, #cd7f32 0%, #a0522d 100%);
+  }
+  
+  .label-text {
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8941f;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 4rem;
+  }
+  
+  .wine-bottle {
+    width: 150px;
+    height: 400px;
+  }
+  
+  .label-emblem {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 4.5rem;
+  }
 }
