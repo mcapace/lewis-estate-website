@@ -1,59 +1,37 @@
-# Lewis Estate - Luxury Wine Website
+# Lewis Estate - Luxury Wine Experience Website
 
-A premium, responsive website for Lewis Estate showcasing their legendary wines and exclusive experiences in Napa Valley.
+A premium, responsive website for Lewis Estate, showcasing Napa Valley's ultimate wine experience with exquisite wines, MICHELIN-Starred cuisine, and exclusive Salon Privé.
 
 ## 🍷 Features
 
-- **Luxury Design**: Dark aesthetic with gold accents
-- **Responsive**: Mobile-first design that works on all devices
-- **Animations**: Smooth Framer Motion animations and transitions
-- **Performance**: Optimized with Next.js 15 and modern web standards
-- **SEO Ready**: Complete metadata and structured data
+- **Luxury Design**: Elegant black and gold theme with premium typography
+- **Responsive**: Mobile-first design that works perfectly on all devices
+- **Smooth Animations**: Framer Motion animations throughout the site
+- **Real Assets**: High-quality images from Google Drive integrated
+- **SEO Optimized**: Proper metadata and semantic HTML structure
+- **Performance**: Next.js Image optimization and static generation
+- **Type Safety**: Full TypeScript implementation
 
 ## 🚀 Tech Stack
 
-- **Framework**: Next.js 15 with App Router
-- **Language**: TypeScript
+- **Framework**: Next.js 16 with App Router
 - **Styling**: Tailwind CSS with custom design system
 - **Animations**: Framer Motion
-- **Fonts**: Playfair Display (serif) + Inter (sans-serif)
-- **Images**: Next.js Image optimization
+- **Language**: TypeScript
 - **Deployment**: Vercel
 
-## 🎨 Design System
+## 📱 Pages
 
-### Colors
-- **Primary Background**: #000000 (black)
-- **Secondary Background**: #1a1a1a (dark gray)
-- **Accent Gold**: #D4AF37
-- **Text Primary**: #FFFFFF
-- **Text Secondary**: #CCCCCC
-
-### Typography
-- **Headings**: Playfair Display (elegant serif)
-- **Body**: Inter (clean sans-serif)
-- **Spacing**: Large whitespace for luxury feel
-
-## 📁 Project Structure
-
-```
-src/
-├── app/
-│   ├── layout.tsx          # Root layout with metadata
-│   ├── page.tsx            # Homepage with all sections
-│   ├── globals.css         # Global styles and design system
-│   └── [pages]/            # Additional pages (wines, salon-prive, etc.)
-├── components/
-│   ├── layout/
-│   │   └── Navigation.tsx  # Main navigation component
-│   └── sections/
-│       └── WineBottle.tsx  # Wine bottle display component
-└── lib/                    # Utility functions
-```
+- **Homepage**: Hero section, wine cellar, salon privé, culinary, and tasting sections
+- **Wines**: Wine collection showcase with tasting notes
+- **Salon Privé**: Exclusive experience details and pricing
+- **Culinary**: MICHELIN-Starred chef experience and menu highlights
+- **Tastings**: Wine tasting experiences and group options
 
 ## 🛠️ Development
 
 ### Prerequisites
+
 - Node.js 18+ 
 - npm or yarn
 
@@ -61,7 +39,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone [your-repo-url]
+git clone <repository-url>
 cd lewis-estate-website
 
 # Install dependencies
@@ -71,66 +49,64 @@ npm install
 npm run dev
 ```
 
-Visit [http://localhost:4000](http://localhost:4000) to see the site.
+The site will be available at `http://localhost:4000`
 
-### Available Scripts
+### Build
 
-- `npm run dev` - Start development server on port 4000
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
+```bash
+# Build for production
+npm run build
 
-## 📱 Sections
+# Start production server
+npm start
+```
 
-### 1. Hero Section
-- Full-screen background image
-- Parallax scrolling effect
-- Main headline and description
-- Scroll indicator
+## 🎨 Design System
 
-### 2. Wine Cellar
-- Three wine bottles with hover effects
-- Lewis Cellars branding
-- Gold/bronze emblems
-- Call-to-action button
+### Colors
+- **Lewis Black**: #000000
+- **Lewis Gold**: #D4AF37
+- **Lewis Gold Hover**: #E5C158
+- **Lewis Gray**: #1a1a1a
 
-### 3. Salon Privé
-- Intimate luxury setting background
-- Exclusive experience description
-- Private service details
+### Typography
+- **Headings**: Playfair Display (serif)
+- **Body**: Inter (sans-serif)
 
-### 4. Culinary Experiences
-- Split layout with gourmet images
-- MICHELIN-Starred chef highlights
-- Interactive image hover effects
+### Components
+- Responsive navigation with mobile menu
+- Interactive wine bottle components
+- Smooth scroll animations
+- Professional footer with contact information
 
-### 5. Wine Tastings
-- Sensory experience focus
-- Couple wine tasting imagery
-- Booking call-to-action
+## 📁 Project Structure
 
-## 🎯 Performance
-
-- **Lighthouse Score**: 90+ on all metrics
-- **Image Optimization**: Next.js Image component with WebP/AVIF
-- **Font Optimization**: Google Fonts with display swap
-- **Code Splitting**: Automatic route-based splitting
-- **Lazy Loading**: Images and components load on demand
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Homepage
+│   ├── wines/             # Wine collection page
+│   ├── salon-prive/       # Salon Privé page
+│   ├── culinary/          # Culinary experiences page
+│   └── tastings/          # Wine tastings page
+├── components/            # React components
+│   ├── layout/           # Layout components
+│   └── sections/         # Page sections
+└── lib/                  # Utility functions and constants
+    ├── animations.ts     # Framer Motion variants
+    ├── constants.ts      # Site constants
+    ├── utils.ts          # Utility functions
+    └── types.ts          # TypeScript interfaces
+```
 
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
 
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Production deployment
-vercel --prod
-```
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy with one click
 
 ### Manual Deployment
 
@@ -138,94 +114,14 @@ vercel --prod
 # Build the project
 npm run build
 
-# Start production server
-npm run start
+# Deploy to Vercel
+npx vercel --prod
 ```
 
-## 📊 SEO Features
+## 📞 Contact
 
-- Complete metadata for all pages
-- Open Graph tags for social sharing
-- Twitter Card support
-- Structured data for business information
-- Semantic HTML structure
-- Optimized images with alt text
-
-## 🎨 Customization
-
-### Adding New Sections
-
-1. Create component in `src/components/sections/`
-2. Import and add to `src/app/page.tsx`
-3. Add corresponding styles to `globals.css`
-
-### Modifying Colors
-
-Update the color palette in `tailwind.config.ts`:
-
-```typescript
-colors: {
-  gold: {
-    500: '#D4AF37', // Your custom gold
-  }
-}
-```
-
-### Adding Animations
-
-Use Framer Motion for smooth animations:
-
-```tsx
-<motion.div
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8 }}
->
-  Content
-</motion.div>
-```
-
-## 📝 Content Management
-
-Currently using placeholder content. To add real content:
-
-1. Replace placeholder images in `src/app/page.tsx`
-2. Update text content in each section
-3. Add real wine data to the `wines` array
-4. Update metadata in `src/app/layout.tsx`
-
-## 🔧 Troubleshooting
-
-### Common Issues
-
-**Images not loading**: Check `next.config.js` for remote patterns
-**Fonts not loading**: Verify Google Fonts import in `globals.css`
-**Animations not working**: Ensure Framer Motion is properly installed
-**Build errors**: Check TypeScript types and imports
-
-### Performance Issues
-
-- Optimize images (use WebP format)
-- Reduce bundle size (check for unused dependencies)
-- Enable compression in production
-- Use Vercel Analytics for monitoring
+For questions about this project, please contact the development team.
 
 ## 📄 License
 
 This project is proprietary to Lewis Estate.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📞 Support
-
-For technical support or questions about this website, please contact the development team.
-
----
-
-Built with ❤️ for Lewis Estate
