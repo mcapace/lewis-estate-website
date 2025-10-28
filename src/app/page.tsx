@@ -39,13 +39,13 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-xs uppercase tracking-widest text-white/80 mb-4 font-inter">
+            <h2 className="text-xs lg:text-sm uppercase tracking-[0.2em] text-white/70 mb-6 font-inter font-semibold">
               THE HOME OF BIG REDS AND SEXY CHARDONNAYS
             </h2>
-            <h1 className="hero-title text-white mb-6">
+            <h1 className="text-5xl lg:text-7xl font-playfair font-normal leading-[1.1] text-white mb-8">
               Napa Valley's Ultimate Experience Awaits
             </h1>
-            <p className="text-lg text-white/90 leading-relaxed mb-10 max-w-3xl mx-auto">
+            <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-12 max-w-3xl mx-auto">
               With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, 
               evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a 
               tasting room. It's Napa Valley's ultimate indulgence.
@@ -101,9 +101,9 @@ export default function Home() {
           viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="section-subtitle mb-6">THE CELLAR AWAITS</h2>
-          <h1 className="section-title text-white mb-8">Discover Lewis Wines</h1>
-          <p className="section-description mx-auto mb-10">
+          <h2 className="text-xs lg:text-sm uppercase tracking-[0.2em] text-white/60 mb-6 font-inter font-semibold">THE CELLAR AWAITS</h2>
+          <h1 className="text-4xl lg:text-6xl font-playfair font-normal leading-[1.2] text-white mb-8">Discover Lewis Wines</h1>
+          <p className="text-lg lg:text-xl text-white/90 leading-relaxed mx-auto mb-12 max-w-2xl">
             Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
           </p>
           <motion.button
@@ -139,11 +139,11 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-subtitle mb-6">ENTER A SECLUDED WORLD</h2>
-            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-semibold text-white mb-8 leading-tight">
+            <h2 className="text-xs lg:text-sm uppercase tracking-[0.2em] text-white/70 mb-6 font-inter font-semibold">ENTER A SECLUDED WORLD</h2>
+            <h1 className="text-5xl lg:text-7xl font-playfair font-normal text-white mb-8 leading-[1.1]">
               Salon Privé
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed mb-10 max-w-4xl mx-auto">
+            <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-12 max-w-4xl mx-auto">
               Luxuriate in the intimacy of your own private enclave for two. You and one guest will enjoy 
               white glove, on-call concierge service, customizable menus, access to both indoor and outdoor 
               Salons Privés, access to their private cellar, private car service, and more.
@@ -196,8 +196,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center lg:text-left"
           >
-            <h1 className="section-title text-white mb-6">Culinary Experiences</h1>
-            <p className="section-description mb-8">
+            <h1 className="text-4xl lg:text-6xl font-playfair font-normal text-white mb-6 leading-[1.2]">Culinary Experiences</h1>
+            <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">
               Indulge in their MICHELIN-Starred chef's culinary experiences curated to heighten your every sensation.
             </p>
             <motion.button
@@ -234,11 +234,11 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-subtitle mb-6">A SENSORY EXPERIENCE</h2>
-            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-semibold text-white mb-8 leading-tight">
+            <h2 className="text-xs lg:text-sm uppercase tracking-[0.2em] text-white/70 mb-6 font-inter font-semibold">A SENSORY EXPERIENCE</h2>
+            <h1 className="text-5xl lg:text-7xl font-playfair font-normal text-white mb-8 leading-[1.1]">
               Wine Tastings
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed mb-10 max-w-4xl mx-auto">
+            <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-12 max-w-4xl mx-auto">
               Explore the passion and craftsmanship of Lewis' winemaking with unique experiences designed to delight your every sense.
             </p>
             <motion.button

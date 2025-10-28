@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { useState } from 'react'
 
 interface WineBottleProps {
@@ -16,6 +17,10 @@ interface WineBottleProps {
 
 const WineBottle = ({ wine, index }: WineBottleProps) => {
   const [isHovered, setIsHovered] = useState(false)
+
+  // For now, we'll use the product showcase image for all bottles
+  // In a real implementation, you'd have separate bottle images
+  const bottleImage = '/images/wine-bottles/product-showcase.png'
 
   return (
     <motion.div
@@ -40,48 +45,30 @@ const WineBottle = ({ wine, index }: WineBottleProps) => {
             : '0 20px 40px rgba(0, 0, 0, 0.5)'
         }}
       >
-        {/* Main Bottle Body - Proper wine bottle shape */}
-        <div className={`wine-bottle ${
-          wine.bottleType === 'chardonnay' 
-            ? 'bottle-chardonnay' 
-            : wine.bottleType === 'cabernet' 
-            ? 'bottle-cabernet' 
-            : 'bottle-big-blend'
-        }`}>
-          
-          {/* Bottle Neck */}
-          <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-3 h-8 bg-gray-800 rounded-t-full"></div>
-          
-          {/* Bottle Cap/Foil */}
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-5 h-2 bg-black rounded-t-full"></div>
-          
-          {/* Wine Level (for Chardonnay) */}
-          {wine.bottleType === 'chardonnay' && (
-            <div className="absolute bottom-8 left-3 right-3 h-1 bg-gradient-to-r from-transparent via-yellow-200/40 to-transparent rounded-full"></div>
-          )}
-          
-          {/* Label Area - Positioned like in Figma */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            {/* Circular Emblem */}
-            <motion.div
-              className={`label-emblem ${
-                wine.emblemColor === 'gold' ? 'emblem-gold' : 'emblem-bronze'
-              }`}
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              transition={{ duration: 0.2 }}
-            >
-              L
-            </motion.div>
-            
-            {/* Label Text */}
-            <div className="label-text">
-              <div className="font-semibold tracking-wide">{wine.name}</div>
-              <div className="font-medium mt-1">{wine.type}</div>
-              <div className="text-gray-300 mt-1 text-xs">{wine.region}</div>
-            </div>
-          </div>
+        {/* Real Wine Bottle Image */}
+        <div className="relative w-32 h-80 md:w-40 md:h-96">
+          <Image
+            src={bottleImage}
+            alt={`${wine.name} ${wine.type}`}
+            fill
+            className="object-contain drop-shadow-2xl"
+            quality={90}
+          />
         </div>
       </motion.div>
+
+      {/* Wine Label Below Bottle */}
+      <div className="text-center">
+        <h3 className="font-playfair text-lg font-semibold text-white mb-1">
+          {wine.name}
+        </h3>
+        <p className="text-sm text-lewis-gold font-medium mb-1">
+          {wine.type}
+        </p>
+        <p className="text-xs text-white/60 uppercase tracking-wider">
+          {wine.region}
+        </p>
+      </div>
     </motion.div>
   )
 }

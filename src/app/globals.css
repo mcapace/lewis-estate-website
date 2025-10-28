@@ -55,19 +55,27 @@
   .btn-primary {
     background-color: #D4AF37;
     color: #000000;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     font-weight: 600;
     font-size: 14px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     border-radius: 0;
     transition: all 0.3s ease;
     font-family: 'Inter', sans-serif;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
   }
   
   .btn-primary:hover {
     background-color: #E5C158;
-    transform: scale(1.02);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+  }
+  
+  .btn-primary:active {
+    transform: translateY(0);
   }
   
   .hero-title {
