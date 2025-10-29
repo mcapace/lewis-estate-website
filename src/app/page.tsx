@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div style={{width: '100vw', height: '6328px', position: 'relative', background: '#DDDDDD', margin: 0, padding: 0}}>
-      <div style={{width: '1440px', left: '50%', top: '100px', transform: 'translateX(-50%)', position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+    <div style={{width: '100vw', height: '6328px', position: 'relative', background: '#000000', margin: 0, padding: 0}}>
+      <div style={{width: '1440px', left: '50%', top: '0px', transform: 'translateX(-50%)', position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
         
         {/* Hero Section */}
         <div style={{width: '1440px', height: '850px', paddingLeft: '155px', paddingRight: '155px', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex'}}>

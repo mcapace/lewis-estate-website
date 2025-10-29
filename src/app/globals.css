@@ -40,20 +40,29 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
   }
 
   body {
-    background-color: var(--color-black);
+    background-color: #000000;
     color: var(--color-white);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    width: 100vw;
+    min-height: 100vh;
   }
 
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 }
 
