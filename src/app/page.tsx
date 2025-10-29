@@ -230,8 +230,8 @@ export default function Home() {
         <div style={{width: '1440px', height: '600px', position: 'relative', background: '#0D0D0D', overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
           <div style={{width: '100%', height: '100%', position: 'relative', background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, #0D0D0D 65%)'}}>
             {/* Map placeholder - you can replace with actual map image */}
-            <div style={{width: '100%', height: '100%', background: '#1a1a1a', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
-              <div style={{width: '300px', height: '200px', background: '#0D0D0D', border: '2px solid #000000', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+            <div style={{width: '100%', height: '100%', background: '#000000', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+              <div style={{width: '300px', height: '200px', background: '#000000', border: '3px solid #000000', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', boxShadow: '0 0 0 1px #0D0D0D'}}>
                 <div style={{color: '#E5C1A0', fontSize: '24px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textAlign: 'center'}}>
                   Lewis Cellars<br/>
                   <span style={{fontSize: '16px', color: '#F4F4F4'}}>6320 Silverado Trail<br/>Napa, CA 94558</span>
