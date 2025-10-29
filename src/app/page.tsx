@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import MapSection from '@/components/sections/MapSection'
 
 export default function Home() {
   return (
@@ -240,6 +241,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Map Section */}
+        <MapSection />
 
         {/* Footer Section */}
         <div style={{width: '1440px', height: '400px', position: 'relative', background: '#0D0D0D', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
