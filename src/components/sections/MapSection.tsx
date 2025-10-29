@@ -1,9 +1,25 @@
 'use client'
 
+import { useState } from 'react'
+import { Map, Marker, NavigationControl } from 'react-map-gl/mapbox'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import 'mapbox-gl/dist/mapbox-gl.css'
+
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN
 
 export default function MapSection() {
+  const [viewState, setViewState] = useState({
+    latitude: 38.2975,
+    longitude: -122.2869,
+    zoom: 13
+  })
+
+  if (!MAPBOX_TOKEN) {
+    console.error('Mapbox token not found')
+    return null
+  }
+
   return (
     <section className="bg-black py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -29,29 +45,35 @@ export default function MapSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative rounded-xl overflow-hidden h-[400px] lg:h-[600px] shadow-2xl bg-gray-900"
+          className="relative rounded-xl overflow-hidden h-[400px] lg:h-[600px] shadow-2xl"
         >
-          {/* Static Map Background */}
-          <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-            <div className="text-center">
+          <Map
+            {...viewState}
+            onMove={evt => setViewState(evt.viewState)}
+            mapStyle="mapbox://styles/mapbox/dark-v11"
+            mapboxAccessToken={MAPBOX_TOKEN}
+            style={{ width: '100%', height: '100%' }}
+          >
+            {/* Lewis Estate Marker */}
+            <Marker latitude={38.2975} longitude={-122.2869}>
               <motion.div
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="cursor-pointer mb-4"
+                className="cursor-pointer"
                 style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.5))' }}
               >
                 <Image
                   src="/images/logos/lewis-logo.png"
-                  width={64}
-                  height={64}
+                  width={48}
+                  height={48}
                   alt="Lewis Estate"
-                  className="mx-auto"
                 />
               </motion.div>
-              <p className="text-white/80 text-lg">Lewis Estate</p>
-              <p className="text-white/60 text-sm">Napa Valley, California</p>
-            </div>
-          </div>
+            </Marker>
+
+            {/* Navigation Controls */}
+            <NavigationControl position="top-right" />
+          </Map>
 
           {/* Desktop Info Card */}
           <div className="hidden lg:block absolute top-8 right-8 bg-black/80 backdrop-blur-md border border-white/10 rounded-lg p-8 max-w-sm">
