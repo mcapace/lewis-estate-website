@@ -85,10 +85,10 @@ export default function Home() {
         </div>
 
         {/* Wine Tastings & Culinary Section */}
-        <div style={{alignSelf: 'stretch', height: '1858px', paddingTop: '40px', paddingLeft: '155px', paddingRight: '155px', background: '#0D0D0D', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
-          <div style={{height: '1363px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+        <div style={{alignSelf: 'stretch', height: '1400px', paddingTop: '40px', paddingLeft: '155px', paddingRight: '155px', background: '#0D0D0D', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+          <div style={{height: '1000px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
             <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: '139px', display: 'inline-flex'}}>
-              <div style={{width: '438px', paddingTop: '128px', paddingBottom: '256px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '32px', display: 'inline-flex'}}>
+              <div style={{width: '438px', paddingTop: '80px', paddingBottom: '100px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '32px', display: 'inline-flex'}}>
                 <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '24px', display: 'flex'}}>
                   <div style={{alignSelf: 'stretch', color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', wordWrap: 'break-word'}}>
                     A Sensory Experience
@@ -134,7 +134,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div style={{width: '438px', paddingTop: '201px', paddingBottom: '256px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '32px', display: 'inline-flex'}}>
+              <div style={{width: '438px', paddingTop: '100px', paddingBottom: '100px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '32px', display: 'inline-flex'}}>
                 <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '24px', display: 'flex'}}>
                   <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', wordWrap: 'break-word'}}>
                     A Magical Interplay
