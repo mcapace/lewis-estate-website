@@ -22,7 +22,7 @@ export default function MapSection() {
 
   return (
     <section className="bg-black py-20 lg:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="w-full max-w-none mx-auto px-0">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -45,7 +45,7 @@ export default function MapSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative rounded-xl overflow-hidden h-[400px] lg:h-[600px] shadow-2xl"
+          className="relative rounded-xl overflow-hidden h-[600px] lg:h-[800px] xl:h-[900px] shadow-2xl w-full"
         >
           <Map
             {...viewState}
