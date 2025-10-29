@@ -111,12 +111,12 @@ export default function Home() {
               <div style={{width: '553px', alignSelf: 'stretch', position: 'relative'}}>
                 <div style={{width: '553px', height: '672px', left: '0px', top: '0px', position: 'absolute', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
                   <Image
-                    style={{width: '1136px', height: '758px', left: '-310px', top: '-50px', position: 'absolute'}}
+                    style={{width: '1136px', height: '758px', left: '-310px', top: '-100px', position: 'absolute'}}
                     src="/_Assets/ws_lewis_wine_tastings.png"
                     alt="Wine Tastings"
                     width={1136}
                     height={758}
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </div>
@@ -125,12 +125,12 @@ export default function Home() {
               <div style={{width: '438px', alignSelf: 'stretch', position: 'relative'}}>
                 <div style={{width: '481px', height: '639px', left: '0px', top: '0px', position: 'absolute', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
                   <Image
-                    style={{width: '513px', height: '651px', left: '-17px', top: '-20px', position: 'absolute'}}
+                    style={{width: '513px', height: '651px', left: '-17px', top: '-50px', position: 'absolute'}}
                     src="/_Assets/ws_lewis_culinary_exp.png"
                     alt="Culinary Experience"
                     width={513}
                     height={651}
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </div>
@@ -175,14 +175,14 @@ export default function Home() {
                   enter A Secluded World
                 </div>
                 <div style={{alignSelf: 'stretch', textAlign: 'center', color: '#E5C1A0', fontSize: '54px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '64px', letterSpacing: '2.16px', wordWrap: 'break-word'}}>
-                  Salon Privé
+              Salon Privé
                 </div>
               </div>
               <div style={{alignSelf: 'stretch', paddingLeft: '80px', paddingRight: '80px', justifyContent: 'flex-start', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
                 <div style={{flex: '1 1 0', textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '20px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '32px', letterSpacing: '0.50px', wordWrap: 'break-word'}}>
                   Luxuriate in the intimacy of your own private enclave for two. You and one guest will enjoy white glove,<br/>on-call concierge service, customizable menus, access to both indoor and outdoor Salons Privés,<br/>access to their private cellar, private car service, and more.
                 </div>
-              </div>
+        </div>
             </div>
             <div style={{height: '55px', paddingTop: '18px', paddingBottom: '19px', paddingLeft: '24px', paddingRight: '24px', background: '#D3A737', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
               <div style={{textAlign: 'center', color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '0.64px', wordWrap: 'break-word'}}>
@@ -192,24 +192,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Map Section */}
-        <div style={{width: '1440px', height: '600px', position: 'relative', background: '#0D0D0D', overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
-          <div style={{width: '100%', height: '100%', position: 'relative', background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, #0D0D0D 65%)'}}>
-            {/* Map placeholder - you can replace with actual map image */}
-            <div style={{width: '100%', height: '100%', background: '#1a1a1a', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
-              <div style={{width: '300px', height: '200px', background: '#2a2a2a', border: '2px solid #E5C1A0', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
-                <div style={{color: '#E5C1A0', fontSize: '24px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textAlign: 'center'}}>
-                  Lewis Cellars<br/>
-                  <span style={{fontSize: '16px', color: '#F4F4F4'}}>6320 Silverado Trail<br/>Napa, CA 94558</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Discover Wines Section */}
         <div style={{width: '1440px', height: '900px', paddingLeft: '155px', paddingRight: '155px', position: 'relative', background: '#0D0D0D', justifyContent: 'center', alignItems: 'flex-start', display: 'inline-flex'}}>
-              <Image
+          <Image
             style={{width: '1440px', height: '850px', left: '0px', top: '0px', position: 'absolute'}}
             src="/_Assets/ws_lewis_product_showcase.png"
             alt="Wine Showcase"
@@ -236,6 +221,21 @@ export default function Home() {
             <div style={{height: '55px', paddingTop: '18px', paddingBottom: '19px', paddingLeft: '24px', paddingRight: '24px', background: '#D3A737', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'inline-flex'}}>
               <div style={{textAlign: 'center', color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '0.64px', wordWrap: 'break-word'}}>
                 Explore wines
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Map Section */}
+        <div style={{width: '1440px', height: '600px', position: 'relative', background: '#0D0D0D', overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+          <div style={{width: '100%', height: '100%', position: 'relative', background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, #0D0D0D 65%)'}}>
+            {/* Map placeholder - you can replace with actual map image */}
+            <div style={{width: '100%', height: '100%', background: '#1a1a1a', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+              <div style={{width: '300px', height: '200px', background: '#2a2a2a', border: '2px solid #E5C1A0', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+                <div style={{color: '#E5C1A0', fontSize: '24px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textAlign: 'center'}}>
+                  Lewis Cellars<br/>
+                  <span style={{fontSize: '16px', color: '#F4F4F4'}}>6320 Silverado Trail<br/>Napa, CA 94558</span>
+                </div>
               </div>
             </div>
           </div>
