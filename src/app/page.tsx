@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div style={{width: '100vw', height: '6328px', position: 'relative', background: 'linear-gradient(180deg, #0D0D0D 0%, #1a1a1a 30%, #2a2a2a 60%, #1a1a1a 80%, #0D0D0D 100%)', margin: 0, padding: 0}}>
+    <div style={{width: '100vw', height: '6328px', position: 'relative', background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, #0D0D0D 65%)', margin: 0, padding: 0}}>
       <div style={{width: '1440px', left: '50%', top: '0px', transform: 'translateX(-50%)', position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
         
         {/* Hero Section */}
