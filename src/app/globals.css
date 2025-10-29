@@ -41,13 +41,19 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     background-color: var(--color-black);
     color: var(--color-white);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 }
 
