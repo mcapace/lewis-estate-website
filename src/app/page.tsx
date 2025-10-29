@@ -12,7 +12,7 @@ export default function Home() {
         <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', display: 'flex', flexDirection: 'column'}}>
           <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', overflow: 'hidden'}}>
             <Image
-              style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px'}}
+              style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
               src="/_Assets/ws_lewis_hero.png"
               alt="Lewis Estate Hero"
               width={1440}
@@ -104,9 +104,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '400px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
+            <div style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
               <Image
-                style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/_Assets/ws_lewis_wine_tastings.png"
                 alt="Wine Tastings"
                 width={1136}
@@ -118,9 +118,9 @@ export default function Home() {
           
           {/* Culinary Experiences */}
           <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse'}}>
-            <div style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '400px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
+            <div style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
               <Image
-                style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/_Assets/ws_lewis_culinary_exp.png"
                 alt="Culinary Experience"
                 width={513}
@@ -150,7 +150,7 @@ export default function Home() {
         {/* Salon Privé Section */}
         <div style={{width: '100%', height: '100vh', position: 'relative', background: '#0D0D0D', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           <Image
-            style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px'}}
+            style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
             src="/_Assets/ws_lewis_salon_prive.png"
             alt="Salon Privé"
             width={1440}
@@ -179,7 +179,7 @@ export default function Home() {
         {/* Discover Wines Section */}
         <div style={{width: '100%', height: '100vh', position: 'relative', background: '#0D0D0D', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           <Image
-            style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px'}}
+            style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
             src="/_Assets/ws_lewis_product_showcase.png"
             alt="Wine Showcase"
             width={1440}
