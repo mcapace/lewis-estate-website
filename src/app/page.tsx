@@ -11,14 +11,14 @@ export default function Home() {
         {/* Hero Section */}
         <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', display: 'flex', flexDirection: 'column'}}>
           <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', overflow: 'hidden'}}>
-          <Image
+            <Image
               style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px'}}
               src="/_Assets/ws_lewis_hero.png"
               alt="Lewis Estate Hero"
               width={1440}
               height={850}
               priority
-            className="object-cover"
+              className="object-cover"
             />
             <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0.65) 100%)'}}></div>
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
                 The Home of Big Reds and Sexy Chardonnays
               </div>
               <div style={{color: '#E5C1A0', fontSize: 'clamp(36px, 8vw, 54px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '1.08px', marginBottom: '32px'}}>
-              Napa Valley's Ultimate Experience Awaits
+                Napa Valley's Ultimate Experience Awaits
               </div>
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px'}}>
                 With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a tasting room. It's Napa Valley's ultimate indulgence.
@@ -114,6 +114,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
+          </div>
           
           {/* Culinary Experiences */}
           <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse'}}>
