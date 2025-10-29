@@ -5,14 +5,14 @@ import MapSection from '@/components/sections/MapSection'
 
 export default function Home() {
   return (
-    <div style={{width: '100vw', minHeight: '8000px', position: 'relative', background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, #0D0D0D 65%)', margin: 0, padding: 0}}>
-      <div style={{width: '1440px', left: '50%', top: '0px', transform: 'translateX(-50%)', position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+    <div style={{width: '100vw', minHeight: '8000px', position: 'relative', background: '#000000', margin: 0, padding: 0, border: 'none'}}>
+      <div style={{width: '100%', maxWidth: '1440px', margin: '0 auto', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
         
         {/* Hero Section */}
-        <div style={{width: '1440px', height: '850px', paddingLeft: '155px', paddingRight: '155px', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex'}}>
-          <div style={{width: '1440px', height: '849px', left: '0px', top: '1px', position: 'absolute', overflow: 'hidden'}}>
+        <div style={{width: '100%', minHeight: '100vh', padding: '20px', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', overflow: 'hidden'}}>
           <Image
-              style={{width: '1440px', height: '850px', left: '0px', top: '0px', position: 'absolute'}}
+              style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px'}}
               src="/_Assets/ws_lewis_hero.png"
               alt="Lewis Estate Hero"
               width={1440}
@@ -20,24 +20,24 @@ export default function Home() {
               priority
             className="object-cover"
             />
-            <div style={{width: '1440px', height: '849px', left: '0px', top: '0px', position: 'absolute', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0.65) 100%)'}}></div>
+            <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0.65) 100%)'}}></div>
           </div>
           <div style={{alignSelf: 'stretch', flex: '1 1 0', position: 'relative', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', gap: '32px', display: 'flex'}}>
             <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '24px', display: 'flex'}}>
-              <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', wordWrap: 'break-word'}}>
+              <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'var(--Brand-White, white)', fontSize: 'clamp(12px, 4vw, 16px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', wordWrap: 'break-word'}}>
                 The Home of Big Reds and Sexy Chardonnays
               </div>
-              <div style={{alignSelf: 'stretch', textAlign: 'center', color: '#E5C1A0', fontSize: '54px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '64px', letterSpacing: '1.08px', wordWrap: 'break-word'}}>
+              <div style={{alignSelf: 'stretch', textAlign: 'center', color: '#E5C1A0', fontSize: 'clamp(32px, 8vw, 54px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '1.08px', wordWrap: 'break-word'}}>
               Napa Valley's Ultimate Experience Awaits
               </div>
             </div>
-            <div style={{alignSelf: 'stretch', paddingLeft: '80px', paddingRight: '80px', justifyContent: 'center', alignItems: 'flex-start', gap: '10px', display: 'inline-flex'}}>
-              <div style={{flex: '1 1 0', textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '20px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '32px', letterSpacing: '0.50px', wordWrap: 'break-word'}}>
+            <div style={{alignSelf: 'stretch', padding: '20px', justifyContent: 'center', alignItems: 'flex-start', gap: '10px', display: 'flex'}}>
+              <div style={{flex: '1 1 0', textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 4vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', wordWrap: 'break-word'}}>
                 With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a tasting room. It's Napa Valley's ultimate indulgence.
               </div>
             </div>
           </div>
-          <div style={{width: '1440px', height: '128px', paddingLeft: '40px', paddingRight: '40px', paddingTop: '32px', paddingBottom: '32px', left: '0px', top: '0px', position: 'absolute', overflow: 'hidden', justifyContent: 'flex-start', alignItems: 'center', gap: '186px', display: 'inline-flex'}}>
+          <div style={{width: '100%', padding: '20px', position: 'absolute', top: '0px', left: '0px', overflow: 'hidden', justifyContent: 'space-between', alignItems: 'center', display: 'flex', flexWrap: 'wrap'}}>
             <div style={{width: '193px', height: '58px', position: 'relative'}}>
               <div style={{width: '168.88px', height: '45.92px', left: '12.06px', top: '6.04px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                 <Image
@@ -49,24 +49,24 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div style={{left: '412px', top: '40px', position: 'absolute', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '40px', display: 'flex'}}>
+            <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 'clamp(10px, 5vw, 40px)', display: 'flex', flexWrap: 'wrap'}}>
               <div style={{height: '48px', paddingTop: '16px', paddingBottom: '16px', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'flex'}}>
-                <div style={{textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
+                <div style={{textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(12px, 3vw, 16px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
                   wine tastings
                 </div>
               </div>
               <div style={{height: '48px', paddingTop: '16px', paddingBottom: '16px', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'flex'}}>
-                <div style={{textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
+                <div style={{textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(12px, 3vw, 16px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
                   culinary experiences
                 </div>
               </div>
               <div style={{height: '48px', paddingTop: '16px', paddingBottom: '16px', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'flex'}}>
-                <div style={{textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
+                <div style={{textAlign: 'center', color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(12px, 3vw, 16px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
                   salon privé
                 </div>
               </div>
               <div style={{height: '48px', paddingTop: '16px', paddingBottom: '16px', justifyContent: 'center', alignItems: 'center', gap: '10px', display: 'flex'}}>
-                <div style={{textAlign: 'center', color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
+                <div style={{textAlign: 'center', color: 'var(--Brand-White, white)', fontSize: 'clamp(12px, 3vw, 16px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', wordWrap: 'break-word'}}>
                   wines
                 </div>
               </div>

@@ -75,6 +75,7 @@
     background-color: #000000;
     width: 100vw;
     height: 100vh;
+    border: none;
   }
 
   body {
@@ -87,12 +88,30 @@
     padding: 0;
     width: 100vw;
     min-height: 100vh;
+    border: none;
   }
 
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: none;
+  }
+
+  /* Ensure no white borders anywhere */
+  *::before,
+  *::after {
+    border: none;
+  }
+
+  /* Remove any default browser borders */
+  img, video, iframe, embed, object {
+    border: none;
+  }
+
+  /* Ensure all containers have black borders */
+  div, section, article, main, header, footer, nav, aside {
+    border: none;
   }
 }
 
