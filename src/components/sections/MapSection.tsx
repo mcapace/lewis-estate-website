@@ -45,7 +45,7 @@ export default function MapSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative rounded-xl overflow-hidden h-[600px] lg:h-[800px] xl:h-[900px] shadow-2xl w-full"
+          className="relative rounded-xl overflow-hidden h-[800px] lg:h-[1000px] xl:h-[1200px] shadow-2xl w-full"
         >
           <Map
             {...viewState}
