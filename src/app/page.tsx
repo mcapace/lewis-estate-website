@@ -5,7 +5,7 @@ import MapSection from '@/components/sections/MapSection'
 
 export default function Home() {
   return (
-    <div style={{width: '100vw', minHeight: '10000px', position: 'relative', background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, #0D0D0D 65%)', margin: 0, padding: 0}}>
+    <div style={{width: '100vw', minHeight: '8000px', position: 'relative', background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, #0D0D0D 65%)', margin: 0, padding: 0}}>
       <div style={{width: '1440px', left: '50%', top: '0px', transform: 'translateX(-50%)', position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
         
         {/* Hero Section */}
@@ -86,8 +86,8 @@ export default function Home() {
         </div>
 
         {/* Wine Tastings & Culinary Section */}
-        <div style={{alignSelf: 'stretch', minHeight: '2200px', paddingTop: '40px', paddingLeft: '155px', paddingRight: '155px', background: '#0D0D0D', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
-          <div style={{minHeight: '1800px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+        <div style={{alignSelf: 'stretch', height: '1600px', paddingTop: '40px', paddingLeft: '155px', paddingRight: '155px', background: '#0D0D0D', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+          <div style={{height: '1200px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
             <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: '139px', display: 'inline-flex'}}>
               <div style={{width: '438px', paddingTop: '80px', paddingBottom: '100px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '32px', display: 'inline-flex'}}>
                 <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: '24px', display: 'flex'}}>
@@ -140,7 +140,7 @@ export default function Home() {
                   <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', wordWrap: 'break-word'}}>
                     A Magical Interplay
                   </div>
-                  <div style={{alignSelf: 'stretch', color: '#E5C1A0', fontSize: '54px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '64px', letterSpacing: '2.16px', wordWrap: 'break-word'}}>
+                  <div style={{alignSelf: 'stretch', color: '#E5C1A0', fontSize: '54px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '70px', letterSpacing: '2.16px', wordWrap: 'break-word', paddingBottom: '10px'}}>
                     Culinary Experiences
                   </div>
                 </div>

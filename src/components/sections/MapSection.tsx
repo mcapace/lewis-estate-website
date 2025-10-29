@@ -21,8 +21,8 @@ export default function MapSection() {
   }
 
   return (
-    <section className="bg-black py-20 lg:py-32">
-      <div className="w-full max-w-none mx-auto px-0">
+    <section className="bg-black py-20 lg:py-32 w-full">
+      <div className="w-full px-4 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
