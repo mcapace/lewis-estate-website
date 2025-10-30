@@ -6,7 +6,7 @@ import MapSection from '@/components/sections/MapSection'
 export default function Home() {
   return (
     <div style={{width: '100vw', minHeight: '8000px', position: 'relative', background: '#000000', margin: 0, padding: 0, border: 'none'}}>
-      <div style={{width: '100%', maxWidth: '1440px', margin: '0 auto', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex'}}>
+      <div style={{width: '100%', maxWidth: '1600px', margin: '0 auto', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex'}}>
         
         {/* Hero Section */}
         <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', display: 'flex', flexDirection: 'column'}}>
@@ -77,7 +77,7 @@ export default function Home() {
         {/* Quote Section */}
         <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '40px'}}>
           <div style={{textAlign: 'center', color: '#E5C1A0', fontSize: 'clamp(32px, 6vw, 64px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', letterSpacing: '0.32px', lineHeight: '1.2', maxWidth: '800px'}}>
-            "A record of excellence that few<br/>California wineries can rival."
+            "A record of excellence that few<br/><br/>California wineries can rival."
           </div>
           <div style={{textAlign: 'center', color: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', fontSize: 'clamp(14px, 2.5vw, 18px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '20px', letterSpacing: '5.76px'}}>
             -James Laube, wine spectator

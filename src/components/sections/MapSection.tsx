@@ -23,21 +23,6 @@ export default function MapSection() {
   return (
     <section className="bg-black py-20 lg:py-32 w-full">
       <div className="w-full px-4 lg:px-8">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">
-            VISIT US
-          </p>
-          <h2 className="text-5xl lg:text-6xl font-heading text-white">
-            Find Us in Napa Valley
-          </h2>
-        </motion.div>
 
         {/* Map Container */}
         <motion.div
@@ -45,7 +30,7 @@ export default function MapSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative rounded-xl overflow-hidden h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] shadow-2xl w-full"
+          className="relative rounded-xl overflow-hidden h-[500px] lg:h-[600px] shadow-2xl w-full"
         >
           <Map
             {...viewState}
@@ -76,46 +61,42 @@ export default function MapSection() {
           </Map>
 
           {/* Desktop Info Card */}
-          <div className="hidden lg:block absolute top-8 right-8 bg-black/80 backdrop-blur-md border border-white/10 rounded-lg p-8 max-w-sm">
-            <h3 className="text-2xl font-heading text-white mb-4">
-              Lewis Estate
+          <div className="hidden lg:block absolute top-8 right-8 bg-black/90 backdrop-blur-md rounded-lg p-6 max-w-sm">
+            <h3 className="text-xl font-neue-haas text-white mb-3">
+              Lewis Cellars
             </h3>
-            <p className="text-white/90 mb-2">
-              Napa Valley, California
+            <p className="text-white/90 text-sm mb-2">
+              Monday-Sunday, 10:00 a.m.-4:30 p.m.
             </p>
-            <p className="text-white/70 text-sm mb-6">
-              Award-winning wines and MICHELIN-Starred dining
+            <p className="text-white/90 text-sm mb-2">
+              6320 Silverado Trail, Napa, CA 94558
             </p>
-            <a
-              href="https://maps.google.com/?q=38.2975,-122.2869"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-lewis-gold hover:bg-lewis-gold-hover text-black px-6 py-3 font-semibold uppercase tracking-wider transition-colors inline-block"
-            >
-              GET DIRECTIONS
-            </a>
+            <p className="text-white/90 text-sm mb-4">
+              707.255.3400
+            </p>
+            <button className="bg-[#D3A737] hover:bg-[#E5C1A0] text-black px-4 py-2 text-sm font-semibold uppercase tracking-wider transition-colors">
+              VISITOR INFORMATION
+            </button>
           </div>
         </motion.div>
 
         {/* Mobile Info Card */}
-        <div className="lg:hidden mt-8 bg-lewis-gray border border-white/10 rounded-lg p-8">
-          <h3 className="text-2xl font-heading text-white mb-4">
-            Lewis Estate
+        <div className="lg:hidden mt-8 bg-black/90 rounded-lg p-6">
+          <h3 className="text-xl font-neue-haas text-white mb-3">
+            Lewis Cellars
           </h3>
-          <p className="text-white/90 mb-2">
-            Napa Valley, California
+          <p className="text-white/90 text-sm mb-2">
+            Monday-Sunday, 10:00 a.m.-4:30 p.m.
           </p>
-          <p className="text-white/70 text-sm mb-6">
-            Award-winning wines and MICHELIN-Starred dining
+          <p className="text-white/90 text-sm mb-2">
+            6320 Silverado Trail, Napa, CA 94558
           </p>
-          <a
-            href="https://maps.google.com/?q=38.2975,-122.2869"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-lewis-gold hover:bg-lewis-gold-hover text-black px-6 py-3 font-semibold uppercase tracking-wider transition-colors inline-block"
-          >
-            GET DIRECTIONS
-          </a>
+          <p className="text-white/90 text-sm mb-4">
+            707.255.3400
+          </p>
+          <button className="bg-[#D3A737] hover:bg-[#E5C1A0] text-black px-4 py-2 text-sm font-semibold uppercase tracking-wider transition-colors">
+            VISITOR INFORMATION
+          </button>
         </div>
       </div>
     </section>
