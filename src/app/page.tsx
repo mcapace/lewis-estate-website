@@ -1,483 +1,466 @@
-'use client';
+'use client'
 
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: 'easeOut' }
-};
-
-const staggerChildren = {
-  animate: {
-    transition: {
-      staggerChildren: 0.2
-    }
-  }
-};
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { Menu, X, ChevronDown } from 'lucide-react'
 
 export default function Home() {
-  const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [quoteRef, quoteInView] = useInView({ triggerOnce: true, threshold: 0.3 });
-  const [tastingsRef, tastingsInView] = useInView({ triggerOnce: true, threshold: 0.2 });
-  const [culinaryRef, culinaryInView] = useInView({ triggerOnce: true, threshold: 0.2 });
-  const [salonRef, salonInView] = useInView({ triggerOnce: true, threshold: 0.2 });
-  const [winesRef, winesInView] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { scrollY } = useScroll()
+  
+  const heroOpacity = useTransform(scrollY, [0, 300], [1, 0.8])
+  const heroScale = useTransform(scrollY, [0, 300], [1, 1.05])
 
   return (
-    <main className="bg-Brand-Black">
-      {/* Header Navigation */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-Brand-Black/80 backdrop-blur-md border-b border-white/10">
+    <main className="bg-black text-white">
+      {/* NAVIGATION BAR */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-20">
-            {/* Wine Spectator Logo */}
-            <div className="flex items-center">
-              <span className="text-Brand-White font-neue-haas text-sm tracking-wider">Wine Spectator</span>
+            {/* Logo */}
+            <div className="text-[#D3A737] font-playfair text-2xl font-bold">
+              LEWIS CELLARS
             </div>
             
-            {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-Brand-White text-sm font-neue-haas hover:text-Brand-Gold-(Drk-BG) transition-colors tracking-wide uppercase">Wine Spectator</a>
-              <a href="#" className="text-Brand-White text-sm font-neue-haas hover:text-Brand-Gold-(Drk-BG) transition-colors tracking-wide uppercase">Current Issue</a>
-              <a href="#" className="text-Brand-White text-sm font-neue-haas hover:text-Brand-Gold-(Drk-BG) transition-colors tracking-wide uppercase">Restaurants</a>
-              <a href="#" className="text-Brand-White text-sm font-neue-haas hover:text-Brand-Gold-(Drk-BG) transition-colors tracking-wide uppercase">Videos</a>
-            </nav>
-          </div>
-        </div>
-      </header>
+            {/* Desktop Menu */}
+            <div className="hidden md:flex items-center space-x-8">
+              <a href="#wines" className="text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Our Wines</a>
+              <a href="#tastings" className="text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Tastings</a>
+              <a href="#culinary" className="text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Culinary</a>
+              <a href="#salon" className="text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Salon Privé</a>
+              <a href="#visit" className="text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Visit</a>
+            </div>
 
-      {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center pt-20">
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden text-white"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          {isMenuOpen && (
+            <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-white/10">
+              <div className="px-6 py-4 space-y-4">
+                <a href="#wines" className="block text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Our Wines</a>
+                <a href="#tastings" className="block text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Tastings</a>
+                <a href="#culinary" className="block text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Culinary</a>
+                <a href="#salon" className="block text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Salon Privé</a>
+                <a href="#visit" className="block text-white hover:text-[#D3A737] transition-colors tracking-wider uppercase text-sm">Visit</a>
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
+
+      {/* HERO SECTION */}
+      <section className="h-screen relative">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+        <motion.div 
+          className="absolute inset-0"
+          style={{ opacity: heroOpacity, scale: heroScale }}
+        >
           <Image
             src="/images/hero/homepage-hero.png"
-            alt="Wine Tasting Experience"
+            alt="Lewis Cellars Wine Tasting"
             fill
             className="object-cover"
             priority
-            quality={90}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-Brand-Black/40 via-Brand-Black/50 to-Brand-Black" />
-        </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
+        </motion.div>
 
         {/* Hero Content */}
-        <div className="relative z-10 container mx-auto px-6 lg:px-12 pt-20 pb-32">
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+          {/* Wine Spectator Badge */}
           <motion.div
-            initial="initial"
-            animate={heroInView ? "animate" : "initial"}
-            variants={staggerChildren}
-            className="max-w-4xl"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-[#D3A737] text-black px-6 py-2 rounded-full text-sm font-semibold tracking-wider uppercase mb-8"
           >
-            <motion.p
-              variants={fadeInUp}
-              className="text-Secondary-Light-Gold-(Drk-BG) text-xs font-neue-haas tracking-[0.2em] uppercase mb-6"
+            Wine Spectator
+          </motion.div>
+
+          {/* Main Title */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="text-5xl md:text-7xl lg:text-8xl font-playfair font-bold text-white mb-6"
+          >
+            LEWIS CELLARS
+          </motion.h1>
+
+          {/* Subtitle */}
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl"
+          >
+            Napa Valley&apos;s Ultimate Wine Experience
+          </motion.p>
+
+          {/* CTA Button */}
+          <motion.button
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+            className="bg-[#D3A737] text-black px-8 py-4 text-lg font-semibold tracking-wider uppercase hover:bg-[#E5C1A0] transition-colors"
+          >
+            Explore Our Wines
+          </motion.button>
+
+          {/* Bouncing Chevron */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          >
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
             >
-              Welcome to Napa Valley at Lewis Cellars
-            </motion.p>
-            
-            <motion.h1
-              variants={fadeInUp}
-              className="text-Brand-White font-playfair text-5xl md:text-6xl lg:text-7xl font-light leading-[1.1] mb-8"
-            >
-              Napa Valley&apos;s Ultimate Experience Awaits
-            </motion.h1>
-            
-            <motion.p
-              variants={fadeInUp}
-              className="text-Brand-White/90 font-neue-haas text-base md:text-lg leading-relaxed max-w-2xl mb-12"
-            >
-              We proudly welcome Wine Spectator subscribers and guests to our MICHELIN-Starred experiences and Wine Spectator Grand Award wine collection. Whether you plan to stay for more than a weekend, our newly different is a journey.
-            </motion.p>
+              <ChevronDown className="text-white" size={32} />
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* Quote Section */}
-      <section ref={quoteRef} className="py-24 md:py-32 bg-Brand-Black">
+      {/* QUOTE SECTION */}
+      <section className="bg-[#0D0D0D] py-24 md:py-32">
         <div className="container mx-auto px-6 lg:px-12">
           <motion.div
-            initial="initial"
-            animate={quoteInView ? "animate" : "initial"}
-            variants={fadeInUp}
-            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-4xl mx-auto"
           >
-            <blockquote className="font-playfair text-3xl md:text-4xl lg:text-5xl font-light text-Brand-White leading-[1.3] mb-8">
+            <blockquote className="font-playfair text-2xl md:text-3xl lg:text-4xl italic text-white leading-relaxed mb-8">
               &ldquo;A record of excellence that few California wineries can rival.&rdquo;
             </blockquote>
-            <cite className="text-Secondary-Light-Gold-(Drk-BG) font-neue-haas text-sm tracking-[0.15em] uppercase not-italic">
-              James Laube, Wine Spectator
+            <cite className="text-[#D3A737] text-lg font-semibold not-italic">
+              Wine Enthusiast
             </cite>
           </motion.div>
         </div>
       </section>
 
-      {/* Wine Tastings Section */}
-      <section ref={tastingsRef} className="py-16 md:py-24 bg-Brand-Black">
+      {/* TASTINGS SECTION */}
+      <section id="tastings" className="bg-white text-black py-24 md:py-32">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-            {/* Text Content */}
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Image */}
             <motion.div
-              initial="initial"
-              animate={tastingsInView ? "animate" : "initial"}
-              variants={fadeInUp}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative h-[500px] md:h-[600px] rounded-lg shadow-2xl overflow-hidden"
+            >
+              <Image
+                src="/images/wine-tasting/wine-tasting-couple.png"
+                alt="Wine Tasting Experience"
+                fill
+                className="object-cover"
+              />
+            </motion.div>
+
+            {/* Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-[#D3A737] text-sm font-semibold tracking-wider uppercase mb-4">
+                TASTINGS
+              </div>
+              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-black mb-6">
+                Discover Our Legacy
+              </h2>
+              <p className="text-gray-700 text-lg leading-relaxed mb-8">
+                Experience the artistry of Lewis Cellars through guided tastings that showcase our award-winning wines and the passion behind each vintage.
+              </p>
+              <button className="bg-[#D3A737] text-black px-8 py-4 text-lg font-semibold tracking-wider uppercase hover:bg-[#E5C1A0] transition-colors">
+                Book Tasting
+              </button>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* CULINARY SECTION */}
+      <section id="culinary" className="bg-[#F4F4F4] text-black py-24 md:py-32">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               className="order-2 md:order-1"
             >
-              <p className="text-Secondary-Light-Gold-(Drk-BG) text-xs font-neue-haas tracking-[0.2em] uppercase mb-4">
-                A Perfect Experience
-              </p>
-              <h2 className="text-Brand-White font-playfair text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] mb-6">
-                Wine Tastings
+              <div className="text-[#D3A737] text-sm font-semibold tracking-wider uppercase mb-4">
+                CULINARY
+              </div>
+              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-black mb-6">
+                MICHELIN-Starred Cuisine
               </h2>
-              <p className="text-Brand-White/80 font-neue-haas text-base leading-relaxed mb-8">
-                Explore the passion-driven artisan-style wines in an intimate setting with a tasting of our exquisite wines.
+              <p className="text-gray-700 text-lg leading-relaxed mb-8">
+                Indulge in extraordinary culinary experiences crafted by our MICHELIN-Starred chef, where each dish perfectly complements our exceptional wines.
               </p>
-              <button className="bg-Brand-Gold-(Drk-BG) text-Brand-Black px-8 py-3 font-neue-haas text-sm tracking-[0.1em] uppercase font-medium hover:bg-Secondary-CTA-Gold-(Drk-BG) transition-all duration-300 hover:scale-105">
-                Book a Tasting
+              <button className="bg-[#D3A737] text-black px-8 py-4 text-lg font-semibold tracking-wider uppercase hover:bg-[#E5C1A0] transition-colors">
+                View Menu
               </button>
             </motion.div>
 
             {/* Image */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
-              animate={tastingsInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
-              transition={{ duration: 0.8 }}
-              className="order-1 md:order-2 relative aspect-[4/5] md:aspect-[3/4]"
-            >
-              <Image
-                src="/images/wine-tasting/wine-tasting-couple.png"
-                alt="Wine Tasting"
-                fill
-                className="object-cover rounded-sm"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Culinary Experiences Section */}
-      <section ref={culinaryRef} className="py-16 md:py-24 bg-Brand-Black">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-            {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={culinaryInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
-              transition={{ duration: 0.8 }}
-              className="relative aspect-[4/5] md:aspect-[3/4]"
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative h-[500px] md:h-[600px] rounded-lg shadow-2xl overflow-hidden order-1 md:order-2"
             >
               <Image
                 src="/images/culinary/plated-dish.png"
                 alt="Culinary Experience"
                 fill
-                className="object-cover rounded-sm"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
               />
-            </motion.div>
-
-            {/* Text Content */}
-            <motion.div
-              initial="initial"
-              animate={culinaryInView ? "animate" : "initial"}
-              variants={fadeInUp}
-            >
-              <p className="text-Secondary-Light-Gold-(Drk-BG) text-xs font-neue-haas tracking-[0.2em] uppercase mb-4">
-                A Michelin Wine Pairing
-              </p>
-              <h2 className="text-Brand-White font-playfair text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] mb-6">
-                Culinary Experiences
-              </h2>
-              <p className="text-Brand-White/80 font-neue-haas text-base leading-relaxed mb-8">
-                We bring MICHELIN-Starred restaurant culture, with special events where Chef teams up with us to deliver our wine and culinary experiences.
-              </p>
-              <button className="bg-Brand-Gold-(Drk-BG) text-Brand-Black px-8 py-3 font-neue-haas text-sm tracking-[0.1em] uppercase font-medium hover:bg-Secondary-CTA-Gold-(Drk-BG) transition-all duration-300 hover:scale-105">
-                Make a Reservation
-              </button>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Interior Showcase Image */}
-      <section className="py-16 md:py-24 bg-Brand-Black">
-        <div className="container mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="relative aspect-[16/10] md:aspect-[21/9] max-w-4xl mx-auto"
-          >
-            <Image
-              src="/_Assets/ws_lewis_hallway.png"
-              alt="Lewis Cellars Interior"
-              fill
-              className="object-cover rounded-sm"
-              sizes="(max-width: 768px) 100vw, 80vw"
-            />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Salon Privé Section */}
-      <section ref={salonRef} className="relative min-h-[70vh] md:min-h-[80vh] flex items-center py-20 md:py-32">
+      {/* SALON PRIVÉ SECTION */}
+      <section id="salon" className="relative h-[80vh] flex items-center justify-center">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0">
           <Image
             src="/images/salon-prive/couple-luxury.png"
             alt="Salon Privé"
             fill
             className="object-cover"
-            sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-Brand-Black via-Brand-Black/60 to-transparent" />
+          <div className="absolute inset-0 bg-black/60" />
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-6 lg:px-12">
-          <motion.div
-            initial="initial"
-            animate={salonInView ? "animate" : "initial"}
-            variants={staggerChildren}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <motion.p
-              variants={fadeInUp}
-              className="text-Secondary-Light-Gold-(Drk-BG) text-xs font-neue-haas tracking-[0.2em] uppercase mb-6"
-            >
-              Exclusive & Premium Experience
-            </motion.p>
-            
-            <motion.h2
-              variants={fadeInUp}
-              className="text-Brand-White font-playfair text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] mb-8"
-            >
-              Salon Privé
-            </motion.h2>
-            
-            <motion.p
-              variants={fadeInUp}
-              className="text-Brand-White/90 font-neue-haas text-base md:text-lg leading-relaxed mb-10"
-            >
-              Experience a five-stop journey with our most exclusive wines, private tours to our winemaking facilities, VIP tastings experiences, and private chef and culinary experiences, finishing with a bottle of wine to take home with you.
-            </motion.p>
-            
-            <motion.button
-              variants={fadeInUp}
-              className="bg-Brand-Gold-(Drk-BG) text-Brand-Black px-8 py-3 font-neue-haas text-sm tracking-[0.1em] uppercase font-medium hover:bg-Secondary-CTA-Gold-(Drk-BG) transition-all duration-300 hover:scale-105"
-            >
-              Join the Experience
-            </motion.button>
-          </motion.div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative z-10 text-center text-white px-6"
+        >
+          <h2 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+            Salon Privé
+          </h2>
+          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
+            Experience the ultimate in luxury with our exclusive Salon Privé, featuring rare vintages and personalized service.
+          </p>
+          <button className="bg-[#D3A737] text-black px-8 py-4 text-lg font-semibold tracking-wider uppercase hover:bg-[#E5C1A0] transition-colors">
+            Inquire Now
+          </button>
+        </motion.div>
       </section>
 
-      {/* Discover Lewis Wines Section */}
-      <section ref={winesRef} className="py-24 md:py-32 bg-Brand-Black">
+      {/* OUR WINES SECTION */}
+      <section id="wines" className="bg-[#0D0D0D] py-24 md:py-32">
         <div className="container mx-auto px-6 lg:px-12">
           <motion.div
-            initial="initial"
-            animate={winesInView ? "animate" : "initial"}
-            variants={staggerChildren}
-            className="text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
           >
-            <motion.p
-              variants={fadeInUp}
-              className="text-Secondary-Light-Gold-(Drk-BG) text-xs font-neue-haas tracking-[0.2em] uppercase mb-6"
-            >
-              Our Collection
-            </motion.p>
-            
-            <motion.h2
-              variants={fadeInUp}
-              className="text-Brand-White font-playfair text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] mb-16"
-            >
-              Discover Lewis Wines
-            </motion.h2>
-            {/* Wine Bottles */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-16 mb-16">
-              {/* Chardonnay */}
-              <motion.div
-                variants={fadeInUp}
-                className="flex flex-col items-center group cursor-pointer"
-              >
-                <div className="relative w-32 h-80 md:w-36 md:h-96 mb-6 transition-transform duration-500 group-hover:scale-105">
-                  <Image
-                    src="/images/wine-bottles/product-showcase.png"
-                    alt="Lewis Cellars Chardonnay"
-                    fill
-                    className="object-contain drop-shadow-2xl"
-                    sizes="(max-width: 768px) 128px, 144px"
-                  />
-                </div>
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-Brand-Gold-(Drk-BG) to-yellow-600 flex items-center justify-center shadow-lg mb-3">
-                  <span className="text-Brand-Black font-playfair text-xl font-bold">L</span>
-                </div>
-              </motion.div>
-
-              {/* Cabernet Sauvignon */}
-              <motion.div
-                variants={fadeInUp}
-                className="flex flex-col items-center group cursor-pointer"
-              >
-                <div className="relative w-32 h-80 md:w-36 md:h-96 mb-6 transition-transform duration-500 group-hover:scale-105">
-                  <Image
-                    src="/images/wine-bottles/product-showcase.png"
-                    alt="Lewis Cellars Cabernet Sauvignon"
-                    fill
-                    className="object-contain drop-shadow-2xl"
-                    sizes="(max-width: 768px) 128px, 144px"
-                  />
-                </div>
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-Brand-Gold-(Drk-BG) to-yellow-600 flex items-center justify-center shadow-lg mb-3">
-                  <span className="text-Brand-Black font-playfair text-xl font-bold">L</span>
-                </div>
-              </motion.div>
-
-              {/* Red Blend */}
-              <motion.div
-                variants={fadeInUp}
-                className="flex flex-col items-center group cursor-pointer"
-              >
-                <div className="relative w-32 h-80 md:w-36 md:h-96 mb-6 transition-transform duration-500 group-hover:scale-105">
-                  <Image
-                    src="/images/wine-bottles/product-showcase.png"
-                    alt="Lewis Cellars Red Blend"
-                    fill
-                    className="object-contain drop-shadow-2xl"
-                    sizes="(max-width: 768px) 128px, 144px"
-                  />
-                </div>
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-700 to-amber-900 flex items-center justify-center shadow-lg mb-3">
-                  <span className="text-Brand-White font-playfair text-xl font-bold">L</span>
-                </div>
-              </motion.div>
-            </div>
-
-            <motion.p
-              variants={fadeInUp}
-              className="text-Brand-White/80 font-neue-haas text-base max-w-2xl mx-auto mb-10"
-            >
-              Explore Lewis Cellars' vintage, barrel-tasting series with tasting notes for Napa and Sonoma wines.
-            </motion.p>
-            <motion.button
-              variants={fadeInUp}
-              className="bg-Brand-Gold-(Drk-BG) text-Brand-Black px-8 py-3 font-neue-haas text-sm tracking-[0.1em] uppercase font-medium hover:bg-Secondary-CTA-Gold-(Drk-BG) transition-all duration-300 hover:scale-105"
-            >
-              Explore Wines
-            </motion.button>
+            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-6">
+              Our Wines
+            </h2>
+            <p className="text-white/80 text-lg max-w-2xl mx-auto">
+              Discover our collection of exceptional wines, each crafted with passion and precision.
+            </p>
           </motion.div>
-        </div>
-      </section>
 
-      {/* Visit Us Section */}
-      <section className="py-24 md:py-32 bg-gradient-to-b from-Brand-Black to-[#1a1a1a]">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+            {/* Chardonnay */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="mb-12"
+              className="group text-center"
             >
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-Brand-Gold-(Drk-BG) to-yellow-600 flex items-center justify-center shadow-2xl mx-auto mb-8">
-                <span className="text-Brand-Black font-playfair text-3xl font-bold">L</span>
+              <div className="relative w-32 h-80 mx-auto mb-6 group-hover:scale-105 transition-transform duration-500">
+                <Image
+                  src="/images/wine-bottles/product-showcase.png"
+                  alt="Lewis Cellars Chardonnay"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              
-              <h2 className="text-Brand-White font-playfair text-3xl md:text-4xl font-light mb-6">
-                Lewis Cellars
-              </h2>
-              
-              <p className="text-Brand-White/80 font-neue-haas text-sm leading-relaxed mb-2">
-                5050 Arundell Cir — Silverado Trail, Calistoga
+              <div className="w-16 h-16 bg-gradient-to-br from-[#D3A737] to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <span className="text-black font-playfair text-2xl font-bold">L</span>
+              </div>
+              <h3 className="font-playfair text-2xl font-bold text-white mb-4">Chardonnay</h3>
+              <p className="text-white/80 text-sm leading-relaxed">
+                Rich and buttery with notes of vanilla and oak, perfectly balanced with crisp acidity.
               </p>
-              <p className="text-Brand-White/80 font-neue-haas text-sm leading-relaxed mb-2">
-                Calistoga, CA 94515
+            </motion.div>
+
+            {/* Cabernet Sauvignon */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="group text-center"
+            >
+              <div className="relative w-32 h-80 mx-auto mb-6 group-hover:scale-105 transition-transform duration-500">
+                <Image
+                  src="/images/wine-bottles/product-showcase.png"
+                  alt="Lewis Cellars Cabernet Sauvignon"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="w-16 h-16 bg-gradient-to-br from-[#D3A737] to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <span className="text-black font-playfair text-2xl font-bold">L</span>
+              </div>
+              <h3 className="font-playfair text-2xl font-bold text-white mb-4">Cabernet Sauvignon</h3>
+              <p className="text-white/80 text-sm leading-relaxed">
+                Bold and complex with dark fruit flavors and smooth tannins, aged to perfection.
               </p>
-              <p className="text-Brand-White/80 font-neue-haas text-sm leading-relaxed mb-8">
-                info@lewiscellars.com
+            </motion.div>
+
+            {/* Red Blend */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="group text-center"
+            >
+              <div className="relative w-32 h-80 mx-auto mb-6 group-hover:scale-105 transition-transform duration-500">
+                <Image
+                  src="/images/wine-bottles/product-showcase.png"
+                  alt="Lewis Cellars Red Blend"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="w-16 h-16 bg-gradient-to-br from-[#D3A737] to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <span className="text-black font-playfair text-2xl font-bold">L</span>
+              </div>
+              <h3 className="font-playfair text-2xl font-bold text-white mb-4">Red Blend</h3>
+              <p className="text-white/80 text-sm leading-relaxed">
+                Our signature blend showcasing the best of Napa Valley&apos;s finest varietals.
               </p>
-              
-              <button className="bg-Brand-Gold-(Drk-BG) text-Brand-Black px-8 py-3 font-neue-haas text-sm tracking-[0.1em] uppercase font-medium hover:bg-Secondary-CTA-Gold-(Drk-BG) transition-all duration-300 hover:scale-105">
-                Get in Touch
-              </button>
             </motion.div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <button className="bg-[#D3A737] text-black px-8 py-4 text-lg font-semibold tracking-wider uppercase hover:bg-[#E5C1A0] transition-colors">
+              View Full Collection
+            </button>
+          </motion.div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-Brand-Black border-t border-white/10 py-16">
+      {/* VISIT US SECTION */}
+      <section id="visit" className="bg-gradient-to-b from-[#0D0D0D] to-[#1a1a1a] py-24 md:py-32">
+        <div className="container mx-auto px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center text-white"
+          >
+            <div className="w-20 h-20 bg-gradient-to-br from-[#D3A737] to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
+              <span className="text-black font-playfair text-4xl font-bold">L</span>
+            </div>
+            
+            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-8">
+              Lewis Cellars
+            </h2>
+            
+            <div className="text-white/80 text-lg space-y-2 mb-12">
+              <p>5050 Arundell Cir — Silverado Trail, Calistoga</p>
+              <p>Calistoga, CA 94515</p>
+              <p>info@lewiscellars.com</p>
+            </div>
+            
+            <button className="bg-[#D3A737] text-black px-8 py-4 text-lg font-semibold tracking-wider uppercase hover:bg-[#E5C1A0] transition-colors">
+              Get in Touch
+            </button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-black border-t border-white/10 py-16">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-            {/* Column 1 */}
+            {/* Visit */}
             <div>
-              <h3 className="text-Brand-White font-neue-haas text-sm font-medium mb-4 tracking-wide uppercase">
-                Info@lewiscellars.com
-              </h3>
+              <h3 className="text-white font-semibold text-lg mb-4">Visit</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">About Us</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">The Estate</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Our Wines</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Tasting</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Wine Allocation Program</a></li>
+                <li><a href="#tastings" className="text-white/60 hover:text-[#D3A737] transition-colors">Tastings</a></li>
+                <li><a href="#culinary" className="text-white/60 hover:text-[#D3A737] transition-colors">Culinary</a></li>
+                <li><a href="#salon" className="text-white/60 hover:text-[#D3A737] transition-colors">Salon Privé</a></li>
+                <li><a href="#visit" className="text-white/60 hover:text-[#D3A737] transition-colors">Location</a></li>
               </ul>
             </div>
 
-            {/* Column 2 */}
+            {/* Wines */}
             <div>
-              <h3 className="text-Brand-White font-neue-haas text-sm font-medium mb-4 tracking-wide uppercase">
-                Shop
-              </h3>
+              <h3 className="text-white font-semibold text-lg mb-4">Wines</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Current Release</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Library</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Limited</a></li>
+                <li><a href="#wines" className="text-white/60 hover:text-[#D3A737] transition-colors">Our Collection</a></li>
+                <li><a href="#" className="text-white/60 hover:text-[#D3A737] transition-colors">Current Release</a></li>
+                <li><a href="#" className="text-white/60 hover:text-[#D3A737] transition-colors">Library Wines</a></li>
+                <li><a href="#" className="text-white/60 hover:text-[#D3A737] transition-colors">Limited Edition</a></li>
               </ul>
             </div>
 
-            {/* Column 3 */}
+            {/* Experiences */}
             <div>
-              <h3 className="text-Brand-White font-neue-haas text-sm font-medium mb-4 tracking-wide uppercase">
-                About Us
-              </h3>
+              <h3 className="text-white font-semibold text-lg mb-4">Experiences</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Our Team</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Trade Only</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Wholesale</a></li>
+                <li><a href="#tastings" className="text-white/60 hover:text-[#D3A737] transition-colors">Wine Tastings</a></li>
+                <li><a href="#culinary" className="text-white/60 hover:text-[#D3A737] transition-colors">Dining</a></li>
+                <li><a href="#salon" className="text-white/60 hover:text-[#D3A737] transition-colors">Private Events</a></li>
+                <li><a href="#" className="text-white/60 hover:text-[#D3A737] transition-colors">Tours</a></li>
               </ul>
             </div>
 
-            {/* Column 4 */}
+            {/* About */}
             <div>
-              <h3 className="text-Brand-White font-neue-haas text-sm font-medium mb-4 tracking-wide uppercase">
-                WineSpectator.com:
-              </h3>
+              <h3 className="text-white font-semibold text-lg mb-4">About</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Top 100 Wines</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Ratings & Reviews</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Wine Ratings Search</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">Wine News & Features</a></li>
-                <li><a href="#" className="text-Brand-White/60 hover:text-Brand-Gold-(Drk-BG) text-sm transition-colors">
-                  Collecting<br />
-                  Buying Guide
-                </a></li>
+                <li><a href="#" className="text-white/60 hover:text-[#D3A737] transition-colors">Our Story</a></li>
+                <li><a href="#" className="text-white/60 hover:text-[#D3A737] transition-colors">Winemaking</a></li>
+                <li><a href="#" className="text-white/60 hover:text-[#D3A737] transition-colors">Awards</a></li>
+                <li><a href="#" className="text-white/60 hover:text-[#D3A737] transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>
 
           {/* Bottom Footer */}
-          <div className="border-t border-white/10 pt-8">
-            <p className="text-Brand-White/40 text-xs text-center font-neue-haas">
-              © 2025 Lewis Cellars | Wine Spectator
+          <div className="border-t border-white/10 pt-8 text-center">
+            <p className="text-white/40 text-sm">
+              © 2025 Lewis Cellars. All rights reserved.
             </p>
           </div>
         </div>
       </footer>
     </main>
-  );
+  )
 }
