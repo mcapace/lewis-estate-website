@@ -116,8 +116,12 @@
 }
 
 @layer components {
+  .font-neue-haas {
+    font-family: 'Neue Haas Grotesk Display Std', sans-serif;
+  }
+  
   .btn-primary {
-    background-color: #D4AF37;
+    background-color: #D3A737;
     color: #000000;
     padding: 1rem 2.5rem;
     font-weight: 600;
@@ -126,7 +130,7 @@
     text-transform: uppercase;
     border-radius: 0;
     transition: all 0.3s ease;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Neue Haas Grotesk Display Std', sans-serif;
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
