@@ -1,0 +1,73 @@
+Section,Element Type,Element Description,URL Destination,URL (Client to Fill),Priority,Notes
+Header,Logo,Lewis Cellars Logo (top left),Homepage,,High,Should link to homepage
+Header,Navigation Link,Wines,Wines Page,,High,Main navigation
+Header,Navigation Link,Salon Privé,Salon Privé Page,,High,Main navigation
+Header,Navigation Link,Culinary,Culinary Page,,High,Main navigation
+Header,Navigation Link,Tastings,Tastings Page,,High,Main navigation
+Header,Navigation Link,Visit Us,Visit/Contact Page,,High,Main navigation
+Header,CTA Button,Join Lewis Insiders,Wine Club / Membership Page,,High,Primary CTA in header
+Homepage - Hero,CTA Button,Reserve Your Tasting,Tasting Room Reservation System,,Critical,Primary hero CTA - needs reservation/booking system
+Homepage - Hero,CTA Button,Explore Our Wines,Wines Page or Wine Shop,,High,Secondary hero CTA
+Homepage - Story,CTA Button,Learn More About Us,About Us Page,,Medium,Story section CTA
+Homepage - Wines,Wine Card,Cabernet Sauvignon - Learn More,Cabernet Product Page,,High,Individual wine detail page
+Homepage - Wines,Wine Card,Chardonnay - Learn More,Chardonnay Product Page,,High,Individual wine detail page
+Homepage - Wines,Wine Card,Rosé - Learn More,Rosé Product Page,,High,Individual wine detail page
+Homepage - Wines,CTA Button,View All Wines,Wines Collection Page,,High,View full wine portfolio
+Homepage - Wines,CTA Button,Shop Now,E-commerce / Wine Shop,,Critical,Direct-to-consumer shop
+Homepage - Salon Privé,CTA Button,Book Your Private Experience,Salon Privé Booking Page,,Critical,Private tasting bookings
+Homepage - Salon Privé,Link,Learn More About Salon Privé,Salon Privé Page,,Medium,Detail page for private experiences
+Homepage - Culinary,CTA Button,View Culinary Experiences,Culinary Page,,High,Culinary detail page
+Homepage - Culinary,CTA Button,Make a Reservation,Culinary Reservations,,High,Dining reservation system
+Homepage - Tastings,CTA Button,Book a Tasting,Tasting Reservations,,Critical,Main tasting booking CTA
+Homepage - Tastings,Link,View Tasting Options,Tastings Page,,Medium,All tasting experiences
+Homepage - Membership,CTA Button,Join Lewis Insiders,Wine Club Membership Page,,Critical,Primary membership CTA
+Homepage - Membership,Link,Learn About Benefits,Membership Benefits Page,,High,Details about insider program
+Homepage - Social,Instagram Feed,Follow Us on Instagram,Lewis Cellars Instagram Profile,,Medium,Link to @lewiscellars Instagram
+Wines Page,Filter/Category,Shop Red Wines,Red Wines Collection,,High,Filtered wine collection
+Wines Page,Filter/Category,Shop White Wines,White Wines Collection,,High,Filtered wine collection
+Wines Page,Filter/Category,Shop Rosé Wines,Rosé Wines Collection,,High,Filtered wine collection
+Wines Page,Individual Wine,Add to Cart / Purchase,E-commerce Cart,,Critical,Shopping cart functionality
+Salon Privé,CTA Button,Request Private Tasting,Private Tasting Request Form,,Critical,Lead capture for private events
+Salon Privé,CTA Button,View Availability,Booking Calendar,,High,Calendar booking system
+Salon Privé,Contact Link,Contact Concierge,Contact Form / Email,,Medium,Direct contact for private events
+Culinary,CTA Button,Reserve Your Table,Culinary Reservations,,Critical,Dining reservation system
+Culinary,Menu Link,View Our Menu,Menu PDF or Page,,High,Culinary menu details
+Culinary,CTA Button,Private Dining Inquiry,Private Dining Form,,Medium,Private dining events
+Tastings,CTA Button,Book Classic Tasting,Classic Tasting Booking,,Critical,Specific tasting type booking
+Tastings,CTA Button,Book Premium Tasting,Premium Tasting Booking,,Critical,Specific tasting type booking
+Tastings,CTA Button,Book Library Tasting,Library Tasting Booking,,High,Specific tasting type booking
+Tastings,Link,Compare Tasting Experiences,Tastings Comparison Page,,Medium,Help users choose tasting type
+Footer,Logo,Lewis Cellars Footer Logo,Homepage,,Medium,Should link to homepage
+Footer,Link,About Us,About Page,,Medium,Company information
+Footer,Link,Our Story,Story/Heritage Page,,Medium,Brand story
+Footer,Link,Our Wines,Wines Page,,Medium,Wine portfolio
+Footer,Link,Visit Us,Visit/Contact Page,,Medium,Location and hours
+Footer,Link,Contact,Contact Page or Form,,Medium,Contact information
+Footer,Link,Careers,Careers Page,,Low,Job opportunities
+Footer,Link,Press,Press/Media Page,,Low,Press releases and media
+Footer,Link,Trade,Trade Portal or Page,,Low,B2B trade information
+Footer,Link,Privacy Policy,Privacy Policy Page,,High,Legal requirement
+Footer,Link,Terms & Conditions,Terms Page,,High,Legal requirement
+Footer,Link,Accessibility,Accessibility Statement,,Medium,Legal/accessibility compliance
+Footer,Social Icon,Facebook,Lewis Cellars Facebook Page,,Medium,Social media link
+Footer,Social Icon,Instagram,Lewis Cellars Instagram,,High,Primary social channel
+Footer,Social Icon,Twitter/X,Lewis Cellars Twitter,,Low,Social media link
+Footer,Social Icon,YouTube,Lewis Cellars YouTube,,Low,Social media link
+Footer,Email Signup,Newsletter Subscription,Email Marketing System,,High,Email capture integration
+Campaign,Landing Page,Wine Spectator Campaign Landing,Campaign-specific landing page,,Critical,Per program doc - main campaign destination
+Campaign,Email CTA,Tasting Room Reservations,Reservation system link for emails,,Critical,Must track email conversions
+Campaign,Email CTA,Wine Club Signup,Wine Club enrollment page,,Critical,Direct membership conversion
+Campaign,Email CTA,DTC Offers,Special offers / promotions page,,High,Campaign-specific offers
+Campaign,Social Media,Instagram Feed Integration,Instagram API or embed,,Medium,Real-time social feed on landing page
+E-commerce,Shop,Main Shop Page,Wine shop homepage,,Critical,E-commerce platform
+E-commerce,Cart,Shopping Cart,Cart page,,Critical,E-commerce checkout
+E-commerce,Checkout,Checkout Page,Checkout system,,Critical,Payment processing
+E-commerce,Account,Customer Account / Login,Account management,,High,User authentication
+E-commerce,Order,Order Tracking,Order status page,,Medium,Post-purchase tracking
+Booking,Tasting Reservations,Tasting room booking system,Booking platform URL,,Critical,"Could be Tock, OpenTable, or custom"
+Booking,Private Events,Private event inquiry/booking,Event booking system,,High,Private experience bookings
+Booking,Culinary,Dining reservations,Restaurant booking system,,High,Culinary experience bookings
+Integration,Age Verification,Age gate / verification,Age verification service,,Critical,Legal requirement for alcohol
+Integration,Analytics,Google Analytics,GA4 tracking code,,High,Campaign tracking
+Integration,Email Marketing,Email capture integration,Marketing platform,,High,List building
+Integration,CRM,Customer data system,CRM platform integration,,Medium,Customer management

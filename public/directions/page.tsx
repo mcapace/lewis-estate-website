@@ -297,6 +297,7 @@ export default function Home() {
             >
               Discover Lewis Wines
             </motion.h2>
+
             {/* Wine Bottles */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-16 mb-16">
               {/* Chardonnay */}
@@ -363,6 +364,7 @@ export default function Home() {
             >
               Explore Lewis Cellars' vintage, barrel-tasting series with tasting notes for Napa and Sonoma wines.
             </motion.p>
+
             <motion.button
               variants={fadeInUp}
               className="bg-Brand-Gold-(Drk-BG) text-Brand-Black px-8 py-3 font-neue-haas text-sm tracking-[0.1em] uppercase font-medium hover:bg-Secondary-CTA-Gold-(Drk-BG) transition-all duration-300 hover:scale-105"
