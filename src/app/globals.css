@@ -29,85 +29,257 @@
   font-style: normal;
   font-display: swap;
 }
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Color Palette */
+  --color-black: #000000;
+  --color-dark-gray: #1a1a1a;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #E5C158;
+  --color-white: #FFFFFF;
+  --color-gray-light: #CCCCCC;
+  --color-overlay: rgba(0, 0, 0, 0.4);
+  
+  /* Typography Scale */
+  --text-hero: 64px;
+  --text-hero-mobile: 40px;
+  --text-section: 48px;
+  --text-section-mobile: 32px;
+  --text-body: 18px;
+  --text-small: 12px;
+  
+  /* Letter Spacing */
+  --tracking-headline: -0.02em;
+  --tracking-small: 0.1em;
+  --tracking-button: 0.05em;
+  
+  /* Spacing System */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 128px;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    border: none;
   }
 
   body {
-    font-family: 'Inter', 'Neue Haas Grotesk Display Std', sans-serif;
+    background-color: #000000;
+    color: var(--color-white);
+    font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    border: none;
   }
 
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
   }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  
-  *,
+  /* Ensure no white borders anywhere */
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    border: none;
+  }
+
+  /* Remove any default browser borders */
+  img, video, iframe, embed, object {
+    border: none;
+  }
+
+  /* Ensure all containers have black borders */
+  div, section, article, main, header, footer, nav, aside {
+    border: none;
   }
 }
 
+@layer components {
+  .btn-primary {
+    background-color: #D4AF37;
+    color: #000000;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-primary:hover {
+    background-color: #E5C158;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+  }
+  
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+  
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--text-hero);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: var(--tracking-headline);
+    margin-bottom: var(--space-md);
+  }
+  
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--text-section);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
+  }
+  
+  .section-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-small);
+    font-weight: 500;
+    letter-spacing: var(--tracking-small);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .section-description {
+    font-size: var(--text-body);
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: var(--space-xl);
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .wine-bottle {
+    position: relative;
+    width: 120px;
+    height: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+  }
+  
+  .wine-bottle:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+  
+  .bottle-chardonnay {
+    background: linear-gradient(180deg, #fefdf8 0%, #f5f5dc 50%, #e6e6b8 100%);
+    border: 2px solid #d4d4a8;
+  }
+  
+  .bottle-cabernet, .bottle-big-blend {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 50%, #000000 100%);
+    border: 2px solid #333333;
+  }
+  
+  .label-emblem {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .emblem-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #b8941f 100%);
+  }
+  
+  .emblem-bronze {
+    background: linear-gradient(135deg, #cd7f32 0%, #a0522d 100%);
+  }
+  
+  .label-text {
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0D0D0D;
+  background: #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D3A737;
-  border-radius: 5px;
+  background: #D4AF37;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #E5C1A0;
+  background: #b8941f;
 }
 
-::selection {
-  background-color: #D3A737;
-  color: #000000;
+/* Responsive Design */
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 4rem;
+  }
+  
+  .wine-bottle {
+    width: 150px;
+    height: 400px;
+  }
+  
+  .label-emblem {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
 }
 
-::-moz-selection {
-  background-color: #D3A737;
-  color: #000000;
-}
-
-*:focus-visible {
-  outline: 2px solid #D3A737;
-  outline-offset: 2px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 4.5rem;
+  }
 }
