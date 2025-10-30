@@ -61,7 +61,7 @@ export default function MapSection() {
           </Map>
 
           {/* Desktop Info Card */}
-          <div className="hidden lg:block absolute top-8 right-8 bg-black/90 backdrop-blur-md rounded-lg p-6 max-w-sm">
+          <div className="hidden lg:block absolute top-8 right-8 bg-black/90 backdrop-blur-md rounded-lg p-6 max-w-sm z-10">
             <h3 className="text-xl font-neue-haas text-white mb-3">
               Lewis Cellars
             </h3>
