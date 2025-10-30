@@ -31,6 +31,7 @@ export default function MapSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
           className="relative rounded-xl overflow-hidden h-[500px] lg:h-[600px] shadow-2xl w-full"
+          style={{ position: 'relative' }}
         >
           <Map
             {...viewState}
@@ -61,7 +62,19 @@ export default function MapSection() {
           </Map>
 
           {/* Desktop Info Card */}
-          <div className="hidden lg:block absolute top-8 right-8 bg-black/90 backdrop-blur-md rounded-lg p-6 max-w-sm z-10">
+          <div 
+            className="hidden lg:block absolute top-8 right-8 bg-black/90 backdrop-blur-md rounded-lg p-6 max-w-sm z-20"
+            style={{ 
+              position: 'absolute',
+              top: '32px',
+              right: '32px',
+              zIndex: 20,
+              backgroundColor: 'rgba(0, 0, 0, 0.9)',
+              borderRadius: '8px',
+              padding: '24px',
+              maxWidth: '300px'
+            }}
+          >
             <h3 className="text-xl font-neue-haas text-white mb-3">
               Lewis Cellars
             </h3>
