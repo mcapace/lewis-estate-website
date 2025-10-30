@@ -77,7 +77,7 @@ export default function Home() {
         {/* Quote Section */}
         <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '40px'}}>
           <div style={{textAlign: 'center', color: '#E5C1A0', fontSize: 'clamp(32px, 6vw, 64px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', letterSpacing: '0.32px', lineHeight: '1.2', maxWidth: '800px'}}>
-            "A record of excellence that few<br/><br/>California wineries can rival."
+            "A record of excellence that few<br/>California wineries can rival."
           </div>
           <div style={{textAlign: 'center', color: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', fontSize: 'clamp(14px, 2.5vw, 18px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '20px', letterSpacing: '5.76px'}}>
             -James Laube, wine spectator
@@ -85,9 +85,9 @@ export default function Home() {
         </div>
 
         {/* Wine Tastings & Culinary Section */}
-        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', gap: '80px'}}>
+        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', gap: '80px', alignItems: 'center'}}>
           {/* Wine Tastings */}
-          <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap'}}>
+          <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap', maxWidth: '1200px', width: '100%'}}>
             <div style={{flex: 1, minWidth: '300px', maxWidth: '500px'}}>
               <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', marginBottom: '16px'}}>
                 A Sensory Experience
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
           
           {/* Culinary Experiences */}
-          <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse'}}>
+          <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse', maxWidth: '1200px', width: '100%'}}>
             <div style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
               <Image
                 style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
@@ -209,20 +209,13 @@ export default function Home() {
         <MapSection />
 
         {/* Footer Section */}
-        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+        <div style={{width: '100%', padding: '40px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           <div style={{textAlign: 'center', maxWidth: '600px', width: '100%'}}>
             <div style={{color: '#E5C1A0', fontSize: 'clamp(24px, 5vw, 32px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.2', letterSpacing: '0.64px', marginBottom: '24px'}}>
               Lewis Cellars
             </div>
-            <div style={{color: '#F4F4F4', fontSize: 'clamp(14px, 3vw, 18px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', opacity: '0.80', marginBottom: '40px'}}>
-              Monday–Sunday, 10:00 a.m.–4:30 p.m.<br/>
-              6320 Silverado Trail Napa, CA 94558<br/>
-              707.255.3400
-            </div>
-            <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
-              <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
-                Visitor Information
-              </div>
+            <div style={{color: '#F4F4F4', fontSize: 'clamp(12px, 2.5vw, 16px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', opacity: '0.60'}}>
+              © 2024 Lewis Cellars. All rights reserved.
             </div>
           </div>
         </div>
