@@ -53,7 +53,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/wine-tasting-group.jpg"
+            src="/images/hero/homepage-hero.png"
             alt="Wine Tasting Experience"
             fill
             className="object-cover"
@@ -147,7 +147,7 @@ export default function Home() {
               className="order-1 md:order-2 relative aspect-[4/5] md:aspect-[3/4]"
             >
               <Image
-                src="/images/tastings/couple-tasting.jpg"
+                src="/images/wine-tasting/wine-tasting-couple.png"
                 alt="Wine Tasting"
                 fill
                 className="object-cover rounded-sm"
@@ -170,7 +170,7 @@ export default function Home() {
               className="relative aspect-[4/5] md:aspect-[3/4]"
             >
               <Image
-                src="/images/culinary/plated-dish.jpg"
+                src="/images/culinary/plated-dish.png"
                 alt="Culinary Experience"
                 fill
                 className="object-cover rounded-sm"
@@ -212,7 +212,7 @@ export default function Home() {
             className="relative aspect-[16/10] md:aspect-[21/9] max-w-4xl mx-auto"
           >
             <Image
-              src="/images/interior/elegant-hallway.jpg"
+              src="/_Assets/ws_lewis_hallway.png"
               alt="Lewis Cellars Interior"
               fill
               className="object-cover rounded-sm"
@@ -227,7 +227,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/salon-prive/couple-luxury.jpg"
+            src="/images/salon-prive/couple-luxury.png"
             alt="Salon Privé"
             fill
             className="object-cover"
@@ -306,7 +306,7 @@ export default function Home() {
               >
                 <div className="relative w-32 h-80 md:w-36 md:h-96 mb-6 transition-transform duration-500 group-hover:scale-105">
                   <Image
-                    src="/images/wines/chardonnay.png"
+                    src="/images/wine-bottles/product-showcase.png"
                     alt="Lewis Cellars Chardonnay"
                     fill
                     className="object-contain drop-shadow-2xl"
@@ -325,7 +325,7 @@ export default function Home() {
               >
                 <div className="relative w-32 h-80 md:w-36 md:h-96 mb-6 transition-transform duration-500 group-hover:scale-105">
                   <Image
-                    src="/images/wines/cabernet.png"
+                    src="/images/wine-bottles/product-showcase.png"
                     alt="Lewis Cellars Cabernet Sauvignon"
                     fill
                     className="object-contain drop-shadow-2xl"
@@ -344,7 +344,7 @@ export default function Home() {
               >
                 <div className="relative w-32 h-80 md:w-36 md:h-96 mb-6 transition-transform duration-500 group-hover:scale-105">
                   <Image
-                    src="/images/wines/red-blend.png"
+                    src="/images/wine-bottles/product-showcase.png"
                     alt="Lewis Cellars Red Blend"
                     fill
                     className="object-contain drop-shadow-2xl"
