@@ -5,26 +5,27 @@ import MapSection from '@/components/sections/MapSection'
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen bg-black">
-      <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
+    <div style={{width: '100vw', minHeight: '8000px', position: 'relative', background: '#000000', margin: 0, padding: 0, border: 'none'}}>
+      <div style={{width: '100%', maxWidth: '1440px', margin: '0 auto', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex'}}>
         
         {/* Hero Section */}
-        <section className="relative w-full h-screen bg-[#0D0D0D] overflow-hidden flex flex-col">
-          <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', display: 'flex', flexDirection: 'column'}}>
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', overflow: 'hidden'}}>
             <Image
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
               src="/_Assets/ws_lewis_hero.png"
               alt="Lewis Estate Hero"
               width={1440}
               height={850}
               priority
+              className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/20 to-black/65"></div>
+            <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0.65) 100%)'}}></div>
           </div>
           
           {/* Navigation */}
-          <nav className="absolute top-0 left-0 right-0 z-10 w-full px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center flex-wrap">
-            <div className="flex items-center">
+          <div style={{width: '100%', padding: '20px 40px', position: 'absolute', top: '0px', left: '0px', zIndex: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap'}}>
+            <div style={{display: 'flex', alignItems: 'center'}}>
               <Image
                 src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
                 alt="Wine Spectator Logo"
@@ -33,184 +34,198 @@ export default function Home() {
                 className="object-contain"
               />
             </div>
-            <div className="hidden md:flex gap-4 lg:gap-8 flex-wrap justify-center">
-              <div className="px-2 py-2">
-                <div className="text-[#F4F4F4] text-xs sm:text-sm font-neue-haas font-normal uppercase tracking-[1.44px] hover:text-[#D3A737] transition-colors cursor-pointer">
+            <div style={{display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center'}}>
+              <div style={{padding: '8px 0'}}>
+                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
                   wine tastings
                 </div>
               </div>
-              <div className="px-2 py-2">
-                <div className="text-[#F4F4F4] text-xs sm:text-sm font-neue-haas font-normal uppercase tracking-[1.44px] hover:text-[#D3A737] transition-colors cursor-pointer">
+              <div style={{padding: '8px 0'}}>
+                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
                   culinary experiences
                 </div>
               </div>
-              <div className="px-2 py-2">
-                <div className="text-[#F4F4F4] text-xs sm:text-sm font-neue-haas font-normal uppercase tracking-[1.44px] hover:text-[#D3A737] transition-colors cursor-pointer">
+              <div style={{padding: '8px 0'}}>
+                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
                   salon privé
                 </div>
               </div>
-              <div className="px-2 py-2">
-                <div className="text-white text-xs sm:text-sm font-neue-haas font-normal uppercase tracking-[1.44px] hover:text-[#D3A737] transition-colors cursor-pointer">
+              <div style={{padding: '8px 0'}}>
+                <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
                   wines
                 </div>
               </div>
             </div>
-          </nav>
+          </div>
           
           {/* Hero Content */}
-          <div className="flex-1 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 relative z-5">
-            <div className="text-center max-w-4xl w-full">
-              <div className="text-white text-sm sm:text-base font-neue-haas font-normal uppercase leading-[18px] tracking-[5.12px] mb-6">
+          <div style={{flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '40px 20px', position: 'relative', zIndex: 5}}>
+            <div style={{textAlign: 'center', maxWidth: '800px', width: '100%'}}>
+              <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
                 The Home of Big Reds and Sexy Chardonnays
               </div>
-              <h1 className="text-[#E5C1A0] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-neue-haas font-light leading-[1.2] tracking-[1.08px] mb-8">
+              <div style={{color: '#E5C1A0', fontSize: 'clamp(36px, 8vw, 54px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '1.08px', marginBottom: '32px'}}>
                 Napa Valley's Ultimate Experience Awaits
-              </h1>
-              <p className="text-[#F4F4F4] text-base sm:text-lg md:text-xl font-neue-haas font-normal leading-[1.6] tracking-[0.50px] max-w-4xl mx-auto">
+              </div>
+              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px'}}>
                 With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a tasting room. It's Napa Valley's ultimate indulgence.
-              </p>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
         
         {/* Quote Section */}
-        <section className="w-full py-16 sm:py-20 md:py-24 lg:py-32 bg-[#0D0D0D] flex flex-col justify-center items-center gap-8 sm:gap-10">
-          <div className="text-center text-[#E5C1A0] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-neue-haas font-light leading-[1.2] tracking-[0.32px] max-w-4xl px-4">
-            "A record of excellence that few<br className="hidden sm:block"/>California wineries can rival."
+        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '40px'}}>
+          <div style={{textAlign: 'center', color: '#E5C1A0', fontSize: 'clamp(32px, 6vw, 64px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', letterSpacing: '0.32px', lineHeight: '1.2', maxWidth: '800px'}}>
+            "A record of excellence that few<br/>California wineries can rival."
           </div>
-          <div className="text-center text-[#EFE5DA] text-sm sm:text-base md:text-lg font-neue-haas font-normal uppercase leading-5 tracking-[5.76px]">
+          <div style={{textAlign: 'center', color: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', fontSize: 'clamp(14px, 2.5vw, 18px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '20px', letterSpacing: '5.76px'}}>
             -James Laube, wine spectator
           </div>
-        </section>
+        </div>
 
         {/* Wine Tastings & Culinary Section */}
-        <section className="w-full py-16 sm:py-20 md:py-24 lg:py-32 bg-[#0D0D0D] flex flex-col gap-16 sm:gap-20 md:gap-24">
+        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', gap: '80px'}}>
           {/* Wine Tastings */}
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 xl:gap-16 items-center px-4 sm:px-6 lg:px-8">
-            <div className="flex-1 min-w-0 max-w-lg lg:max-w-xl">
-              <div className="text-white text-sm font-neue-haas font-normal uppercase leading-[18px] tracking-[4.48px] mb-4">
+          <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap'}}>
+            <div style={{flex: 1, minWidth: '300px', maxWidth: '500px'}}>
+              <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', marginBottom: '16px'}}>
                 A Sensory Experience
               </div>
-              <h2 className="text-[#E5C1A0] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-neue-haas font-light leading-[1.2] tracking-[2.16px] mb-6">
+              <div style={{color: '#E5C1A0', fontSize: 'clamp(32px, 6vw, 54px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '24px'}}>
                 Wine Tastings
-              </h2>
-              <p className="text-[#F4F4F4] text-base sm:text-lg md:text-xl font-neue-haas font-normal leading-[1.6] tracking-[0.50px] mb-8">
+              </div>
+              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
                 Explore the passion and craftsmanship of Lewis' winemaking with unique experiences designed to delight your every sense.
-              </p>
-              <button className="px-6 py-4 bg-[#D3A737] text-[#0D0D0D] text-base font-neue-haas font-semibold uppercase tracking-[0.64px] hover:bg-[#E5C1A0] transition-colors cursor-pointer">
-                Book A wine tasting
-              </button>
+              </div>
+              <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
+                <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
+                  Book A wine tasting
+                </div>
+              </div>
             </div>
-            <div className="flex-1 min-w-0 max-w-2xl w-full h-80 sm:h-96 md:h-[500px] relative bg-[#EFE5DA] overflow-hidden rounded-lg">
+            <div style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
               <Image
-                className="w-full h-full object-cover object-center"
+                style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/_Assets/ws_lewis_wine_tastings.png"
                 alt="Wine Tastings"
                 width={1136}
                 height={758}
+                className="object-cover"
               />
             </div>
           </div>
           
           {/* Culinary Experiences */}
-          <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-10 xl:gap-16 items-center px-4 sm:px-6 lg:px-8">
-            <div className="flex-1 min-w-0 max-w-lg lg:max-w-xl">
-              <div className="text-white text-sm font-neue-haas font-normal uppercase leading-[18px] tracking-[4.48px] mb-4">
-                A Magical Interplay
-              </div>
-              <h2 className="text-[#E5C1A0] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-neue-haas font-light leading-[1.2] tracking-[2.16px] mb-6">
-                Culinary Experiences
-              </h2>
-              <p className="text-[#F4F4F4] text-base sm:text-lg md:text-xl font-neue-haas font-normal leading-[1.6] tracking-[0.50px] mb-8">
-                Indulge in their MICHELIN-Starred chef's culinary experiences curated to heighten your every sensation.
-              </p>
-              <button className="px-6 py-4 bg-[#D3A737] text-[#0D0D0D] text-base font-neue-haas font-semibold uppercase tracking-[0.64px] hover:bg-[#E5C1A0] transition-colors cursor-pointer">
-                Book A Taste of Lewis
-              </button>
-            </div>
-            <div className="flex-1 min-w-0 max-w-2xl w-full h-80 sm:h-96 md:h-[500px] relative bg-[#EFE5DA] overflow-hidden rounded-lg">
+          <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse'}}>
+            <div style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
               <Image
-                className="w-full h-full object-cover object-center"
+                style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/_Assets/ws_lewis_culinary_exp.png"
                 alt="Culinary Experience"
                 width={513}
                 height={651}
+                className="object-cover"
               />
             </div>
+            <div style={{flex: 1, minWidth: '300px', maxWidth: '500px'}}>
+              <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', marginBottom: '16px'}}>
+                A Magical Interplay
+              </div>
+              <div style={{color: '#E5C1A0', fontSize: 'clamp(32px, 6vw, 54px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '24px'}}>
+                Culinary Experiences
+              </div>
+              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
+                Indulge in their MICHELIN-Starred chef's culinary experiences curated to heighten your every sensation.
+              </div>
+              <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
+                <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
+                  Book A Taste of Lewis
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
 
         {/* Salon Privé Section */}
-        <section className="relative w-full h-screen bg-[#0D0D0D] overflow-hidden flex flex-col justify-center items-center">
+        <div style={{width: '100%', height: '100vh', position: 'relative', background: '#0D0D0D', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           <Image
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
             src="/_Assets/ws_lewis_salon_prive.png"
             alt="Salon Privé"
             width={1440}
             height={850}
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/80"></div>
-          <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl w-full">
-            <div className="text-white text-sm sm:text-base font-neue-haas font-normal uppercase leading-[18px] tracking-[5.12px] mb-6">
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.3) 0%, rgba(13, 13, 13, 0.8) 100%)'}}></div>
+          <div style={{position: 'relative', zIndex: 5, textAlign: 'center', padding: '40px 20px', maxWidth: '800px', width: '100%'}}>
+            <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               enter A Secluded World
             </div>
-            <h2 className="text-[#E5C1A0] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-neue-haas font-light leading-[1.2] tracking-[2.16px] mb-8">
+            <div style={{color: '#E5C1A0', fontSize: 'clamp(36px, 8vw, 54px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '32px'}}>
               Salon Privé
-            </h2>
-            <p className="text-[#F4F4F4] text-base sm:text-lg md:text-xl font-neue-haas font-normal leading-[1.6] tracking-[0.50px] mb-10 max-w-3xl mx-auto">
+            </div>
+            <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '40px'}}>
               Luxuriate in the intimacy of your own private enclave for two. You and one guest will enjoy white glove, on-call concierge service, customizable menus, access to both indoor and outdoor Salons Privés, access to their private cellar, private car service, and more.
-            </p>
-            <button className="px-6 py-4 bg-[#D3A737] text-[#0D0D0D] text-base font-neue-haas font-semibold uppercase tracking-[0.64px] hover:bg-[#E5C1A0] transition-colors cursor-pointer">
-              Explore the salon privé
-            </button>
+            </div>
+            <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
+              <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
+                Explore the salon privé
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
 
         {/* Discover Wines Section */}
-        <section className="relative w-full h-screen bg-[#0D0D0D] overflow-hidden flex flex-col justify-center items-center">
+        <div style={{width: '100%', height: '100vh', position: 'relative', background: '#0D0D0D', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           <Image
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
             src="/_Assets/ws_lewis_product_showcase.png"
             alt="Wine Showcase"
             width={1440}
             height={850}
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/80"></div>
-          <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl w-full">
-            <div className="text-white text-sm sm:text-base font-neue-haas font-normal uppercase leading-[18px] tracking-[5.12px] mb-6">
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.3) 0%, rgba(13, 13, 13, 0.8) 100%)'}}></div>
+          <div style={{position: 'relative', zIndex: 5, textAlign: 'center', padding: '40px 20px', maxWidth: '800px', width: '100%'}}>
+            <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               the Cellar Awaits
             </div>
-            <h2 className="text-[#E5C1A0] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-neue-haas font-light leading-[1.2] tracking-[2.16px] mb-8">
+            <div style={{color: '#E5C1A0', fontSize: 'clamp(36px, 8vw, 54px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '32px'}}>
               Discover Lewis Wines
-            </h2>
-            <p className="text-[#F4F4F4] text-base sm:text-lg md:text-xl font-neue-haas font-normal leading-[1.6] tracking-[0.50px] mb-10 max-w-3xl mx-auto">
+            </div>
+            <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '40px'}}>
               Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
-            </p>
-            <button className="px-6 py-4 bg-[#D3A737] text-[#0D0D0D] text-base font-neue-haas font-semibold uppercase tracking-[0.64px] hover:bg-[#E5C1A0] transition-colors cursor-pointer">
-              Explore wines
-            </button>
+            </div>
+            <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
+              <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
+                Explore wines
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
 
         {/* Map Section */}
         <MapSection />
 
         {/* Footer Section */}
-        <section className="w-full py-16 sm:py-20 md:py-24 lg:py-32 bg-[#0D0D0D] flex flex-col justify-center items-center">
-          <div className="text-center max-w-2xl w-full px-4 sm:px-6 lg:px-8">
-            <h2 className="text-[#E5C1A0] text-2xl sm:text-3xl md:text-4xl font-neue-haas font-normal leading-[1.2] tracking-[0.64px] mb-6">
+        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+          <div style={{textAlign: 'center', maxWidth: '600px', width: '100%'}}>
+            <div style={{color: '#E5C1A0', fontSize: 'clamp(24px, 5vw, 32px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.2', letterSpacing: '0.64px', marginBottom: '24px'}}>
               Lewis Cellars
-            </h2>
-            <div className="text-[#F4F4F4] text-sm sm:text-base md:text-lg font-neue-haas font-normal leading-[1.6] tracking-[0.50px] opacity-80 mb-10 space-y-2">
-              <div>Monday–Sunday, 10:00 a.m.–4:30 p.m.</div>
-              <div>6320 Silverado Trail Napa, CA 94558</div>
-              <div>707.255.3400</div>
             </div>
-            <button className="px-6 py-4 bg-[#D3A737] text-[#0D0D0D] text-base font-neue-haas font-semibold uppercase tracking-[0.64px] hover:bg-[#E5C1A0] transition-colors cursor-pointer">
-              Visitor Information
-            </button>
+            <div style={{color: '#F4F4F4', fontSize: 'clamp(14px, 3vw, 18px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', opacity: '0.80', marginBottom: '40px'}}>
+              Monday–Sunday, 10:00 a.m.–4:30 p.m.<br/>
+              6320 Silverado Trail Napa, CA 94558<br/>
+              707.255.3400
+            </div>
+            <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
+              <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
+                Visitor Information
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   )
