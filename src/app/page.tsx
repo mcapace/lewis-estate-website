@@ -167,7 +167,7 @@ export default function Home() {
         {/* Salon Privé Section */}
         <div id="salon-prive" style={{width: '100%', position: 'relative', background: '#0D0D0D', overflow: 'visible', display: 'flex', flexDirection: 'column', scrollMarginTop: '80px'}}>
           {/* Image Container - Fixed Height */}
-          <div style={{width: '100%', height: '80vh', position: 'relative', overflow: 'hidden'}}>
+          <div style={{width: '100%', height: '80vh', position: 'relative', overflow: 'visible'}}>
           <Image
               style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
             src="/_Assets/ws_lewis_salon_prive.png"
@@ -177,24 +177,25 @@ export default function Home() {
             className="object-cover"
           />
           <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.3) 0%, rgba(13, 13, 13, 0.8) 100%)'}}></div>
-            
-            {/* Text Overlay - Starts at legs of couple */}
-            <div style={{position: 'absolute', bottom: '0px', left: '0px', right: '0px', zIndex: 5, textAlign: 'center', padding: '0px 20px 40px 20px', maxWidth: '800px', width: '100%', margin: '0 auto'}}>
+          </div>
+          
+          {/* Text Content - Starts at legs (overlapping image bottom) and continues below */}
+          <div style={{width: '100%', background: '#0D0D0D', padding: '0px 20px 60px 20px', marginTop: '-120px', position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <div style={{maxWidth: '800px', width: '100%', textAlign: 'center'}}>
+              {/* Titles - Overlapping bottom of image */}
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               enter A Secluded World
             </div>
-              <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '24px'}}>
+              <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '32px'}}>
               Salon Privé
-              </div>
             </div>
-          </div>
-          
-          {/* Text Content Below Image - Black Background */}
-          <div style={{width: '100%', background: '#0D0D0D', padding: '0px 20px 60px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <div style={{maxWidth: '800px', width: '100%', textAlign: 'center'}}>
-              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px', marginTop: '0px'}}>
+              
+              {/* Descriptive text - Below image */}
+              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
               Luxuriate in the intimacy of your own private enclave for two. You and one guest will enjoy white glove, on-call concierge service, customizable menus, access to both indoor and outdoor Salons Privés, access to their private cellar, private car service, and more.
             </div>
+              
+              {/* Button - Below image */}
             <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore the salon privé
