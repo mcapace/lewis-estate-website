@@ -9,7 +9,7 @@ export default function Home() {
       <div style={{width: '100%', maxWidth: '1600px', margin: '0 auto', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex'}}>
         
         {/* Hero Section */}
-        <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', display: 'flex', flexDirection: 'column', zIndex: 0}}>
+        <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'visible', display: 'flex', flexDirection: 'column', zIndex: 0}}>
           <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', overflow: 'hidden'}}>
             <Image
               style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         
         {/* Hero Text Content Section - Below Hero Image */}
-        <div style={{width: '100%', padding: '0px 20px 80px 20px', marginTop: '-80px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px'}}>
+        <div style={{width: '100%', padding: '0px 20px 80px 20px', marginTop: '-60px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px', position: 'relative', zIndex: 1}}>
           <div style={{textAlign: 'center', maxWidth: '800px', width: '100%'}}>
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               The Home of Big Reds and Sexy Chardonnays
