@@ -57,6 +57,7 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </div>
           
         {/* Hero Text Content Section - Below Hero Image */}
         <div style={{width: '100%', padding: '0px 20px 80px 20px', marginTop: '-100px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px', position: 'relative', zIndex: 1}}>
@@ -230,9 +231,9 @@ export default function Home() {
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '20px', marginTop: '0px'}}>
                 Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
               </div>
-            <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px'}}>
+              <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px'}}>
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
-                Explore wines
+                  Explore wines
                 </div>
               </div>
             </div>
