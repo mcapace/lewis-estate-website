@@ -60,14 +60,15 @@ export default function MapSection() {
             <NavigationControl position="top-right" />
           </Map>
 
-          {/* Info Box - Desktop: Right side, vertically centered | Mobile: Bottom, full width */}
+          {/* Info Box - Desktop: Left side, vertically centered | Mobile: Bottom, full width */}
           <div 
-            className="absolute right-8 top-1/2 -translate-y-1/2 z-10 transition-all duration-300 hover:bg-[#0D0D0D]/98
+            className="absolute left-8 top-1/2 -translate-y-1/2 z-10 transition-all duration-300 hover:bg-[#0D0D0D]/98
                        max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-auto max-md:translate-y-0 max-md:max-w-none max-md:rounded-t-xl max-md:rounded-b-none"
             style={{
               backgroundColor: '#0D0D0D',
               padding: '32px',
-              maxWidth: '380px',
+              maxWidth: '480px',
+              width: '480px',
               borderRadius: '8px'
             }}
           >
