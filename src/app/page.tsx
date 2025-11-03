@@ -222,6 +222,37 @@ export default function Home() {
             height={850}
               className="object-contain"
             />
+            {/* Clickable overlay areas for wine bottles */}
+            {/* Chardonnay Bottle - Left */}
+            <a 
+              href="https://www.lewiscellars.com/product/2023-chardonnay-napa-valley-750?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-WinesWineCard"
+              style={{
+                position: 'absolute',
+                left: '20%',
+                top: '20%',
+                width: '22%',
+                height: '60%',
+                cursor: 'pointer',
+                zIndex: 5,
+                textDecoration: 'none'
+              }}
+              aria-label="Chardonnay Wine"
+            />
+            {/* Cabernet Sauvignon Bottle - Middle */}
+            <a 
+              href="https://www.lewiscellars.com/product/2022-reserve-cabernet-sauvignon-750?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-WinesWineCard"
+              style={{
+                position: 'absolute',
+                left: '39%',
+                top: '20%',
+                width: '22%',
+                height: '60%',
+                cursor: 'pointer',
+                zIndex: 5,
+                textDecoration: 'none'
+              }}
+              aria-label="Cabernet Sauvignon Wine"
+            />
           </div>
 
           {/* Text Content Box Below Bottles */}
