@@ -213,73 +213,73 @@ export default function Home() {
 
         {/* Footer Section */}
         <footer style={{width: '100%', padding: '80px 20px 40px 20px', background: '#0D0D0D', borderTop: '1px solid rgba(255, 255, 255, 0.1)'}}>
-          <div style={{maxWidth: '1600px', margin: '0 auto'}}>
+          <div style={{maxWidth: '1400px', margin: '0 auto', padding: '0 40px'}}>
             <div className="footer-grid" style={{marginBottom: '40px'}}>
               
               {/* Column 1: WineSpectator.com & Wine Spectator Magazine */}
               <div>
-                <h3 style={{color: '#FFFFFF', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   WineSpectator.com
                 </h3>
-                <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '32px'}}>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '28px'}}>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Become a Member
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Member Benefits
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Give a Gift Membership
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Email Newsletters
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Find a Wine Shop
                     </a>
                   </li>
                 </ul>
                 
-                <h3 style={{color: '#FFFFFF', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '32px', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '28px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   Wine Spectator Magazine
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Subscribe
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Digital Subscription
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Gift Subscription
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Buy Back Issues
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Issue Archives
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Wine Spectator Products
                     </a>
                   </li>
@@ -288,59 +288,59 @@ export default function Home() {
 
               {/* Column 2: Help, Events & Services */}
               <div>
-                <h3 style={{color: '#FFFFFF', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   Help
                 </h3>
-                <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '32px'}}>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '28px'}}>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Manage Account
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Contact Us
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Accessibility
                     </a>
                   </li>
                 </ul>
 
-                <h3 style={{color: '#FFFFFF', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '32px', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '28px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   Events
                 </h3>
-                <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '32px'}}>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '28px'}}>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Wine Experience
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Grand Tour
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       M. Shanken Events Calendar
                     </a>
                   </li>
                 </ul>
 
-                <h3 style={{color: '#FFFFFF', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '32px', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '28px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   Services
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Apps
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Gift Center
                     </a>
                   </li>
@@ -349,63 +349,63 @@ export default function Home() {
 
               {/* Column 3: About Us & Trade Only */}
               <div>
-                <h3 style={{color: '#FFFFFF', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   About Us
                 </h3>
-                <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '32px'}}>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '28px'}}>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       How We Taste
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Job Opportunities
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Terms of Service
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Privacy Policy
                     </a>
                   </li>
                 </ul>
 
-                <h3 style={{color: '#FFFFFF', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '32px', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '28px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   Trade Only
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Submit Wines
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Advertise With Us / Media Kit
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Sell Wine Spectator / Join the Retailer Club
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Shanken Ratings Network
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Trade News
                     </a>
                   </li>
-                  <li style={{marginBottom: '12px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textDecoration: 'none', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Impact Databank Reports
                     </a>
                   </li>
@@ -414,10 +414,10 @@ export default function Home() {
 
               {/* Column 4: M. Shanken Publications & Follow Us */}
               <div>
-                <h3 style={{color: '#FFFFFF', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   M. Shanken Publications
                 </h3>
-                <div style={{marginBottom: '32px'}}>
+                <div style={{marginBottom: '28px'}}>
                   <div style={{marginBottom: '16px', height: 'auto', maxWidth: '150px'}}>
                     <Image
                       src="/pub logos /Cigar.png"
@@ -465,7 +465,7 @@ export default function Home() {
                   </div>
             </div>
 
-                <h3 style={{color: '#FFFFFF', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '32px', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '28px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   Follow Us
                 </h3>
                 <div style={{display: 'flex', gap: '12px', flexWrap: 'wrap'}}>
@@ -498,8 +498,8 @@ export default function Home() {
             </div>
 
             {/* Copyright */}
-            <div style={{paddingTop: '40px', borderTop: '1px solid rgba(255, 255, 255, 0.1)', marginTop: '40px'}}>
-              <p style={{color: '#F4F4F4', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', margin: 0}}>
+            <div style={{paddingTop: '40px', borderTop: '1px solid rgba(255, 255, 255, 0.1)', marginTop: '40px', textAlign: 'center'}}>
+              <p style={{color: '#F4F4F4', fontSize: '12px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', margin: 0}}>
                 © Copyright 2025 Wine Spectator. All rights reserved.
               </p>
             </div>

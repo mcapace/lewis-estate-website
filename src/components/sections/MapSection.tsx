@@ -62,42 +62,86 @@ export default function MapSection() {
 
           {/* Info Box - Desktop: Right side, vertically centered | Mobile: Bottom, full width */}
           <div 
-            className="absolute right-8 top-1/2 -translate-y-1/2 z-10 bg-black/90 backdrop-blur-sm p-8 md:p-10 max-w-md transition-all duration-300 hover:bg-black/95
+            className="absolute right-8 top-1/2 -translate-y-1/2 z-10 transition-all duration-300 hover:bg-[#0D0D0D]/98
                        max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-auto max-md:translate-y-0 max-md:max-w-none max-md:rounded-t-xl max-md:rounded-b-none"
+            style={{
+              backgroundColor: '#0D0D0D',
+              padding: '32px',
+              maxWidth: '380px',
+              borderRadius: '8px'
+            }}
           >
-            {/* Gold Circle with L - Logo */}
-            <div className="mb-6 flex justify-start">
-              <Image
-                src="/images/logos/lewis-logo.png"
-                width={56}
-                height={56}
-                alt="Lewis Cellars"
-                className="rounded-full"
-              />
-            </div>
-
             {/* Title */}
-            <h3 className="text-white font-playfair text-3xl mb-6">
+            <h3 style={{
+              color: '#FFFFFF',
+              fontSize: '24px',
+              fontFamily: 'Neue Haas Grotesk Display Std',
+              fontWeight: '600',
+              marginBottom: '24px',
+              letterSpacing: '0.5px'
+            }}>
               Lewis Cellars
             </h3>
 
             {/* Hours */}
-            <p className="text-white/90 text-sm leading-relaxed mb-4">
-              Monday-Sunday, 10:00 a.m.-4:30 p.m.
+            <p style={{
+              color: '#F4F4F4',
+              fontSize: '14px',
+              fontFamily: 'Neue Haas Grotesk Display Std',
+              fontWeight: '300',
+              lineHeight: '1.6',
+              letterSpacing: '0.3px',
+              marginBottom: '16px'
+            }}>
+              Monday–Sunday, 10:00 a.m.–4:30 p.m.
             </p>
 
             {/* Address */}
-            <p className="text-white/90 text-sm leading-relaxed mb-4">
-              6320 Silverado Trail, Napa, CA 94558
+            <p style={{
+              color: '#F4F4F4',
+              fontSize: '14px',
+              fontFamily: 'Neue Haas Grotesk Display Std',
+              fontWeight: '300',
+              lineHeight: '1.6',
+              letterSpacing: '0.3px',
+              marginBottom: '16px'
+            }}>
+              6320 Silverado Trail<br/>
+              Napa, CA 94558
             </p>
 
             {/* Phone */}
-            <p className="text-white/90 text-sm leading-relaxed mb-6">
+            <p style={{
+              color: '#F4F4F4',
+              fontSize: '14px',
+              fontFamily: 'Neue Haas Grotesk Display Std',
+              fontWeight: '300',
+              lineHeight: '1.6',
+              letterSpacing: '0.3px',
+              marginBottom: '24px'
+            }}>
               707.255.3400
             </p>
 
             {/* Button */}
-            <button className="bg-[#D3A737] hover:bg-[#E5C1A0] text-black px-8 py-3 uppercase tracking-wider transition-all duration-300 font-semibold">
+            <button style={{
+              backgroundColor: '#D3A737',
+              color: '#0D0D0D',
+              padding: '18px 24px',
+              fontSize: '16px',
+              fontFamily: 'Neue Haas Grotesk Display Std',
+              fontWeight: '300',
+              textTransform: 'uppercase',
+              letterSpacing: '0.64px',
+              border: 'none',
+              cursor: 'pointer',
+              transition: 'background-color 0.3s ease',
+              width: '100%'
+            }}
+            className="hover:bg-[#E5C1A0]"
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E5C1A0'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#D3A737'}
+            >
               VISITOR INFORMATION
             </button>
           </div>
