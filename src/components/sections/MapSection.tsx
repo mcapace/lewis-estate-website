@@ -136,7 +136,7 @@ export default function MapSection() {
             </p>
 
             {/* Button */}
-            <button style={{
+            <a href="https://www.lewiscellars.com/visit?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{
               backgroundColor: '#D3A737',
               color: '#0D0D0D',
               padding: '18px 24px',
@@ -150,14 +150,16 @@ export default function MapSection() {
               transition: 'background-color 0.3s ease',
               width: '100%',
               textAlign: 'center',
-              borderRadius: '4px'
+              borderRadius: '4px',
+              display: 'block',
+              textDecoration: 'none'
             }}
             className="hover:bg-[#E5C1A0]"
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E5C1A0'}
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#D3A737'}
             >
               VISITOR INFORMATION
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

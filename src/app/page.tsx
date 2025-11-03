@@ -25,7 +25,7 @@ export default function Home() {
           
           {/* Navigation */}
           <div style={{width: '100%', padding: '20px 40px', position: 'absolute', top: '0px', left: '0px', zIndex: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap'}}>
-            <div style={{display: 'flex', alignItems: 'center', cursor: 'pointer'}} onClick={() => window.location.reload()}>
+            <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
               <Image
                 src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
                 alt="Wine Spectator Logo"
@@ -33,24 +33,24 @@ export default function Home() {
                 height={40}
                 className="object-contain"
               />
-            </div>
+            </a>
             <div style={{display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center'}}>
-              <a href="#wine-tastings" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); setTimeout(() => { const el = document.getElementById('wine-tastings'); if (el) { const yOffset = -80; const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset; window.scrollTo({ top: y, behavior: 'smooth' }); } }, 100); }}>
+              <a href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
                 <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wine tastings
                 </div>
               </a>
-              <a href="#culinary-experiences" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); setTimeout(() => { const el = document.getElementById('culinary-experiences'); if (el) { const yOffset = -80; const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset; window.scrollTo({ top: y, behavior: 'smooth' }); } }, 100); }}>
+              <a href="https://www.lewiscellars.com/visit/culinary-experiences?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
                 <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   culinary experiences
                 </div>
               </a>
-              <a href="#salon-prive" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); setTimeout(() => { const el = document.getElementById('salon-prive'); if (el) { const yOffset = -80; const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset; window.scrollTo({ top: y, behavior: 'smooth' }); } }, 100); }}>
+              <a href="https://www.lewiscellars.com/visit/salon-prive?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
                 <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   salon privé
                 </div>
               </a>
-              <a href="#discover-wines" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); setTimeout(() => { const el = document.getElementById('discover-wines'); if (el) { const yOffset = -80; const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset; window.scrollTo({ top: y, behavior: 'smooth' }); } }, 100); }}>
+              <a href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
                 <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wines
                 </div>
@@ -68,9 +68,14 @@ export default function Home() {
             <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.0', letterSpacing: '1.08px', marginBottom: '24px'}}>
               Napa Valley's Ultimate<br/>Experience Awaits
               </div>
-            <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px'}}>
+            <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
                 With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a tasting room. It's Napa Valley's ultimate indulgence.
             </div>
+            <a href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-HeroCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none'}}>
+              <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
+                EXPLORE OUR WINES
+              </div>
+            </a>
           </div>
         </div>
         
@@ -101,11 +106,11 @@ export default function Home() {
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
                 Explore the passion and craftsmanship of Lewis' winemaking with unique experiences designed to delight your every sense.
               </div>
-              <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
+              <a href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-TastingsCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none'}}>
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                   Book A wine tasting
                 </div>
-              </div>
+              </a>
             </div>
             <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
               <Image
@@ -141,13 +146,13 @@ export default function Home() {
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
                 Indulge in their MICHELIN-Starred chef's culinary experiences curated to heighten your every sensation.
               </div>
-              <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
+              <a href="https://www.lewiscellars.com/visit/culinary-experiences?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-CulinaryCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none'}}>
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                   Book A Taste of Lewis
                 </div>
+              </a>
+                </div>
               </div>
-            </div>
-          </div>
 
           {/* Third Image - Dining Room */}
           <div style={{width: '100%', maxWidth: '1200px', display: 'flex', justifyContent: 'flex-end'}}>
@@ -196,11 +201,11 @@ export default function Home() {
             </div>
               
               {/* Button - Below image */}
-            <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
+            <a href="https://www.lewiscellars.com/visit/salon-prive?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-SalonPriveCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none'}}>
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore the salon privé
-                </div>
               </div>
+              </a>
             </div>
           </div>
         </div>
@@ -243,11 +248,11 @@ export default function Home() {
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '20px', marginTop: '0px'}}>
               Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
             </div>
-              <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px'}}>
+              <a href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-WinesCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px', textDecoration: 'none'}}>
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore wines
-                </div>
               </div>
+              </a>
             </div>
           </div>
         </div>
@@ -258,6 +263,111 @@ export default function Home() {
         {/* Footer Section */}
         <footer style={{width: '100%', padding: '80px 20px 40px 20px', background: '#0D0D0D', borderTop: '1px solid rgba(255, 255, 255, 0.1)'}}>
           <div style={{maxWidth: '1400px', margin: '0 auto', padding: '0 40px'}}>
+            {/* Lewis Cellars Footer Links */}
+            <div className="footer-grid" style={{marginBottom: '60px', paddingBottom: '60px', borderBottom: '1px solid rgba(255, 255, 255, 0.1)'}}>
+              {/* Column 1: VISIT */}
+              <div>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                  Visit
+                </h3>
+                <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/visit?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Plan Your Visit
+                    </a>
+                  </li>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/visit?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Hours
+                    </a>
+                  </li>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/visit?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Directions
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 2: WINES */}
+              <div>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                  Wines
+                </h3>
+                <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Our Collection
+                    </a>
+                  </li>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Current Releases
+                    </a>
+                  </li>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Library Wines
+                    </a>
+                  </li>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/join?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Wine Club
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 3: EXPERIENCES */}
+              <div>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                  Experiences
+                </h3>
+                <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Wine Tastings
+                    </a>
+                  </li>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/visit/culinary-experiences?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Culinary
+                    </a>
+                  </li>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/visit/private-events?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Private Events
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 4: ABOUT */}
+              <div>
+                <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                  About
+                </h3>
+                <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/about?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Our Story
+                    </a>
+                  </li>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/about?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Team
+                    </a>
+                  </li>
+                  <li style={{marginBottom: '8px'}}>
+                    <a href="https://www.lewiscellars.com/concierge?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=FooterLink" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Wine Spectator Footer Links */}
             <div className="footer-grid" style={{marginBottom: '40px'}}>
               
               {/* Column 1: WineSpectator.com & Wine Spectator Magazine */}
