@@ -54,11 +54,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <head>
-        <link rel="icon" href="/images/wsfavicon.avif" type="image/avif" />
-        <link rel="shortcut icon" href="/images/wsfavicon.avif" type="image/avif" />
-        <link rel="apple-touch-icon" href="/images/wsfavicon.avif" />
-      </head>
       <body className="font-inter antialiased">
         {children}
       </body>

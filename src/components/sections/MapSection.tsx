@@ -64,19 +64,18 @@ export default function MapSection() {
           {/* Info Box - Desktop: Right side, vertically centered | Mobile: Bottom, full width */}
           <div 
             className="z-10 transition-all duration-300 hover:bg-[#0D0D0D]/98
-                       max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-auto max-md:translate-y-0 max-md:max-w-none max-md:rounded-t-xl max-md:rounded-b-none"
+                       absolute right-[clamp(16px,4vw,56px)] top-1/2 -translate-y-1/2
+                       md:right-[clamp(16px,4vw,56px)] md:top-1/2 md:-translate-y-1/2
+                       max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-auto max-md:translate-y-0
+                       max-md:max-w-none max-md:w-full max-md:min-w-full
+                       max-md:rounded-t-xl max-md:rounded-b-none"
             style={{
-              position: 'absolute',
-              right: '56px',
-              top: '50%',
-              transform: 'translateY(-50%)',
               backgroundColor: '#0D0D0D',
-              padding: '28px 32px',
-              maxWidth: '420px',
-              width: '420px',
-              minWidth: '420px',
+              padding: 'clamp(20px, 4vw, 28px) clamp(20px, 4vw, 32px)',
+              maxWidth: 'clamp(280px, 90vw, 420px)',
+              width: 'clamp(280px, 90vw, 420px)',
+              minWidth: '280px',
               borderRadius: '8px',
-              zIndex: 10
             }}
           >
             {/* Title */}
