@@ -67,7 +67,7 @@ export default function MapSection() {
                        max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-auto max-md:translate-y-0 max-md:max-w-none max-md:rounded-t-xl max-md:rounded-b-none"
             style={{
               position: 'absolute',
-              right: '32px',
+              right: '56px',
               top: '50%',
               transform: 'translateY(-50%)',
               backgroundColor: '#0D0D0D',

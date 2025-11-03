@@ -436,12 +436,12 @@ export default function Home() {
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
                   </div>
-                  <div style={{marginBottom: '16px', height: 'auto', maxWidth: '150px'}}>
+                  <div style={{marginBottom: '16px', height: 'auto', maxWidth: '200px'}}>
                     <Image
                       src="/pub logos /MarketWatch.png"
                       alt="Market Watch"
-                      width={150}
-                      height={40}
+                      width={200}
+                      height={60}
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
                   </div>
