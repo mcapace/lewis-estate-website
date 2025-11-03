@@ -288,11 +288,17 @@ export default function Home() {
             </div>
               
               {/* Button - Below image */}
-            <a href="https://www.lewiscellars.com/visit/salon-prive?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-SalonPriveCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none'}}>
+            <motion.a 
+              href="https://www.lewiscellars.com/visit/salon-prive?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-SalonPriveCTAButton" 
+              style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', borderRadius: '4px'}}
+              whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+            >
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore the salon privé
-              </div>
-              </a>
+                </div>
+              </motion.a>
             </div>
           </div>
         </div>
@@ -381,11 +387,17 @@ export default function Home() {
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '20px', marginTop: '0px'}}>
               Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
             </div>
-              <a href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-WinesCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px', textDecoration: 'none'}}>
+              <motion.a 
+                href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-WinesCTAButton" 
+                style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px', textDecoration: 'none', borderRadius: '4px'}}
+                whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
+              >
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore wines
-              </div>
-              </a>
+                </div>
+              </motion.a>
             </div>
           </div>
         </div>
