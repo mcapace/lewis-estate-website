@@ -533,7 +533,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            </div>
 
             {/* Copyright */}
             <div style={{paddingTop: '40px', borderTop: '1px solid rgba(255, 255, 255, 0.1)', marginTop: '40px', textAlign: 'center'}}>
