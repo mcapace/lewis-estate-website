@@ -25,7 +25,7 @@ export default function Home() {
           
           {/* Navigation */}
           <div style={{width: '100%', padding: '20px 40px', position: 'absolute', top: '0px', left: '0px', zIndex: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap'}}>
-            <div style={{display: 'flex', alignItems: 'center'}}>
+            <div style={{display: 'flex', alignItems: 'center', cursor: 'pointer'}} onClick={() => window.location.reload()}>
               <Image
                 src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
                 alt="Wine Spectator Logo"
@@ -198,8 +198,8 @@ export default function Home() {
             width: '100%',
             maxWidth: '1600px',
             backgroundColor: '#0D0D0D',
-            padding: '10px 40px 60px 40px',
-            marginTop: '-140px',
+            padding: '0px 40px 60px 40px',
+            marginTop: '-180px',
             position: 'relative',
             zIndex: 10,
             display: 'flex',

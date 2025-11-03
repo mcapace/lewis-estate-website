@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   description: 'Discover Lewis Estate\'s legendary wines and experience Napa Valley\'s ultimate indulgence with exquisite wines, MICHELIN-Starred cuisine, and exclusive Salon Privé.',
   keywords: 'Lewis Estate, Napa Valley, wine tasting, luxury wine, Cabernet Sauvignon, Chardonnay, wine estate, Salon Privé, wine cellar',
   authors: [{ name: 'Lewis Estate' }],
+  icons: {
+    icon: '/images/wsfavicon.avif',
+    shortcut: '/images/wsfavicon.avif',
+    apple: '/images/wsfavicon.avif',
+  },
   openGraph: {
     title: 'Lewis Estate - Napa Valley\'s Ultimate Wine Experience',
     description: 'Discover Lewis Estate\'s legendary wines and experience Napa Valley\'s ultimate indulgence.',
