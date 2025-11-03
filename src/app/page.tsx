@@ -199,7 +199,7 @@ export default function Home() {
             maxWidth: '1600px',
             backgroundColor: '#0D0D0D',
             padding: '10px 40px 60px 40px',
-            marginTop: '-80px',
+            marginTop: '-140px',
             position: 'relative',
             zIndex: 10,
             display: 'flex',
@@ -454,12 +454,12 @@ export default function Home() {
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
                   </a>
-                  <a href="https://www.marketwatchmag.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '280px', textDecoration: 'none'}}>
+                  <a href="https://www.marketwatchmag.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '200px', textDecoration: 'none'}}>
                     <Image
                       src="/pub logos /MarketWatch.png"
                       alt="Market Watch"
-                      width={280}
-                      height={80}
+                      width={200}
+                      height={54}
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
                   </a>
