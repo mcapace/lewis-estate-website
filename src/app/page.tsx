@@ -107,7 +107,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
+            <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
               <Image
                 style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/_Assets/ws_lewis_wine_tastings.png"
@@ -121,7 +121,7 @@ export default function Home() {
           
           {/* Culinary Experiences */}
           <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse', maxWidth: '1200px', width: '100%'}}>
-            <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
+            <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
               <Image
                 style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/_Assets/ws_lewis_culinary_exp.png"
@@ -146,6 +146,20 @@ export default function Home() {
                   Book A Taste of Lewis
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Third Image - Dining Room */}
+          <div style={{width: '100%', maxWidth: '1200px', display: 'flex', justifyContent: 'center'}}>
+            <div className="image-container" style={{width: '100%', maxWidth: '1200px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
+              <Image
+                style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
+                src="/images/culinary/dining-room.jpg"
+                alt="Dining Room"
+                width={1200}
+                height={650}
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -199,7 +213,7 @@ export default function Home() {
             maxWidth: '1600px',
             backgroundColor: '#0D0D0D',
             padding: '0px 40px 60px 40px',
-            marginTop: '-180px',
+            marginTop: '-200px',
             position: 'relative',
             zIndex: 10,
             display: 'flex',
