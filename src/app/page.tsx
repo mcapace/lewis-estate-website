@@ -555,13 +555,13 @@ export default function Home() {
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
                   </a>
-                  <a href="https://www.marketwatchmag.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '280px', textDecoration: 'none'}}>
+                  <a href="https://www.marketwatchmag.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '350px', textDecoration: 'none'}}>
                     <Image
                       src="/pub logos /MarketWatch.png"
                       alt="Market Watch"
-                      width={280}
-                      height={76}
-                      style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
+                      width={350}
+                      height={95}
+                      style={{width: '350px', height: 'auto', maxWidth: '100%'}}
                     />
                   </a>
                   <a href="https://www.shankennewsdaily.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '150px', textDecoration: 'none'}}>
