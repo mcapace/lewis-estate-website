@@ -22,23 +22,22 @@ export default function MapSection() {
 
   return (
     <section style={{width: '100%', padding: '80px 20px', background: '#000000'}}>
-      <div style={{width: '100%', padding: '0 20px'}}>
-
-        {/* Map Container */}
+      <div style={{width: '100%', padding: '0 20px', maxWidth: '1600px', margin: '0 auto'}}>
+        {/* Map Container with Overlay */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative rounded-xl overflow-hidden h-[500px] lg:h-[600px] shadow-2xl w-full"
-          style={{ position: 'relative' }}
+          className="relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl"
         >
+          {/* Map - fills entire container */}
           <Map
             {...viewState}
             onMove={evt => setViewState(evt.viewState)}
             mapStyle="mapbox://styles/mapbox/dark-v11"
             mapboxAccessToken={MAPBOX_TOKEN}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: '100%', height: '100%', position: 'absolute', inset: 0 }}
           >
             {/* Lewis Estate Marker */}
             <Marker latitude={38.2975} longitude={-122.2869}>
@@ -61,56 +60,48 @@ export default function MapSection() {
             <NavigationControl position="top-right" />
           </Map>
 
-          {/* Desktop Info Card */}
+          {/* Info Box - Desktop: Right side, vertically centered | Mobile: Bottom, full width */}
           <div 
-            className="hidden lg:block absolute top-8 right-8 bg-black/90 backdrop-blur-md rounded-lg p-6 max-w-sm z-20"
-            style={{ 
-              position: 'absolute',
-              top: '32px',
-              right: '32px',
-              zIndex: 20,
-              backgroundColor: 'rgba(0, 0, 0, 0.9)',
-              borderRadius: '8px',
-              padding: '24px',
-              maxWidth: '300px'
-            }}
+            className="absolute right-8 top-1/2 -translate-y-1/2 z-10 bg-black/90 backdrop-blur-sm p-8 md:p-10 max-w-md transition-all duration-300 hover:bg-black/95
+                       max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-auto max-md:translate-y-0 max-md:max-w-none max-md:rounded-t-xl max-md:rounded-b-none"
           >
-            <h3 className="text-xl font-neue-haas text-white mb-3">
+            {/* Gold Circle with L - Logo */}
+            <div className="mb-6 flex justify-start">
+              <Image
+                src="/images/logos/lewis-logo.png"
+                width={56}
+                height={56}
+                alt="Lewis Cellars"
+                className="rounded-full"
+              />
+            </div>
+
+            {/* Title */}
+            <h3 className="text-white font-playfair text-3xl mb-6">
               Lewis Cellars
             </h3>
-            <p className="text-white/90 text-sm mb-2">
+
+            {/* Hours */}
+            <p className="text-white/90 text-sm leading-relaxed mb-4">
               Monday-Sunday, 10:00 a.m.-4:30 p.m.
             </p>
-            <p className="text-white/90 text-sm mb-2">
+
+            {/* Address */}
+            <p className="text-white/90 text-sm leading-relaxed mb-4">
               6320 Silverado Trail, Napa, CA 94558
             </p>
-            <p className="text-white/90 text-sm mb-4">
+
+            {/* Phone */}
+            <p className="text-white/90 text-sm leading-relaxed mb-6">
               707.255.3400
             </p>
-            <button className="bg-[#D3A737] hover:bg-[#E5C1A0] text-black px-4 py-2 text-sm font-semibold uppercase tracking-wider transition-colors">
+
+            {/* Button */}
+            <button className="bg-[#D3A737] hover:bg-[#E5C1A0] text-black px-8 py-3 uppercase tracking-wider transition-all duration-300 font-semibold">
               VISITOR INFORMATION
             </button>
           </div>
         </motion.div>
-
-        {/* Mobile Info Card */}
-        <div className="lg:hidden mt-8 bg-black/90 rounded-lg p-6">
-          <h3 className="text-xl font-neue-haas text-white mb-3">
-            Lewis Cellars
-          </h3>
-          <p className="text-white/90 text-sm mb-2">
-            Monday-Sunday, 10:00 a.m.-4:30 p.m.
-          </p>
-          <p className="text-white/90 text-sm mb-2">
-            6320 Silverado Trail, Napa, CA 94558
-          </p>
-          <p className="text-white/90 text-sm mb-4">
-            707.255.3400
-          </p>
-          <button className="bg-[#D3A737] hover:bg-[#E5C1A0] text-black px-4 py-2 text-sm font-semibold uppercase tracking-wider transition-colors">
-            VISITOR INFORMATION
-          </button>
-        </div>
       </div>
     </section>
   )
