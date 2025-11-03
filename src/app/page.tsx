@@ -199,7 +199,7 @@ export default function Home() {
             maxWidth: '1600px',
             backgroundColor: '#0D0D0D',
             padding: '20px 40px 40px 40px',
-            marginTop: '-20px',
+            marginTop: '-80px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
