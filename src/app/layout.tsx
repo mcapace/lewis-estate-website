@@ -26,11 +26,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'Lewis Estate' }],
   icons: {
     icon: [
-      { url: '/images/wsfavicon.png', type: 'image/png' },
-      { url: '/images/wsfavicon.png', type: 'image/x-icon' },
+      { url: '/icon.png', type: 'image/png' },
+      { url: '/icon.png', type: 'image/x-icon' },
     ],
-    shortcut: '/images/wsfavicon.png',
-    apple: '/images/wsfavicon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
   },
   openGraph: {
     title: 'Lewis Estate - Napa Valley\'s Ultimate Wine Experience',
