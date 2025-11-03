@@ -5,7 +5,7 @@ import MapSection from '@/components/sections/MapSection'
 
 export default function Home() {
   return (
-    <div style={{width: '100vw', minHeight: '8000px', position: 'relative', background: '#000000', margin: 0, padding: 0, border: 'none'}}>
+    <div style={{width: '100vw', position: 'relative', background: '#000000', margin: 0, padding: 0, border: 'none'}}>
       <div style={{width: '100%', maxWidth: '1600px', margin: '0 auto', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex', overflow: 'visible'}}>
         
         {/* Hero Section */}
@@ -55,9 +55,9 @@ export default function Home() {
                   wines
                 </div>
               </a>
+              </div>
             </div>
           </div>
-        </div>
           
         {/* Hero Text Content Section - Below Hero Image */}
         <div style={{width: '100%', padding: '0px 20px 80px 20px', marginTop: '-100px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px', position: 'relative', zIndex: 1}}>
@@ -165,9 +165,11 @@ export default function Home() {
         </div>
 
         {/* Salon Privé Section */}
-        <div id="salon-prive" style={{width: '100%', height: '100vh', position: 'relative', background: '#0D0D0D', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', scrollMarginTop: '80px'}}>
+        <div id="salon-prive" style={{width: '100%', position: 'relative', background: '#0D0D0D', overflow: 'visible', display: 'flex', flexDirection: 'column', scrollMarginTop: '80px'}}>
+          {/* Image Container - Fixed Height */}
+          <div style={{width: '100%', height: '80vh', position: 'relative', overflow: 'hidden'}}>
           <Image
-            style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
+              style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
             src="/_Assets/ws_lewis_salon_prive.png"
             alt="Salon Privé"
             width={1440}
@@ -175,19 +177,28 @@ export default function Home() {
             className="object-cover"
           />
           <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.3) 0%, rgba(13, 13, 13, 0.8) 100%)'}}></div>
-          <div style={{position: 'relative', zIndex: 5, textAlign: 'center', padding: '40px 20px', maxWidth: '800px', width: '100%'}}>
+            
+            {/* Text Overlay - Starts at legs of couple */}
+            <div style={{position: 'absolute', bottom: '0px', left: '0px', right: '0px', zIndex: 5, textAlign: 'center', padding: '0px 20px 40px 20px', maxWidth: '800px', width: '100%', margin: '0 auto'}}>
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               enter A Secluded World
             </div>
-            <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '24px'}}>
+              <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '24px'}}>
               Salon Privé
+              </div>
             </div>
-            <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
+          </div>
+          
+          {/* Text Content Below Image - Black Background */}
+          <div style={{width: '100%', background: '#0D0D0D', padding: '0px 20px 60px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <div style={{maxWidth: '800px', width: '100%', textAlign: 'center'}}>
+              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px', marginTop: '0px'}}>
               Luxuriate in the intimacy of your own private enclave for two. You and one guest will enjoy white glove, on-call concierge service, customizable menus, access to both indoor and outdoor Salons Privés, access to their private cellar, private car service, and more.
             </div>
             <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
-              <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
+                <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore the salon privé
+                </div>
               </div>
             </div>
           </div>
@@ -223,17 +234,17 @@ export default function Home() {
           }}>
             <div style={{textAlign: 'center', maxWidth: '800px', width: '100%', paddingTop: '0px', marginTop: '0px', position: 'relative', zIndex: 11}}>
               <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '12px', marginTop: '0px'}}>
-                the Cellar Awaits
-              </div>
+              the Cellar Awaits
+            </div>
               <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '12px', marginTop: '0px'}}>
-                Discover Lewis Wines
-              </div>
+              Discover Lewis Wines
+            </div>
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '20px', marginTop: '0px'}}>
-                Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
-              </div>
+              Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
+            </div>
               <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px'}}>
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
-                  Explore wines
+                Explore wines
                 </div>
               </div>
             </div>
@@ -495,7 +506,7 @@ export default function Home() {
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
                   </a>
-                </div>
+            </div>
 
                 <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '28px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   Follow Us
@@ -531,7 +542,7 @@ export default function Home() {
                       <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c5.084 0 9.426-3.163 11.174-7.637-.15-.813-1.174-4.906-1.174-4.906-.25.485-.787 1.228-1.282 1.678-.494.49-1.682 1.317-2.914 1.317-.77 0-1.413-.237-1.92-.71-.507-.474-.761-1.101-.761-1.882 0-1.97 1.5-4.74 4.262-4.74 2.25 0 3.537 1.686 3.537 3.932 0 2.253-1.423 4.16-3.537 4.16-.692 0-1.343-.361-1.565-.957 0 0-.337 1.28-.419 1.595-.152.584-.562 1.316-1.157 1.678-.348.22-.742.331-1.174.331-1.268 0-2.275-1.314-2.275-3.01 0-2.634 2.017-5.036 5.102-5.036 2.717 0 4.652 1.937 4.652 4.527 0 2.717-1.713 4.904-4.07 4.904-1.133 0-2.197-.588-2.556-1.688 0 0-.561 2.133-.697 2.65-.25.964-1.005 2.17-1.495 2.909C9.956 21.65 10.97 22 12 22c5.514 0 10-4.486 10-10S17.514 2 12 2z"/>
                     </svg>
                   </a>
-                </div>
+            </div>
               </div>
             </div>
 
