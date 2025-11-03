@@ -9,7 +9,7 @@ export default function Home() {
       <div style={{width: '100%', maxWidth: '1600px', margin: '0 auto', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex'}}>
         
         {/* Hero Section */}
-        <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', display: 'flex', flexDirection: 'column'}}>
+        <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'hidden', display: 'flex', flexDirection: 'column', zIndex: 0}}>
           <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', overflow: 'hidden'}}>
             <Image
               style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
@@ -75,9 +75,12 @@ export default function Home() {
         </div>
         
         {/* Quote Section */}
-        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '40px'}}>
-          <div style={{textAlign: 'center', color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', letterSpacing: '0.32px', lineHeight: '1.1', maxWidth: '700px'}}>
-            "A record of excellence that few<br/>California wineries can rival."
+        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '40px', position: 'relative', zIndex: 1}}>
+          <div style={{textAlign: 'center', color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', letterSpacing: '0.32px', lineHeight: '1.08'}}>
+            <span style={{display: 'inline-block', width: '1100px', maxWidth: '90vw'}}>
+              <span style={{display: 'block'}}>"A record of excellence that few</span>
+              <span style={{display: 'block'}}>California wineries can rival."</span>
+            </span>
           </div>
           <div style={{textAlign: 'center', color: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', fontSize: 'clamp(14px, 2.5vw, 18px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '20px', letterSpacing: '5.76px'}}>
             -James Laube, wine spectator
