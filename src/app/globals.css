@@ -8,6 +8,14 @@
 
 @font-face {
   font-family: 'Neue Haas Grotesk Display Std';
+  src: url('/Fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayXThin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Std';
   src: url('/Fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
