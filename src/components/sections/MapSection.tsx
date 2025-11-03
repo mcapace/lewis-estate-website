@@ -21,8 +21,8 @@ export default function MapSection() {
   }
 
   return (
-    <section className="bg-black py-20 lg:py-32 w-full">
-      <div className="w-full px-4 lg:px-8">
+    <section style={{width: '100%', padding: '80px 20px', background: '#000000'}}>
+      <div style={{width: '100%', padding: '0 20px'}}>
 
         {/* Map Container */}
         <motion.div

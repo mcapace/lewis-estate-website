@@ -65,7 +65,7 @@ export default function Home() {
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               The Home of Big Reds and Sexy Chardonnays
             </div>
-            <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.0', letterSpacing: '1.08px', marginBottom: '32px'}}>
+            <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.0', letterSpacing: '1.08px', marginBottom: '24px'}}>
               Napa Valley's Ultimate<br/>Experience Awaits
             </div>
             <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px'}}>
@@ -165,10 +165,10 @@ export default function Home() {
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               enter A Secluded World
             </div>
-            <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '32px'}}>
+            <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '24px'}}>
               Salon Privé
             </div>
-            <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '40px'}}>
+            <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
               Luxuriate in the intimacy of your own private enclave for two. You and one guest will enjoy white glove, on-call concierge service, customizable menus, access to both indoor and outdoor Salons Privés, access to their private cellar, private car service, and more.
             </div>
             <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
@@ -194,10 +194,10 @@ export default function Home() {
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               the Cellar Awaits
             </div>
-            <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '32px'}}>
+            <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '24px'}}>
               Discover Lewis Wines
             </div>
-            <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '40px'}}>
+            <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
               Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
             </div>
             <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
@@ -212,7 +212,7 @@ export default function Home() {
         <MapSection />
 
         {/* Footer Section */}
-        <div style={{width: '100%', padding: '40px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           <div style={{textAlign: 'center', maxWidth: '600px', width: '100%'}}>
             <div style={{color: '#E5C1A0', fontSize: 'clamp(24px, 5vw, 32px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.2', letterSpacing: '0.64px', marginBottom: '24px'}}>
               Lewis Cellars
