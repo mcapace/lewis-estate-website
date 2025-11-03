@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         
         {/* Hero Text Content Section - Below Hero Image */}
-        <div style={{width: '100%', padding: '40px 20px 80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px'}}>
+        <div style={{width: '100%', padding: '20px 20px 80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px'}}>
           <div style={{textAlign: 'center', maxWidth: '800px', width: '100%'}}>
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               The Home of Big Reds and Sexy Chardonnays
@@ -107,7 +107,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
+            <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
               <Image
                 style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/_Assets/ws_lewis_wine_tastings.png"
@@ -121,7 +121,7 @@ export default function Home() {
           
           {/* Culinary Experiences */}
           <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse', maxWidth: '1200px', width: '100%'}}>
-            <div style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden'}}>
+            <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '500px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
               <Image
                 style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/_Assets/ws_lewis_culinary_exp.png"
