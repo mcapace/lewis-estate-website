@@ -35,27 +35,26 @@ export default function Home() {
               />
             </div>
             <div style={{display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center'}}>
-              <div style={{padding: '8px 0'}}>
-                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
+              <a href="#wine-tastings" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); document.getElementById('wine-tastings')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wine tastings
                 </div>
-              </div>
-              <div style={{padding: '8px 0'}}>
-                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
+              </a>
+              <a href="#culinary-experiences" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); document.getElementById('culinary-experiences')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   culinary experiences
                 </div>
-              </div>
-              <div style={{padding: '8px 0'}}>
-                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
+              </a>
+              <a href="#salon-prive" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); document.getElementById('salon-prive')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   salon privé
                 </div>
-              </div>
-              <div style={{padding: '8px 0'}}>
-                <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
+              </a>
+              <a href="#discover-wines" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); document.getElementById('discover-wines')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+                <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wines
                 </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
           
@@ -88,7 +87,7 @@ export default function Home() {
         </div>
 
         {/* Wine Tastings & Culinary Section */}
-        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', gap: '80px', alignItems: 'center'}}>
+        <div id="wine-tastings" style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', gap: '80px', alignItems: 'center', scrollMarginTop: '80px'}}>
           {/* Wine Tastings */}
           <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap', maxWidth: '1200px', width: '100%'}}>
             <div style={{flex: 1, minWidth: '300px', maxWidth: '500px'}}>
@@ -120,7 +119,7 @@ export default function Home() {
           </div>
           
           {/* Culinary Experiences */}
-          <div style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse', maxWidth: '1200px', width: '100%'}}>
+          <div id="culinary-experiences" style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse', maxWidth: '1200px', width: '100%', scrollMarginTop: '80px'}}>
             <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
               <Image
                 style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
@@ -151,13 +150,13 @@ export default function Home() {
 
           {/* Third Image - Dining Room */}
           <div style={{width: '100%', maxWidth: '1200px', display: 'flex', justifyContent: 'flex-end'}}>
-            <div className="image-container" style={{width: '100%', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
+            <div className="image-container" style={{width: '100%', maxWidth: '400px', height: '400px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
               <Image
                 style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/images/culinary/dining-room.jpg"
                 alt="Dining Room"
-                width={600}
-                height={650}
+                width={400}
+                height={400}
                 className="object-cover"
               />
             </div>
@@ -165,7 +164,7 @@ export default function Home() {
         </div>
 
         {/* Salon Privé Section */}
-        <div style={{width: '100%', height: '100vh', position: 'relative', background: '#0D0D0D', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+        <div id="salon-prive" style={{width: '100%', height: '100vh', position: 'relative', background: '#0D0D0D', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', scrollMarginTop: '80px'}}>
           <Image
             style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
             src="/_Assets/ws_lewis_salon_prive.png"
@@ -194,7 +193,7 @@ export default function Home() {
         </div>
 
         {/* Discover Wines Section */}
-        <div style={{width: '100%', background: '#0D0D0D', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '80px 20px 80px 20px', overflow: 'visible', position: 'relative'}}>
+        <div id="discover-wines" style={{width: '100%', background: '#0D0D0D', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '80px 20px 80px 20px', overflow: 'visible', position: 'relative', scrollMarginTop: '80px'}}>
           {/* Wine Bottles Image Section */}
           <div style={{width: '100%', maxWidth: '1600px', marginBottom: '0', position: 'relative', paddingBottom: '0', overflow: 'visible'}}>
           <Image
