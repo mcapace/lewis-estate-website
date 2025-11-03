@@ -198,12 +198,13 @@ export default function Home() {
             width: '100%',
             maxWidth: '1600px',
             backgroundColor: '#0D0D0D',
-            padding: '60px 40px',
+            padding: '0px 40px 60px 40px',
             marginTop: '0',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'flex-start',
+            paddingTop: '40px'
           }}>
             <div style={{textAlign: 'center', maxWidth: '800px', width: '100%'}}>
               <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
