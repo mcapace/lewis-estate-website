@@ -198,8 +198,8 @@ export default function Home() {
             width: '100%',
             maxWidth: '1600px',
             backgroundColor: '#0D0D0D',
-            padding: '20px 40px 60px 40px',
-            marginTop: '-20px',
+            padding: '10px 40px 60px 40px',
+            marginTop: '-80px',
             position: 'relative',
             zIndex: 10,
             display: 'flex',
@@ -241,27 +241,27 @@ export default function Home() {
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '28px'}}>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://sub.winespectator.com/pubs/M5/WNE/2-Subscribe-button-monthly.jsp?cds_page_id=274759&cds_mag_code=WNE&id=1762194047753&lsid=53071220477056377&vid=1" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Become a Member
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/pages/member-benefits" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Member Benefits
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://giftcenter.winespectator.com/?_gl=1*9ysxb3*_gcl_au*NzE1Mzc0ODQyLjE3NTc2OTEyODM.*_ga*MTYyMzMzNjE3MC4xNzU3NjkxMjg3*_ga_65Y4BX4L8M*czE3NjIxOTQwNDckbzI0JGcxJHQxNzYyMTk0MDcxJGozNiRsMCRoMA.." style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Give a Gift Membership
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/newsletter" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Email Newsletters
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/retailers/search" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Find a Wine Shop
                     </a>
                   </li>
@@ -272,32 +272,32 @@ export default function Home() {
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://sub.winespectator.com/pubs/M5/WNE/2-Subscribe-button-monthly.jsp?cds_page_id=274759&cds_mag_code=WNE&id=1762194105091&lsid=53071220477056377&vid=2" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Subscribe
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://mshanken.emags.com/mshanken_subs" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Digital Subscription
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://giftcenter.winespectator.com/" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Gift Subscription
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://sub.winespectator.com/pubs/M5/WNE/WNE_mag_store1.jsp?cds_page_id=253707&cds_mag_code=WNE&id=1762194137685&lsid=53071220477056377&vid=3" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Buy Back Issues
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/issues" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Issue Archives
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://sub.winespectator.com/pubs/M5/WNE/product_store.jsp?cds_page_id=254319&cds_mag_code=WNE&id=1762194154192&lsid=53071220477056377&vid=4" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Wine Spectator Products
                     </a>
                   </li>
@@ -311,17 +311,17 @@ export default function Home() {
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '28px'}}>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://mshanken.cloud.buysub.com/" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Manage Account
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://help.winespectator.com/support/home?_gl=1*7gvcy8*_gcl_au*NzE1Mzc0ODQyLjE3NTc2OTEyODM.*_ga*MTYyMzMzNjE3MC4xNzU3NjkxMjg3*_ga_65Y4BX4L8M*czE3NjIxOTQwNDckbzI0JGcxJHQxNzYyMTk0MTYyJGo4JGwwJGgw" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Contact Us
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://help.winespectator.com/support/solutions/articles/234691-what-is-the-accessibility-policy-for-wine-spectator-?_gl=1*8m2ret*_gcl_au*NzE1Mzc0ODQyLjE3NTc2OTEyODM.*_ga*MTYyMzMzNjE3MC4xNzU3NjkxMjg3*_ga_65Y4BX4L8M*czE3NjIxOTQwNDckbzI0JGcxJHQxNzYyMTk0MTYyJGo4JGwwJGgw" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Accessibility
                     </a>
                   </li>
@@ -332,17 +332,17 @@ export default function Home() {
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '28px'}}>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.nywineexperience.com/" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Wine Experience
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://grandtour.winespectator.com/?_gl=1*tcwcvs*_gcl_au*NzE1Mzc0ODQyLjE3NTc2OTEyODM.*_ga*MTYyMzMzNjE3MC4xNzU3NjkxMjg3*_ga_65Y4BX4L8M*czE3NjIxOTQwNDckbzI0JGcxJHQxNzYyMTk0MjExJGozMiRsMCRoMA.." style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Grand Tour
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.shankennewsdaily.com/events/" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       M. Shanken Events Calendar
                     </a>
                   </li>
@@ -353,12 +353,12 @@ export default function Home() {
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://apps.apple.com/us/app/wineratings-by-wine-spectator/id381341648" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Apps
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://giftcenter.winespectator.com/?_gl=1*v61jrh*_gcl_au*NzE1Mzc0ODQyLjE3NTc2OTEyODM.*_ga*MTYyMzMzNjE3MC4xNzU3NjkxMjg3*_ga_65Y4BX4L8M*czE3NjIxOTQwNDckbzI0JGcxJHQxNzYyMTk0MjI1JGoxOCRsMCRoMA.." style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Gift Center
                     </a>
                   </li>
@@ -372,22 +372,22 @@ export default function Home() {
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0, marginBottom: '28px'}}>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/articles/about-our-tastings" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       How We Taste
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/pages/job-opportunities" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Job Opportunities
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/pages/terms-of-service" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Terms of Service
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/pages/privacy-policy" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Privacy Policy
                     </a>
                   </li>
@@ -398,32 +398,32 @@ export default function Home() {
                 </h3>
                 <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/articles/how-to-submit-wines" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Submit Wines
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.mshanken.com/winespectator/" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Advertise With Us / Media Kit
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/retailerclub" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Sell Wine Spectator / Join the Retailer Club
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/pages/shanken-ratings-network" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Shanken Ratings Network
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.winespectator.com/for-the-trade/trade-news" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Trade News
                     </a>
                   </li>
                   <li style={{marginBottom: '8px'}}>
-                    <a href="#" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
+                    <a href="https://www.impactdatabank.com/" style={{color: '#F4F4F4', fontSize: '13px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textDecoration: 'none', transition: 'color 0.3s ease', lineHeight: '1.5'}} className="hover:text-[#D3A737]">
                       Impact Databank Reports
                     </a>
                   </li>
@@ -436,7 +436,7 @@ export default function Home() {
                   M. Shanken Publications
                 </h3>
                 <div style={{marginBottom: '28px'}}>
-                  <div style={{marginBottom: '16px', height: 'auto', maxWidth: '150px'}}>
+                  <a href="https://www.cigaraficionado.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '150px', textDecoration: 'none'}}>
                     <Image
                       src="/pub logos /Cigar.png"
                       alt="Cigar Aficionado"
@@ -444,8 +444,8 @@ export default function Home() {
                       height={40}
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
-                  </div>
-                  <div style={{marginBottom: '16px', height: 'auto', maxWidth: '150px'}}>
+                  </a>
+                  <a href="https://whiskyadvocate.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '150px', textDecoration: 'none'}}>
                     <Image
                       src="/pub logos /WhiskyAdvocate.png"
                       alt="Whisky Advocate"
@@ -453,8 +453,8 @@ export default function Home() {
                       height={40}
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
-                  </div>
-                  <div style={{marginBottom: '16px', height: 'auto', maxWidth: '280px'}}>
+                  </a>
+                  <a href="https://www.marketwatchmag.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '280px', textDecoration: 'none'}}>
                     <Image
                       src="/pub logos /MarketWatch.png"
                       alt="Market Watch"
@@ -462,8 +462,8 @@ export default function Home() {
                       height={80}
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
-                  </div>
-                  <div style={{marginBottom: '16px', height: 'auto', maxWidth: '150px'}}>
+                  </a>
+                  <a href="https://www.shankennewsdaily.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '150px', textDecoration: 'none'}}>
                     <Image
                       src="/pub logos /ShankenNewsDaily.png"
                       alt="Shanken News Daily"
@@ -471,8 +471,8 @@ export default function Home() {
                       height={40}
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
-                  </div>
-                  <div style={{marginBottom: '16px', height: 'auto', maxWidth: '150px'}}>
+                  </a>
+                  <a href="https://msh.dragonforms.com/loading.do?omedasite=MSH2_QVnewStandard" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '150px', textDecoration: 'none'}}>
                     <Image
                       src="/pub logos /Impact.png"
                       alt="Impact"
@@ -480,7 +480,7 @@ export default function Home() {
                       height={40}
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
-                  </div>
+                  </a>
             </div>
 
                 <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '28px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
@@ -488,27 +488,33 @@ export default function Home() {
                 </h3>
                 <div style={{display: 'flex', gap: '12px', flexWrap: 'wrap'}}>
                   {/* Facebook */}
-                  <a href="#" style={{width: '40px', height: '40px', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', textDecoration: 'none', transition: 'all 0.3s ease'}} className="hover:border-[#D3A737] hover:bg-[#D3A737]">
+                  <a href="https://www.facebook.com/WineSpectator/?rf=100968456611081" target="_blank" rel="noopener noreferrer" style={{width: '40px', height: '40px', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', textDecoration: 'none', transition: 'all 0.3s ease'}} className="hover:border-[#D3A737] hover:bg-[#D3A737]">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                     </svg>
                   </a>
                   {/* Instagram */}
-                  <a href="#" style={{width: '40px', height: '40px', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', textDecoration: 'none', transition: 'all 0.3s ease'}} className="hover:border-[#D3A737] hover:bg-[#D3A737]">
+                  <a href="https://www.instagram.com/wine_spectator/?hl=en" target="_blank" rel="noopener noreferrer" style={{width: '40px', height: '40px', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', textDecoration: 'none', transition: 'all 0.3s ease'}} className="hover:border-[#D3A737] hover:bg-[#D3A737]">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                     </svg>
                   </a>
                   {/* X (Twitter) */}
-                  <a href="#" style={{width: '40px', height: '40px', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', textDecoration: 'none', transition: 'all 0.3s ease'}} className="hover:border-[#D3A737] hover:bg-[#D3A737]">
+                  <a href="https://x.com/winespectator?lang=en" target="_blank" rel="noopener noreferrer" style={{width: '40px', height: '40px', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', textDecoration: 'none', transition: 'all 0.3s ease'}} className="hover:border-[#D3A737] hover:bg-[#D3A737]">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
                   </a>
                   {/* YouTube */}
-                  <a href="#" style={{width: '40px', height: '40px', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', textDecoration: 'none', transition: 'all 0.3s ease'}} className="hover:border-[#D3A737] hover:bg-[#D3A737]">
+                  <a href="https://www.youtube.com/WineSpectatorVideo" target="_blank" rel="noopener noreferrer" style={{width: '40px', height: '40px', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', textDecoration: 'none', transition: 'all 0.3s ease'}} className="hover:border-[#D3A737] hover:bg-[#D3A737]">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                  </a>
+                  {/* Pinterest */}
+                  <a href="https://www.pinterest.com/winespectator/" target="_blank" rel="noopener noreferrer" style={{width: '40px', height: '40px', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', textDecoration: 'none', transition: 'all 0.3s ease'}} className="hover:border-[#D3A737] hover:bg-[#D3A737]">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c5.084 0 9.426-3.163 11.174-7.637-.15-.813-1.174-4.906-1.174-4.906-.25.485-.787 1.228-1.282 1.678-.494.49-1.682 1.317-2.914 1.317-.77 0-1.413-.237-1.92-.71-.507-.474-.761-1.101-.761-1.882 0-1.97 1.5-4.74 4.262-4.74 2.25 0 3.537 1.686 3.537 3.932 0 2.253-1.423 4.16-3.537 4.16-.692 0-1.343-.361-1.565-.957 0 0-.337 1.28-.419 1.595-.152.584-.562 1.316-1.157 1.678-.348.22-.742.331-1.174.331-1.268 0-2.275-1.314-2.275-3.01 0-2.634 2.017-5.036 5.102-5.036 2.717 0 4.652 1.937 4.652 4.527 0 2.717-1.713 4.904-4.07 4.904-1.133 0-2.197-.588-2.556-1.688 0 0-.561 2.133-.697 2.65-.25.964-1.005 2.17-1.495 2.909C9.956 21.65 10.97 22 12 22c5.514 0 10-4.486 10-10S17.514 2 12 2z"/>
                     </svg>
                   </a>
             </div>
