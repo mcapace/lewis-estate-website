@@ -151,13 +151,13 @@ export default function Home() {
 
           {/* Third Image - Dining Room */}
           <div style={{width: '100%', maxWidth: '1200px', display: 'flex', justifyContent: 'flex-end'}}>
-            <div className="image-container" style={{width: '100%', maxWidth: '250px', height: '250px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
+            <div className="image-container" style={{width: '100%', maxWidth: '350px', height: '350px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
               <Image
                 style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
                 src="/images/culinary/dining-room.jpg"
                 alt="Dining Room"
-                width={250}
-                height={250}
+                width={350}
+                height={350}
                 className="object-cover"
               />
             </div>
