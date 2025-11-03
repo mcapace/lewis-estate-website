@@ -35,22 +35,22 @@ export default function Home() {
               />
             </div>
             <div style={{display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center'}}>
-              <a href="#wine-tastings" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); document.getElementById('wine-tastings')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+              <a href="#wine-tastings" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); const el = document.getElementById('wine-tastings'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
                 <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wine tastings
                 </div>
               </a>
-              <a href="#culinary-experiences" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); document.getElementById('culinary-experiences')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+              <a href="#culinary-experiences" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); const el = document.getElementById('culinary-experiences'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
                 <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   culinary experiences
                 </div>
               </a>
-              <a href="#salon-prive" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); document.getElementById('salon-prive')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+              <a href="#salon-prive" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); const el = document.getElementById('salon-prive'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
                 <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   salon privé
                 </div>
               </a>
-              <a href="#discover-wines" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); document.getElementById('discover-wines')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+              <a href="#discover-wines" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}} onClick={(e) => { e.preventDefault(); const el = document.getElementById('discover-wines'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
                 <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wines
                 </div>
