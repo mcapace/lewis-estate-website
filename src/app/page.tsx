@@ -180,11 +180,11 @@ export default function Home() {
         </div>
 
         {/* Discover Wines Section */}
-        <div style={{width: '100%', background: '#0D0D0D', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '80px 20px 60px 20px'}}>
+        <div style={{width: '100%', background: '#0D0D0D', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '80px 20px 40px 20px'}}>
           {/* Wine Bottles Image Section */}
           <div style={{width: '100%', maxWidth: '1600px', marginBottom: '0', position: 'relative', paddingBottom: '0'}}>
             <Image
-              style={{width: '100%', height: 'auto', objectFit: 'contain', objectPosition: 'center', display: 'block'}}
+              style={{width: '100%', height: 'auto', objectFit: 'contain', objectPosition: 'center', display: 'block', marginBottom: '0'}}
               src="/_Assets/ws_lewis_product_showcase.png"
               alt="Wine Showcase"
               width={1440}
@@ -199,23 +199,23 @@ export default function Home() {
             maxWidth: '1600px',
             backgroundColor: '#0D0D0D',
             padding: '0px 40px 40px 40px',
-            marginTop: '0',
+            marginTop: '-40px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'flex-start'
           }}>
-            <div style={{textAlign: 'center', maxWidth: '800px', width: '100%', paddingTop: '0px'}}>
-              <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '8px', marginTop: '0px'}}>
+            <div style={{textAlign: 'center', maxWidth: '800px', width: '100%', paddingTop: '0px', marginTop: '0px'}}>
+              <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '12px', marginTop: '0px'}}>
                 the Cellar Awaits
               </div>
-              <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '8px'}}>
+              <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '12px', marginTop: '0px'}}>
                 Discover Lewis Wines
               </div>
-              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '16px'}}>
+              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '20px', marginTop: '0px'}}>
                 Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
               </div>
-            <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer'}}>
+            <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px'}}>
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore wines
                 </div>
