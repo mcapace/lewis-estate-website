@@ -60,13 +60,13 @@ export default function Home() {
         </div>
         
         {/* Hero Text Content Section - Below Hero Image */}
-        <div style={{width: '100%', padding: '0px 20px 80px 20px', marginTop: '-40px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px'}}>
+        <div style={{width: '100%', padding: '0px 20px 80px 20px', marginTop: '-80px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px'}}>
           <div style={{textAlign: 'center', maxWidth: '800px', width: '100%'}}>
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               The Home of Big Reds and Sexy Chardonnays
             </div>
-            <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.2', letterSpacing: '1.08px', marginBottom: '32px'}}>
-              Napa Valley's Ultimate Experience Awaits
+            <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.0', letterSpacing: '1.08px', marginBottom: '32px'}}>
+              Napa Valley's Ultimate<br/>Experience Awaits
             </div>
             <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', lineHeight: '1.6', letterSpacing: '0.50px'}}>
               With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a tasting room. It's Napa Valley's ultimate indulgence.
