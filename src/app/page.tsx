@@ -180,7 +180,7 @@ export default function Home() {
         </div>
 
         {/* Discover Wines Section */}
-        <div style={{width: '100%', background: '#0D0D0D', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '80px 20px'}}>
+        <div style={{width: '100%', background: '#0D0D0D', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '80px 20px 0 20px'}}>
           {/* Wine Bottles Image Section */}
           <div style={{width: '100%', maxWidth: '1600px', marginBottom: '0', position: 'relative'}}>
             <Image
@@ -198,8 +198,8 @@ export default function Home() {
             width: '100%',
             maxWidth: '1600px',
             backgroundColor: '#0D0D0D',
-            padding: '60px 40px',
-            marginTop: '0',
+            padding: '40px 40px 60px 40px',
+            marginTop: '-20px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
