@@ -6,6 +6,13 @@ import MapSection from '@/components/sections/MapSection'
 export default function Home() {
   return (
     <div style={{width: '100vw', position: 'relative', background: '#000000', margin: 0, padding: 0, border: 'none'}}>
+      {/* Disclaimer Bar */}
+      <div style={{width: '100%', background: '#0D0D0D', padding: '8px 20px', textAlign: 'center', borderBottom: '1px solid rgba(255, 255, 255, 0.1)', position: 'relative', zIndex: 100}}>
+        <p style={{color: '#F4F4F4', fontSize: '12px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', margin: 0, letterSpacing: '0.5px'}}>
+          Paid sponsorship by Lewis Cellars
+        </p>
+      </div>
+      
       <div style={{width: '100%', maxWidth: '1600px', margin: '0 auto', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex', overflow: 'visible'}}>
         
         {/* Hero Section */}
