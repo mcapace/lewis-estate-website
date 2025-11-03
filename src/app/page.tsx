@@ -222,14 +222,14 @@ export default function Home() {
           }}>
             <div style={{textAlign: 'center', maxWidth: '800px', width: '100%', paddingTop: '0px', marginTop: '0px', position: 'relative', zIndex: 11}}>
               <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '12px', marginTop: '0px'}}>
-              the Cellar Awaits
-            </div>
+                the Cellar Awaits
+              </div>
               <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '12px', marginTop: '0px'}}>
-              Discover Lewis Wines
-            </div>
+                Discover Lewis Wines
+              </div>
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '20px', marginTop: '0px'}}>
-              Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
-            </div>
+                Explore Lewis' cellar of legendary wines and discover your favorite big reds and sexy chardonnays.
+              </div>
             <div style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px'}}>
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore wines
