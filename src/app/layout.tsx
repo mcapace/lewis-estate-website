@@ -25,7 +25,10 @@ export const metadata: Metadata = {
   keywords: 'Lewis Estate, Napa Valley, wine tasting, luxury wine, Cabernet Sauvignon, Chardonnay, wine estate, Salon Privé, wine cellar',
   authors: [{ name: 'Lewis Estate' }],
   icons: {
-    icon: '/images/wsfavicon.avif',
+    icon: [
+      { url: '/images/wsfavicon.avif', type: 'image/avif' },
+      { url: '/images/wsfavicon.avif', type: 'image/x-icon' },
+    ],
     shortcut: '/images/wsfavicon.avif',
     apple: '/images/wsfavicon.avif',
   },
