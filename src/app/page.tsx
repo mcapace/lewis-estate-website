@@ -207,14 +207,14 @@ export default function Home() {
                 transition={{ duration: 0.4 }}
                 style={{width: '100%', height: '100%'}}
               >
-                <Image
+              <Image
                   style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', transition: 'transform 0.4s ease'}}
-                  src="/_Assets/ws_lewis_culinary_exp.png"
-                  alt="Culinary Experience"
-                  width={513}
-                  height={651}
-                  className="object-cover"
-                />
+                src="/_Assets/ws_lewis_culinary_exp.png"
+                alt="Culinary Experience"
+                width={513}
+                height={651}
+                className="object-cover"
+              />
               </motion.div>
             </motion.div>
             <div style={{flex: 1, minWidth: '300px', maxWidth: '500px'}}>
@@ -297,7 +297,7 @@ export default function Home() {
             >
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore the salon privé
-                </div>
+              </div>
               </motion.a>
             </div>
           </div>
@@ -396,7 +396,7 @@ export default function Home() {
               >
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 Explore wines
-                </div>
+              </div>
               </motion.a>
             </div>
           </div>
@@ -631,13 +631,13 @@ export default function Home() {
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
                   </a>
-                  <a href="https://www.marketwatchmag.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '350px', textDecoration: 'none'}}>
+                  <a href="https://www.marketwatchmag.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '250px', textDecoration: 'none'}}>
                     <Image
                       src="/pub logos /MarketWatch.png"
                       alt="Market Watch"
-                      width={350}
-                      height={95}
-                      style={{width: '350px', height: 'auto', maxWidth: '100%'}}
+                      width={250}
+                      height={68}
+                      style={{width: '250px', height: 'auto', maxWidth: '100%'}}
                     />
                   </a>
                   <a href="https://www.shankennewsdaily.com/" style={{display: 'block', marginBottom: '16px', height: 'auto', maxWidth: '150px', textDecoration: 'none'}}>
