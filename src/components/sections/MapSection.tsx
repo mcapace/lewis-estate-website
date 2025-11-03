@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Map, Marker, NavigationControl } from 'react-map-gl/mapbox'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
@@ -14,6 +14,16 @@ export default function MapSection() {
     longitude: -122.2869,
     zoom: 13
   })
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   if (!MAPBOX_TOKEN) {
     console.error('Mapbox token not found')
@@ -63,19 +73,31 @@ export default function MapSection() {
 
           {/* Info Box - Desktop: Right side, vertically centered | Mobile: Bottom, full width */}
           <div 
-            className="z-10 transition-all duration-300 hover:bg-[#0D0D0D]/98
-                       absolute right-[clamp(16px,4vw,56px)] top-1/2 -translate-y-1/2
-                       md:right-[clamp(16px,4vw,56px)] md:top-1/2 md:-translate-y-1/2
-                       max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-auto max-md:translate-y-0
-                       max-md:max-w-none max-md:w-full max-md:min-w-full
-                       max-md:rounded-t-xl max-md:rounded-b-none"
+            className="z-10 transition-all duration-300 hover:bg-[#0D0D0D]/98"
             style={{
+              position: 'absolute',
               backgroundColor: '#0D0D0D',
-              padding: 'clamp(20px, 4vw, 28px) clamp(20px, 4vw, 32px)',
-              maxWidth: 'clamp(280px, 90vw, 420px)',
-              width: 'clamp(280px, 90vw, 420px)',
-              minWidth: '280px',
-              borderRadius: '8px',
+              padding: isMobile ? '20px' : 'clamp(20px, 4vw, 28px) clamp(20px, 4vw, 32px)',
+              ...(isMobile ? {
+                bottom: '0',
+                left: '0',
+                right: '0',
+                top: 'auto',
+                transform: 'none',
+                maxWidth: '100%',
+                width: '100%',
+                minWidth: '100%',
+                borderRadius: '12px 12px 0 0',
+                padding: '24px 20px'
+              } : {
+                right: 'clamp(16px, 4vw, 56px)',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                maxWidth: 'clamp(280px, 90vw, 420px)',
+                width: 'clamp(280px, 90vw, 420px)',
+                minWidth: '280px',
+                borderRadius: '8px',
+              })
             }}
           >
             {/* Title */}

@@ -73,67 +73,43 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Mobile Hamburger Button - Shown on mobile */}
+            {/* Mobile Hamburger Button - Only shown on mobile */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '5px',
-                background: 'transparent',
-                border: 'none',
-                cursor: 'pointer',
-                padding: '8px',
-                zIndex: 101
-              }}
-              className="md:hidden"
+              className="flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-2 z-[101] md:hidden"
               aria-label="Toggle menu"
             >
-              <span style={{
-                width: '25px',
-                height: '2px',
-                background: mobileMenuOpen ? 'transparent' : '#F4F4F4',
-                transition: 'all 0.3s ease',
-                transform: mobileMenuOpen ? 'rotate(45deg) translate(8px, 8px)' : 'none'
-              }}></span>
-              <span style={{
-                width: '25px',
-                height: '2px',
-                background: '#F4F4F4',
-                transition: 'all 0.3s ease',
-                opacity: mobileMenuOpen ? '0' : '1'
-              }}></span>
-              <span style={{
-                width: '25px',
-                height: '2px',
-                background: '#F4F4F4',
-                transition: 'all 0.3s ease',
-                transform: mobileMenuOpen ? 'rotate(-45deg) translate(7px, -7px)' : 'none'
-              }}></span>
+              <span 
+                className="w-[25px] h-[2px] transition-all duration-300"
+                style={{
+                  background: mobileMenuOpen ? 'transparent' : '#F4F4F4',
+                  transform: mobileMenuOpen ? 'rotate(45deg) translate(8px, 8px)' : 'none'
+                }}
+              ></span>
+              <span 
+                className="w-[25px] h-[2px] bg-[#F4F4F4] transition-all duration-300"
+                style={{
+                  opacity: mobileMenuOpen ? '0' : '1'
+                }}
+              ></span>
+              <span 
+                className="w-[25px] h-[2px] bg-[#F4F4F4] transition-all duration-300"
+                style={{
+                  transform: mobileMenuOpen ? 'rotate(-45deg) translate(7px, -7px)' : 'none'
+                }}
+              ></span>
             </button>
           </div>
 
-          {/* Mobile Menu Overlay */}
+          {/* Mobile Menu Overlay - Only shown on mobile */}
           <motion.div
             initial={{ opacity: 0, x: '100%' }}
             animate={{ opacity: mobileMenuOpen ? 1 : 0, x: mobileMenuOpen ? '0%' : '100%' }}
             transition={{ duration: 0.3 }}
+            className="fixed top-0 right-0 w-full max-w-[300px] h-screen bg-[#0D0D0D] z-[99] p-[80px_30px_30px_30px] flex flex-col gap-[30px] shadow-[-4px_0_20px_rgba(0,0,0,0.5)] md:hidden"
             style={{
-              position: 'fixed',
-              top: '0',
-              right: '0',
-              width: '100%',
-              maxWidth: '300px',
-              height: '100vh',
-              background: '#0D0D0D',
-              zIndex: 99,
-              padding: '80px 30px 30px 30px',
               display: mobileMenuOpen ? 'flex' : 'none',
-              flexDirection: 'column',
-              gap: '30px',
-              boxShadow: '-4px 0 20px rgba(0, 0, 0, 0.5)'
             }}
-            className="md:hidden"
           >
             <a 
               href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" 
@@ -169,7 +145,7 @@ export default function Home() {
             >
               <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
                 wines
-              </div>
+            </div>
             </a>
           </motion.div>
 
@@ -427,14 +403,14 @@ export default function Home() {
         {/* Discover Wines Section */}
         <div id="discover-wines" style={{width: '100%', background: '#0D0D0D', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '80px 20px 80px 20px', overflow: 'visible', position: 'relative', scrollMarginTop: '80px'}}>
           {/* Wine Bottles Image Section */}
-          <div style={{width: '100%', maxWidth: '1600px', marginBottom: '0', position: 'relative', paddingBottom: '0', overflow: 'visible', minHeight: '300px'}}>
+          <div style={{width: '100%', maxWidth: '1600px', marginBottom: '0', position: 'relative', paddingBottom: '0', overflow: 'visible', minHeight: '300px', padding: '0 10px'}}>
           <Image
-              style={{width: '100%', height: 'auto', objectFit: 'contain', objectPosition: 'center', display: 'block', marginBottom: '0'}}
+              style={{width: '100%', height: 'auto', objectFit: 'contain', objectPosition: 'center', display: 'block', marginBottom: '0', transform: 'scale(1.2)', transformOrigin: 'center'}}
+              className="object-contain md:scale-100"
             src="/_Assets/ws_lewis_product_showcase.png"
             alt="Wine Showcase"
             width={1440}
             height={850}
-              className="object-contain"
               priority={false}
             />
             {/* Clickable overlay areas for wine bottles */}
