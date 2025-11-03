@@ -198,17 +198,17 @@ export default function Home() {
             width: '100%',
             maxWidth: '1600px',
             backgroundColor: '#0D0D0D',
-            padding: '20px 40px 60px 40px',
+            padding: '0px 40px 60px 40px',
             marginTop: '0',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'flex-start'
           }}>
-            <div style={{textAlign: 'center', maxWidth: '800px', width: '100%'}}>
-            <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
-              the Cellar Awaits
-            </div>
+            <div style={{textAlign: 'center', maxWidth: '800px', width: '100%', paddingTop: '20px'}}>
+              <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
+                the Cellar Awaits
+              </div>
               <div style={{color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', lineHeight: '1.2', letterSpacing: '2.16px', marginBottom: '24px'}}>
               Discover Lewis Wines
             </div>
