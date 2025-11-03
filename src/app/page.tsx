@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         
         {/* Hero Text Content Section - Below Hero Image */}
-        <div style={{width: '100%', padding: '20px 20px 80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px'}}>
+        <div style={{width: '100%', padding: '10px 20px 80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '32px'}}>
           <div style={{textAlign: 'center', maxWidth: '800px', width: '100%'}}>
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
               The Home of Big Reds and Sexy Chardonnays
