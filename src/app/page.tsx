@@ -1,7 +1,11 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import MapSection from '@/components/sections/MapSection'
+import ScrollAnimation from '@/components/ScrollAnimation'
 
 export default function Home() {
   return (
@@ -78,11 +82,17 @@ export default function Home() {
             <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
                 With exquisite, award-winning wines, succulent cuisine from their MICHELIN-Starred chef, evocative artwork, and their exclusive Salon Privé – the new Lewis Estate is more than a tasting room. It's Napa Valley's ultimate indulgence.
             </div>
-            <a href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-HeroCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', marginBottom: '24px'}}>
+            <motion.a 
+              href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-HeroCTAButton" 
+              style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', marginBottom: '24px', borderRadius: '4px'}}
+              whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+            >
               <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                 EXPLORE OUR WINES
               </div>
-            </a>
+            </motion.a>
             
             {/* Social Media Icons */}
             <div style={{display: 'flex', gap: '12px', justifyContent: 'center', alignItems: 'center'}}>
@@ -103,17 +113,31 @@ export default function Home() {
         </div>
         
         {/* Quote Section */}
-        <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '40px', position: 'relative', zIndex: 1}}>
-          <div style={{textAlign: 'center', color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', letterSpacing: '0.32px', lineHeight: '1.08'}}>
-            <span style={{display: 'inline-block', width: '1100px', maxWidth: '90vw'}}>
-              <span style={{display: 'block'}}>"A record of excellence that few</span>
-              <span style={{display: 'block'}}>California wineries can rival."</span>
-            </span>
-          </div>
-          <div style={{textAlign: 'center', color: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', fontSize: 'clamp(14px, 2.5vw, 18px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '20px', letterSpacing: '5.76px'}}>
+        <ScrollAnimation delay={0.2}>
+          <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '40px', position: 'relative', zIndex: 1}}>
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              style={{textAlign: 'center', color: '#E5C1A0', fontSize: 'clamp(48px, 8vw, 72px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '200', letterSpacing: '0.32px', lineHeight: '1.08'}}
+            >
+              <span style={{display: 'inline-block', width: '1100px', maxWidth: '90vw'}}>
+                <span style={{display: 'block'}}>"A record of excellence that few</span>
+                <span style={{display: 'block'}}>California wineries can rival."</span>
+              </span>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              style={{textAlign: 'center', color: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', fontSize: 'clamp(14px, 2.5vw, 18px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '20px', letterSpacing: '5.76px'}}
+            >
             -James Laube, wine spectator
+            </motion.div>
           </div>
-        </div>
+        </ScrollAnimation>
 
         {/* Wine Tastings & Culinary Section */}
         <div id="wine-tastings" style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', gap: '80px', alignItems: 'center', scrollMarginTop: '80px'}}>
@@ -129,36 +153,70 @@ export default function Home() {
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
                 Explore the passion and craftsmanship of Lewis' winemaking with unique experiences designed to delight your every sense.
               </div>
-              <a href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-TastingsCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none'}}>
+              <motion.a 
+                href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-TastingsCTAButton" 
+                style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', borderRadius: '4px'}}
+                whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
+              >
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                   Book A wine tasting
                 </div>
-              </a>
+              </motion.a>
             </div>
-            <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
+            <motion.div 
+              className="image-container" 
+              style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              whileHover={{ scale: 1.02, boxShadow: '0 25px 70px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3)' }}
+            >
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.4 }}
+                style={{width: '100%', height: '100%'}}
+              >
               <Image
-                style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
+                  style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', transition: 'transform 0.4s ease'}}
                 src="/_Assets/ws_lewis_wine_tastings.png"
                 alt="Wine Tastings"
                 width={1136}
                 height={758}
                 className="object-cover"
               />
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
           
           {/* Culinary Experiences */}
           <div id="culinary-experiences" style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse', maxWidth: '1200px', width: '100%', scrollMarginTop: '80px'}}>
-            <div className="image-container" style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}>
-              <Image
-                style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
-                src="/_Assets/ws_lewis_culinary_exp.png"
-                alt="Culinary Experience"
-                width={513}
-                height={651}
-                className="object-cover"
-              />
-            </div>
+            <motion.div 
+              className="image-container" 
+              style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              whileHover={{ scale: 1.02, boxShadow: '0 25px 70px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3)' }}
+            >
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.4 }}
+                style={{width: '100%', height: '100%'}}
+              >
+                <Image
+                  style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', transition: 'transform 0.4s ease'}}
+                  src="/_Assets/ws_lewis_culinary_exp.png"
+                  alt="Culinary Experience"
+                  width={513}
+                  height={651}
+                  className="object-cover"
+                />
+              </motion.div>
+            </motion.div>
             <div style={{flex: 1, minWidth: '300px', maxWidth: '500px'}}>
               <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', marginBottom: '16px'}}>
                 A Magical Interplay
@@ -169,11 +227,17 @@ export default function Home() {
               <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1.6', letterSpacing: '0.50px', marginBottom: '32px'}}>
                 Indulge in their MICHELIN-Starred chef's culinary experiences curated to heighten your every sensation.
               </div>
-              <a href="https://www.lewiscellars.com/visit/culinary-experiences?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-CulinaryCTAButton" style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none'}}>
+              <motion.a 
+                href="https://www.lewiscellars.com/visit/culinary-experiences?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-CulinaryCTAButton" 
+                style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', borderRadius: '4px'}}
+                whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
+              >
                 <div style={{color: 'var(--Brand-Black, #0D0D0D)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '0.64px'}}>
                   Book A Taste of Lewis
                 </div>
-              </a>
+              </motion.a>
                 </div>
               </div>
 
