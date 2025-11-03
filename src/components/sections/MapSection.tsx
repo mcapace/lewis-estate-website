@@ -77,7 +77,6 @@ export default function MapSection() {
             style={{
               position: 'absolute',
               backgroundColor: '#0D0D0D',
-              padding: isMobile ? '20px' : 'clamp(20px, 4vw, 28px) clamp(20px, 4vw, 32px)',
               ...(isMobile ? {
                 bottom: '0',
                 left: '0',
@@ -97,6 +96,7 @@ export default function MapSection() {
                 width: 'clamp(280px, 90vw, 420px)',
                 minWidth: '280px',
                 borderRadius: '8px',
+                padding: 'clamp(20px, 4vw, 28px) clamp(20px, 4vw, 32px)'
               })
             }}
           >
