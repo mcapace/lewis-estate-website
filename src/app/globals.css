@@ -331,3 +331,11 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+/* Hide Mapbox logo/attribution */
+.mapboxgl-ctrl-attrib {
+  display: none !important;
+}
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}

@@ -38,6 +38,7 @@ export default function MapSection() {
             mapStyle="mapbox://styles/mapbox/dark-v11"
             mapboxAccessToken={MAPBOX_TOKEN}
             style={{ width: '100%', height: '100%', position: 'absolute', inset: 0 }}
+            attributionControl={false}
           >
             {/* Lewis Estate Marker */}
             <Marker latitude={38.2975} longitude={-122.2869}>
@@ -66,21 +67,22 @@ export default function MapSection() {
                        max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-auto max-md:translate-y-0 max-md:max-w-none max-md:rounded-t-xl max-md:rounded-b-none"
             style={{
               backgroundColor: '#0D0D0D',
-              padding: '32px 40px',
-              maxWidth: '520px',
-              width: '520px',
-              minWidth: '520px',
+              padding: '28px 32px',
+              maxWidth: '420px',
+              width: '420px',
+              minWidth: '420px',
               borderRadius: '8px'
             }}
           >
             {/* Title */}
             <h3 style={{
-              color: '#FFFFFF',
+              color: '#E5C1A0',
               fontSize: '24px',
               fontFamily: 'Neue Haas Grotesk Display Std',
               fontWeight: '600',
               marginBottom: '24px',
-              letterSpacing: '0.5px'
+              letterSpacing: '0.5px',
+              textAlign: 'left'
             }}>
               Lewis Cellars
             </h3>
@@ -93,7 +95,8 @@ export default function MapSection() {
               fontWeight: '300',
               lineHeight: '1.6',
               letterSpacing: '0.3px',
-              marginBottom: '16px'
+              marginBottom: '16px',
+              textAlign: 'left'
             }}>
               Monday–Sunday, 10:00 a.m.–4:30 p.m.
             </p>
@@ -106,7 +109,8 @@ export default function MapSection() {
               fontWeight: '300',
               lineHeight: '1.6',
               letterSpacing: '0.3px',
-              marginBottom: '16px'
+              marginBottom: '16px',
+              textAlign: 'left'
             }}>
               6320 Silverado Trail<br/>
               Napa, CA 94558
@@ -120,7 +124,8 @@ export default function MapSection() {
               fontWeight: '300',
               lineHeight: '1.6',
               letterSpacing: '0.3px',
-              marginBottom: '24px'
+              marginBottom: '24px',
+              textAlign: 'left'
             }}>
               707.255.3400
             </p>
@@ -138,7 +143,9 @@ export default function MapSection() {
               border: 'none',
               cursor: 'pointer',
               transition: 'background-color 0.3s ease',
-              width: '100%'
+              width: '100%',
+              textAlign: 'center',
+              borderRadius: '4px'
             }}
             className="hover:bg-[#E5C1A0]"
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E5C1A0'}
