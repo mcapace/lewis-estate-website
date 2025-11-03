@@ -403,15 +403,16 @@ export default function Home() {
         {/* Discover Wines Section */}
         <div id="discover-wines" style={{width: '100%', background: '#0D0D0D', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '80px 20px 80px 20px', overflow: 'visible', position: 'relative', scrollMarginTop: '80px'}}>
           {/* Wine Bottles Image Section */}
-          <div style={{width: '100%', maxWidth: '1600px', marginBottom: '0', position: 'relative', paddingBottom: '0', overflow: 'visible', minHeight: '300px', padding: '0 10px'}}>
+          <div style={{width: '100%', maxWidth: '1600px', marginBottom: '0', position: 'relative', paddingBottom: '0', overflow: 'visible', minHeight: '300px'}}>
           <Image
-              style={{width: '100%', height: 'auto', objectFit: 'contain', objectPosition: 'center', display: 'block', marginBottom: '0', transform: 'scale(1.2)', transformOrigin: 'center'}}
-              className="object-contain md:scale-100"
+              style={{width: '100%', height: 'auto', objectFit: 'contain', objectPosition: 'center', display: 'block', marginBottom: '0'}}
+              className="object-contain"
             src="/_Assets/ws_lewis_product_showcase.png"
             alt="Wine Showcase"
             width={1440}
             height={850}
               priority={false}
+              sizes="(max-width: 768px) 100vw, 1600px"
             />
             {/* Clickable overlay areas for wine bottles */}
             {/* Chardonnay Bottle - Left */}

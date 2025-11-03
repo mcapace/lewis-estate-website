@@ -51,6 +51,14 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Make wine bottles larger on mobile */
+@media (max-width: 768px) {
+  #discover-wines img[alt="Wine Showcase"] {
+    transform: scale(1.3);
+    transform-origin: center;
+  }
+}
+
 :root {
   /* Color Palette */
   --color-black: #000000;
