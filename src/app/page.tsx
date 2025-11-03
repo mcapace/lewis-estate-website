@@ -8,6 +8,8 @@ import MapSection from '@/components/sections/MapSection'
 import ScrollAnimation from '@/components/ScrollAnimation'
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
     <div style={{width: '100vw', position: 'relative', background: '#000000', margin: 0, padding: 0, border: 'none'}}>
       {/* Disclaimer Bar */}
@@ -35,40 +37,158 @@ export default function Home() {
           </div>
           
           {/* Navigation */}
-          <div style={{width: '100%', padding: '15px 20px', position: 'absolute', top: '0px', left: '0px', zIndex: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.8) 0%, rgba(13, 13, 13, 0) 100%)'}}>
-            <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
+          <div style={{width: '100%', padding: '15px 20px', position: 'absolute', top: '0px', left: '0px', zIndex: 100, display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.8) 0%, rgba(13, 13, 13, 0) 100%)'}}>
+            <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none', zIndex: 101}}>
               <Image
                 src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
                 alt="Wine Spectator Logo"
                 width={150}
                 height={40}
-                style={{width: '120px', height: 'auto', maxWidth: '100%'}}
+                style={{width: 'clamp(100px, 25vw, 150px)', height: 'auto', maxWidth: '100%'}}
                 className="object-contain"
               />
             </a>
-            <div style={{display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', fontSize: '12px'}}>
+            
+            {/* Desktop Navigation - Hidden on mobile */}
+            <div style={{gap: '20px', flexWrap: 'wrap', justifyContent: 'center', fontSize: '12px'}} className="hidden md:flex">
               <a href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
-                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(11px, 2.5vw, 14px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wine tastings
                 </div>
               </a>
               <a href="https://www.lewiscellars.com/visit/culinary-experiences?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
-                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(11px, 2.5vw, 14px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   culinary experiences
                 </div>
               </a>
               <a href="https://www.lewiscellars.com/visit/salon-prive?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
-                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: 'clamp(11px, 2.5vw, 14px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   salon privé
                 </div>
               </a>
               <a href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
-                <div style={{color: 'var(--Brand-White, white)', fontSize: 'clamp(11px, 2.5vw, 14px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
+                <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wines
                 </div>
               </a>
-              </div>
             </div>
+
+            {/* Mobile Hamburger Button - Shown on mobile */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '5px',
+                background: 'transparent',
+                border: 'none',
+                cursor: 'pointer',
+                padding: '8px',
+                zIndex: 101
+              }}
+              className="md:hidden"
+              aria-label="Toggle menu"
+            >
+              <span style={{
+                width: '25px',
+                height: '2px',
+                background: mobileMenuOpen ? 'transparent' : '#F4F4F4',
+                transition: 'all 0.3s ease',
+                transform: mobileMenuOpen ? 'rotate(45deg) translate(8px, 8px)' : 'none'
+              }}></span>
+              <span style={{
+                width: '25px',
+                height: '2px',
+                background: '#F4F4F4',
+                transition: 'all 0.3s ease',
+                opacity: mobileMenuOpen ? '0' : '1'
+              }}></span>
+              <span style={{
+                width: '25px',
+                height: '2px',
+                background: '#F4F4F4',
+                transition: 'all 0.3s ease',
+                transform: mobileMenuOpen ? 'rotate(-45deg) translate(7px, -7px)' : 'none'
+              }}></span>
+            </button>
+          </div>
+
+          {/* Mobile Menu Overlay */}
+          <motion.div
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: mobileMenuOpen ? 1 : 0, x: mobileMenuOpen ? '0%' : '100%' }}
+            transition={{ duration: 0.3 }}
+            style={{
+              position: 'fixed',
+              top: '0',
+              right: '0',
+              width: '100%',
+              maxWidth: '300px',
+              height: '100vh',
+              background: '#0D0D0D',
+              zIndex: 99,
+              padding: '80px 30px 30px 30px',
+              display: mobileMenuOpen ? 'flex' : 'none',
+              flexDirection: 'column',
+              gap: '30px',
+              boxShadow: '-4px 0 20px rgba(0, 0, 0, 0.5)'
+            }}
+            className="md:hidden"
+          >
+            <a 
+              href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" 
+              onClick={() => setMobileMenuOpen(false)}
+              style={{padding: '12px 0', textDecoration: 'none', borderBottom: '1px solid rgba(255, 255, 255, 0.1)'}}
+            >
+              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
+                wine tastings
+              </div>
+            </a>
+            <a 
+              href="https://www.lewiscellars.com/visit/culinary-experiences?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" 
+              onClick={() => setMobileMenuOpen(false)}
+              style={{padding: '12px 0', textDecoration: 'none', borderBottom: '1px solid rgba(255, 255, 255, 0.1)'}}
+            >
+              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
+                culinary experiences
+              </div>
+            </a>
+            <a 
+              href="https://www.lewiscellars.com/visit/salon-prive?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" 
+              onClick={() => setMobileMenuOpen(false)}
+              style={{padding: '12px 0', textDecoration: 'none', borderBottom: '1px solid rgba(255, 255, 255, 0.1)'}}
+            >
+              <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
+                salon privé
+              </div>
+            </a>
+            <a 
+              href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" 
+              onClick={() => setMobileMenuOpen(false)}
+              style={{padding: '12px 0', textDecoration: 'none', borderBottom: '1px solid rgba(255, 255, 255, 0.1)'}}
+            >
+              <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px'}}>
+                wines
+              </div>
+            </a>
+          </motion.div>
+
+          {/* Mobile Menu Backdrop */}
+          {mobileMenuOpen && (
+            <div
+              onClick={() => setMobileMenuOpen(false)}
+              style={{
+                position: 'fixed',
+                top: '0',
+                left: '0',
+                width: '100%',
+                height: '100vh',
+                background: 'rgba(0, 0, 0, 0.7)',
+                zIndex: 98
+              }}
+              className="md:hidden"
+            />
+          )}
           </div>
           
         {/* Hero Text Content Section - Below Hero Image */}
