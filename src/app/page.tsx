@@ -494,7 +494,7 @@ export default function Home() {
                       style={{width: 'auto', height: 'auto', maxWidth: '100%'}}
                     />
                   </a>
-            </div>
+                </div>
 
                 <h3 style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '600', marginTop: '28px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
                   Follow Us
@@ -531,7 +531,6 @@ export default function Home() {
                     </svg>
                   </a>
                 </div>
-              </div>
               </div>
             </div>
 
