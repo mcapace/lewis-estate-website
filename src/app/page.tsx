@@ -180,7 +180,7 @@ export default function Home() {
           </div>
           
           {/* Text Content - Starts at legs (overlapping image bottom) and continues below */}
-          <div style={{width: '100%', background: '#0D0D0D', padding: '0px 20px 60px 20px', marginTop: '-120px', position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+          <div style={{width: '100%', background: '#0D0D0D', padding: '0px 20px 60px 20px', marginTop: '-180px', position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <div style={{maxWidth: '800px', width: '100%', textAlign: 'center'}}>
               {/* Titles - Overlapping bottom of image */}
             <div style={{color: 'var(--Brand-White, white)', fontSize: '16px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '5.12px', marginBottom: '24px'}}>
