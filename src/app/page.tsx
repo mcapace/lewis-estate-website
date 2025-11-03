@@ -9,6 +9,16 @@ import ScrollAnimation from '@/components/ScrollAnimation'
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   return (
     <div style={{width: '100vw', position: 'relative', background: '#000000', margin: 0, padding: 0, border: 'none'}}>
@@ -50,7 +60,7 @@ export default function Home() {
             </a>
             
             {/* Desktop Navigation - Hidden on mobile */}
-            <div style={{gap: '20px', flexWrap: 'wrap', justifyContent: 'center', fontSize: '12px'}} className="hidden md:flex">
+            <div style={{gap: '20px', flexWrap: 'wrap', justifyContent: 'center', fontSize: '12px', display: isMobile ? 'none' : 'flex'}}>
               <a href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
                 <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wine tastings
@@ -76,7 +86,7 @@ export default function Home() {
             {/* Mobile Hamburger Button - Only shown on mobile */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-2 z-[101] md:hidden"
+              style={{display: isMobile ? 'flex' : 'none', flexDirection: 'column', gap: '5px', background: 'transparent', border: 'none', cursor: 'pointer', padding: '8px', zIndex: 101}}
               aria-label="Toggle menu"
             >
               <span 
