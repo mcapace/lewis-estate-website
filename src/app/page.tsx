@@ -51,17 +51,17 @@ export default function Home() {
             <div style={{display: 'flex', alignItems: 'center', gap: '12px', zIndex: 101, flex: isMobile ? '0' : '0 0 auto'}}>
               <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
                 <div style={{position: 'relative', width: 'clamp(80px, 20vw, 120px)', height: 'auto'}}>
-                  <Image
-                    src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
-                    alt="Wine Spectator Logo"
+              <Image
+                src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
+                alt="Wine Spectator Logo"
                     width={120}
-                    height={40}
-                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(90%) sepia(30%) saturate(1200%) hue-rotate(355deg) brightness(1.15) contrast(0.9)'}}
+                height={40}
+                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(92%) sepia(25%) saturate(1100%) hue-rotate(355deg) brightness(1.2) contrast(0.88)'}}
                     className="object-contain"
                   />
                 </div>
               </a>
-              <span style={{color: '#e6cf8e', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1', display: 'flex', alignItems: 'center'}}>×</span>
+              <span style={{color: '#ebd493', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1', display: 'flex', alignItems: 'center'}}>×</span>
               <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
                 <Image
                   src="/images/logos/assets_50612480d3c642cea40342a99f4dc2b7_44b56dde89a746a4a6c8c35f911348c9.webp"
