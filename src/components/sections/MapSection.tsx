@@ -12,7 +12,9 @@ export default function MapSection() {
   const [viewState, setViewState] = useState({
     latitude: 38.297778,
     longitude: -122.286111,
-    zoom: 14
+    zoom: 15,
+    bearing: 0,
+    pitch: 0
   })
   const [isMobile, setIsMobile] = useState(false)
 
@@ -23,15 +25,6 @@ export default function MapSection() {
     checkMobile()
     window.addEventListener('resize', checkMobile)
     return () => window.removeEventListener('resize', checkMobile)
-  }, [])
-
-  // Reset map view to correct location on mount
-  useEffect(() => {
-    setViewState({
-      latitude: 38.297778,
-      longitude: -122.286111,
-      zoom: 14
-    })
   }, [])
 
   if (!MAPBOX_TOKEN) {
@@ -52,7 +45,13 @@ export default function MapSection() {
         >
           {/* Map - fills entire container */}
           <Map
-            {...viewState}
+            initialViewState={{
+              latitude: 38.297778,
+              longitude: -122.286111,
+              zoom: 15,
+              bearing: 0,
+              pitch: 0
+            }}
             onMove={evt => setViewState(evt.viewState)}
             mapStyle="mapbox://styles/mapbox/dark-v11"
             mapboxAccessToken={MAPBOX_TOKEN}

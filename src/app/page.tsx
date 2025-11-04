@@ -55,20 +55,20 @@ export default function Home() {
                 src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
                 alt="Wine Spectator Logo"
                     width={120}
-                    height={40}
-                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(73%) sepia(78%) saturate(1000%) hue-rotate(0deg) brightness(1.05) contrast(0.9)'}}
+                height={40}
+                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(70%) sepia(90%) saturate(800%) hue-rotate(0deg) brightness(1.1) contrast(0.95)'}}
                     className="object-contain"
                   />
                 </div>
               </a>
-              <span style={{color: '#F4F4F4', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1', display: 'flex', alignItems: 'center'}}>×</span>
+              <span style={{color: '#D3A737', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1', display: 'flex', alignItems: 'center'}}>×</span>
               <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
                 <Image
                   src="/images/logos/assets_50612480d3c642cea40342a99f4dc2b7_44b56dde89a746a4a6c8c35f911348c9.webp"
                   alt="Lewis Cellars Logo"
-                  width={120}
-                height={40}
-                  style={{width: 'clamp(80px, 20vw, 120px)', height: 'auto', maxWidth: '100%', objectFit: 'contain'}}
+                  width={100}
+                  height={33}
+                  style={{width: 'clamp(65px, 16vw, 100px)', height: 'auto', maxWidth: '100%', objectFit: 'contain'}}
                 className="object-contain"
               />
               </a>
