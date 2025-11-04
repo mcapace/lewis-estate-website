@@ -376,7 +376,8 @@ export default function Home() {
         {/* Salon Privé Section */}
         <div id="salon-prive" style={{width: '100%', position: 'relative', background: '#0D0D0D', overflow: 'visible', display: 'flex', flexDirection: 'column', scrollMarginTop: '80px'}}>
           {/* Image Container - Fixed Height */}
-          <div style={{width: '100%', height: '80vh', position: 'relative', overflow: 'visible'}}>
+          <a href="https://www.lewiscellars.com/visit/salon-prive?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-SalonPriveCTAButton" style={{textDecoration: 'none', display: 'block', width: '100%', height: '80vh', position: 'relative', overflow: 'visible', cursor: 'pointer'}}>
+          <div style={{width: '100%', height: '100%', position: 'relative', overflow: 'visible'}}>
           <Image
               style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center'}}
             src="/_Assets/ws_lewis_salon_prive.png"
@@ -387,6 +388,7 @@ export default function Home() {
           />
           <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.15) 0%, rgba(13, 13, 13, 0.5) 100%)'}}></div>
           </div>
+          </a>
           
           {/* Text Content - Starts at legs (overlapping image bottom) and continues below */}
           <div style={{width: '100%', background: '#0D0D0D', padding: '0px 20px 60px 20px', marginTop: '-180px', position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
