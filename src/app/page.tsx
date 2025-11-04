@@ -50,13 +50,19 @@ export default function Home() {
           <div style={{width: '100%', padding: '15px 20px', position: 'absolute', top: '0px', left: '0px', zIndex: 100, display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.8) 0%, rgba(13, 13, 13, 0) 100%)'}}>
             <div style={{display: 'flex', alignItems: 'center', gap: '12px', zIndex: 101, flex: isMobile ? '0' : '0 0 auto'}}>
               <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
-                <div style={{position: 'relative', width: 'clamp(80px, 20vw, 120px)', height: 'auto', filter: 'brightness(0) saturate(100%) invert(93%) sepia(30%) saturate(1500%) hue-rotate(355deg) brightness(1.2) contrast(0.85)', WebkitFilter: 'brightness(0) saturate(100%) invert(93%) sepia(30%) saturate(1500%) hue-rotate(355deg) brightness(1.2) contrast(0.85)'}}>
-                  <Image
-                    src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
-                    alt="Wine Spectator Logo"
+                <div style={{
+                  position: 'relative', 
+                  width: 'clamp(80px, 20vw, 120px)', 
+                  height: 'auto',
+                  filter: 'brightness(0) saturate(100%) invert(92%) sepia(35%) saturate(1200%) hue-rotate(355deg) brightness(1.1) contrast(0.9)',
+                  WebkitFilter: 'brightness(0) saturate(100%) invert(92%) sepia(35%) saturate(1200%) hue-rotate(355deg) brightness(1.1) contrast(0.9)'
+                }}>
+              <Image
+                src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
+                alt="Wine Spectator Logo"
                     width={120}
-                    height={40}
-                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain'}}
+                height={40}
+                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block'}}
                     className="object-contain"
                   />
                 </div>
