@@ -64,16 +64,14 @@ export default function MapSection() {
               latitude={38.297778} 
               longitude={-122.286111}
               anchor="center"
-              style={{ zIndex: 1000 }}
             >
               <div
                 style={{ 
                   filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.8))',
-                  zIndex: 1000,
-                  position: 'relative',
-                  pointerEvents: 'auto',
                   cursor: 'pointer',
-                  transform: 'translate(-50%, -50%)'
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
                 }}
               >
                 <Image
