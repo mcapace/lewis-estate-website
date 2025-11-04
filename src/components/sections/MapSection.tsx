@@ -12,7 +12,7 @@ export default function MapSection() {
   const [viewState, setViewState] = useState({
     latitude: 38.297778,
     longitude: -122.286111,
-    zoom: 13
+    zoom: 14
   })
   const [isMobile, setIsMobile] = useState(false)
 
@@ -23,6 +23,15 @@ export default function MapSection() {
     checkMobile()
     window.addEventListener('resize', checkMobile)
     return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
+  // Reset map view to correct location on mount
+  useEffect(() => {
+    setViewState({
+      latitude: 38.297778,
+      longitude: -122.286111,
+      zoom: 14
+    })
   }, [])
 
   if (!MAPBOX_TOKEN) {
@@ -43,20 +52,19 @@ export default function MapSection() {
         >
           {/* Map - fills entire container */}
           <Map
-            key="lewis-cellars-map"
             {...viewState}
             onMove={evt => setViewState(evt.viewState)}
             mapStyle="mapbox://styles/mapbox/dark-v11"
             mapboxAccessToken={MAPBOX_TOKEN}
             style={{ width: '100%', height: '100%', position: 'absolute', inset: 0 }}
             attributionControl={false}
+            reuseMaps={false}
           >
             {/* Lewis Estate Marker */}
             <Marker 
-              key="lewis-cellars-marker"
               latitude={38.297778} 
               longitude={-122.286111}
-              anchor="center"
+              anchor="bottom"
             >
               <motion.div
                 animate={{ scale: [1, 1.1, 1] }}

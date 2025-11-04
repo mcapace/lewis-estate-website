@@ -48,26 +48,27 @@ export default function Home() {
           
           {/* Navigation */}
           <div style={{width: '100%', padding: '15px 20px', position: 'absolute', top: '0px', left: '0px', zIndex: 100, display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.8) 0%, rgba(13, 13, 13, 0) 100%)'}}>
-            <div style={{display: 'flex', alignItems: 'center', gap: '20px', zIndex: 101, flex: isMobile ? '0' : '0 0 auto'}}>
+            <div style={{display: 'flex', alignItems: 'center', gap: '12px', zIndex: 101, flex: isMobile ? '0' : '0 0 auto'}}>
               <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
-                <Image
-                  src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
-                  alt="Wine Spectator Logo"
-                  width={150}
+              <Image
+                src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
+                alt="Wine Spectator Logo"
+                  width={120}
                   height={40}
-                  style={{width: 'clamp(100px, 25vw, 150px)', height: 'auto', maxWidth: '100%'}}
+                  style={{width: 'clamp(80px, 20vw, 120px)', height: 'auto', maxWidth: '100%', objectFit: 'contain'}}
                   className="object-contain"
                 />
               </a>
+              <span style={{color: '#F4F4F4', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1', display: 'flex', alignItems: 'center'}}>×</span>
               <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
                 <Image
                   src="/images/logos/assets_50612480d3c642cea40342a99f4dc2b7_44b56dde89a746a4a6c8c35f911348c9.webp"
                   alt="Lewis Cellars Logo"
                   width={120}
-                  height={40}
-                  style={{width: 'clamp(80px, 20vw, 120px)', height: 'auto', maxWidth: '100%'}}
-                  className="object-contain"
-                />
+                height={40}
+                  style={{width: 'clamp(80px, 20vw, 120px)', height: 'auto', maxWidth: '100%', objectFit: 'contain'}}
+                className="object-contain"
+              />
               </a>
             </div>
             
