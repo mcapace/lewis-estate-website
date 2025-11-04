@@ -64,25 +64,23 @@ export default function MapSection() {
               latitude={38.297778} 
               longitude={-122.286111}
               anchor="center"
+              offset={[0, 0]}
             >
-              <div
+              <Image
+                src="/images/logos/lewis-logo.png"
+                width={80}
+                height={80}
+                alt="Lewis Estate"
                 style={{ 
+                  display: 'block', 
+                  width: '80px', 
+                  height: '80px', 
+                  objectFit: 'contain',
                   filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.8))',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
+                  cursor: 'pointer'
                 }}
-              >
-                <Image
-                  src="/images/logos/lewis-logo.png"
-                  width={80}
-                  height={80}
-                  alt="Lewis Estate"
-                  style={{ display: 'block', width: '80px', height: '80px', objectFit: 'contain' }}
-                  priority
-                />
-              </div>
+                priority
+              />
             </Marker>
 
             {/* Navigation Controls */}
