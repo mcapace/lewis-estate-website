@@ -64,27 +64,28 @@ export default function MapSection() {
             <Marker 
               latitude={38.297778} 
               longitude={-122.286111}
-              anchor="bottom"
+              anchor="center"
+              style={{ zIndex: 1000 }}
             >
-              <motion.div
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="cursor-pointer"
+              <div
                 style={{ 
-                  filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.5))',
+                  filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.8))',
                   zIndex: 1000,
-                  position: 'relative'
+                  position: 'relative',
+                  pointerEvents: 'auto',
+                  cursor: 'pointer',
+                  transform: 'translate(-50%, -50%)'
                 }}
               >
                 <Image
                   src="/images/logos/lewis-logo.png"
-                  width={64}
-                  height={64}
+                  width={80}
+                  height={80}
                   alt="Lewis Estate"
-                  style={{ display: 'block', width: '64px', height: '64px' }}
+                  style={{ display: 'block', width: '80px', height: '80px', objectFit: 'contain' }}
                   priority
                 />
-              </motion.div>
+              </div>
             </Marker>
 
             {/* Navigation Controls */}

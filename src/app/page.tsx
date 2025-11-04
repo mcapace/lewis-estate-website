@@ -50,14 +50,16 @@ export default function Home() {
           <div style={{width: '100%', padding: '15px 20px', position: 'absolute', top: '0px', left: '0px', zIndex: 100, display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.8) 0%, rgba(13, 13, 13, 0) 100%)'}}>
             <div style={{display: 'flex', alignItems: 'center', gap: '12px', zIndex: 101, flex: isMobile ? '0' : '0 0 auto'}}>
               <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
-                <Image
-                  src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
-                  alt="Wine Spectator Logo"
-                  width={120}
-                  height={40}
-                  style={{width: 'clamp(80px, 20vw, 120px)', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(77%) sepia(64%) saturate(1234%) hue-rotate(358deg) brightness(102%) contrast(85%)'}}
-                  className="object-contain"
-                />
+                <div style={{position: 'relative', width: 'clamp(80px, 20vw, 120px)', height: 'auto'}}>
+              <Image
+                src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
+                alt="Wine Spectator Logo"
+                    width={120}
+                    height={40}
+                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(73%) sepia(78%) saturate(1000%) hue-rotate(0deg) brightness(1.05) contrast(0.9)'}}
+                    className="object-contain"
+                  />
+                </div>
               </a>
               <span style={{color: '#F4F4F4', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1', display: 'flex', alignItems: 'center'}}>×</span>
               <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
