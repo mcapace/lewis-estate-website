@@ -105,7 +105,7 @@ export default function MapSection() {
               color: '#E5C1A0',
               fontSize: '24px',
               fontFamily: 'Neue Haas Grotesk Display Std',
-              fontWeight: '600',
+              fontWeight: '400',
               marginBottom: '24px',
               letterSpacing: '0.5px',
               textAlign: 'left'
