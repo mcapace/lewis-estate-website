@@ -10,8 +10,8 @@ const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN
 
 export default function MapSection() {
   const [viewState, setViewState] = useState({
-    latitude: 38.2975,
-    longitude: -122.2869,
+    latitude: 38.2974,
+    longitude: -122.2875,
     zoom: 13
   })
   const [isMobile, setIsMobile] = useState(false)
@@ -52,8 +52,8 @@ export default function MapSection() {
           >
             {/* Lewis Estate Marker */}
             <Marker 
-              latitude={38.2975} 
-              longitude={-122.2869}
+              latitude={38.2974} 
+              longitude={-122.2875}
               anchor="center"
             >
               <motion.div
