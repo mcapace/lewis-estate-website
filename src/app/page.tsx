@@ -385,7 +385,7 @@ export default function Home() {
             height={850}
             className="object-cover"
           />
-          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.3) 0%, rgba(13, 13, 13, 0.8) 100%)'}}></div>
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.15) 0%, rgba(13, 13, 13, 0.5) 100%)'}}></div>
           </div>
           
           {/* Text Content - Starts at legs (overlapping image bottom) and continues below */}
