@@ -39,7 +39,7 @@ export default function MapSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl"
+          className="relative w-full h-[500px] md:h-[600px] overflow-hidden shadow-2xl"
         >
           {/* Map - fills entire container */}
           <Map
