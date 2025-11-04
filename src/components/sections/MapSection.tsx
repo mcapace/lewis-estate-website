@@ -43,6 +43,7 @@ export default function MapSection() {
         >
           {/* Map - fills entire container */}
           <Map
+            key="lewis-cellars-map"
             {...viewState}
             onMove={evt => setViewState(evt.viewState)}
             mapStyle="mapbox://styles/mapbox/dark-v11"
@@ -52,6 +53,7 @@ export default function MapSection() {
           >
             {/* Lewis Estate Marker */}
             <Marker 
+              key="lewis-cellars-marker"
               latitude={38.297778} 
               longitude={-122.286111}
               anchor="center"
