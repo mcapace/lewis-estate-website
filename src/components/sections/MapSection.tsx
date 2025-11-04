@@ -10,8 +10,8 @@ const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN
 
 export default function MapSection() {
   const [viewState, setViewState] = useState({
-    latitude: 38.398,
-    longitude: -122.277,
+    latitude: 38.425586774855695,
+    longitude: -122.33702466070206,
     zoom: 16,
     bearing: 0,
     pitch: 0
@@ -46,8 +46,8 @@ export default function MapSection() {
           {/* Map - fills entire container */}
           <Map
             initialViewState={{
-              latitude: 38.398,
-              longitude: -122.277,
+              latitude: 38.425586774855695,
+              longitude: -122.33702466070206,
               zoom: 16
             }}
             onMove={evt => setViewState(evt.viewState)}
@@ -59,8 +59,8 @@ export default function MapSection() {
           >
             {/* Lewis Estate Marker */}
             <Marker 
-              latitude={38.398} 
-              longitude={-122.277}
+              latitude={38.425586774855695} 
+              longitude={-122.33702466070206}
               anchor="center"
             >
               <div style={{
