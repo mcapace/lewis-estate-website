@@ -221,7 +221,7 @@ export default function Home() {
         
         {/* Quote Section */}
         <ScrollAnimation delay={0.2}>
-          <div style={{width: '100%', padding: '80px 20px', background: '#0D0D0D', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '40px', position: 'relative', zIndex: 1}}>
+          <div style={{width: '100vw', padding: '80px 20px', background: '#000000', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '40px', position: 'relative', zIndex: 1, marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)'}}>
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
