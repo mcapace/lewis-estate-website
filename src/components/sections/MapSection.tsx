@@ -73,7 +73,8 @@ export default function MapSection() {
                   width={64}
                   height={64}
                   alt="Lewis Estate"
-                  style={{ display: 'block' }}
+                  style={{ display: 'block', width: '64px', height: '64px' }}
+                  priority
                 />
               </motion.div>
             </Marker>
