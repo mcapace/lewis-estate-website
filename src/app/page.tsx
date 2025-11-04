@@ -33,7 +33,7 @@ export default function Home() {
         
         {/* Hero Section */}
         <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'visible', display: 'flex', flexDirection: 'column', zIndex: 0}}>
-          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', overflow: 'hidden'}}>
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', overflow: 'hidden', paddingTop: '80px'}}>
             <Image
               style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
               src="/_Assets/ws_lewis_hero.png"
