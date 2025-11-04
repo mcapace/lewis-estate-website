@@ -45,13 +45,7 @@ export default function MapSection() {
         >
           {/* Map - fills entire container */}
           <Map
-            initialViewState={{
-              latitude: 38.297778,
-              longitude: -122.286111,
-              zoom: 15,
-              bearing: 0,
-              pitch: 0
-            }}
+            {...viewState}
             onMove={evt => setViewState(evt.viewState)}
             mapStyle="mapbox://styles/mapbox/dark-v11"
             mapboxAccessToken={MAPBOX_TOKEN}
