@@ -51,18 +51,27 @@ export default function MapSection() {
             attributionControl={false}
           >
             {/* Lewis Estate Marker */}
-            <Marker latitude={38.2975} longitude={-122.2869}>
+            <Marker 
+              latitude={38.2975} 
+              longitude={-122.2869}
+              anchor="center"
+            >
               <motion.div
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="cursor-pointer"
-                style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.5))' }}
+                style={{ 
+                  filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.5))',
+                  zIndex: 1000,
+                  position: 'relative'
+                }}
               >
                 <Image
                   src="/images/logos/lewis-logo.png"
-                  width={48}
-                  height={48}
+                  width={64}
+                  height={64}
                   alt="Lewis Estate"
+                  style={{ display: 'block' }}
                 />
               </motion.div>
             </Marker>
