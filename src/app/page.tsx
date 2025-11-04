@@ -51,12 +51,12 @@ export default function Home() {
             <div style={{display: 'flex', alignItems: 'center', gap: '12px', zIndex: 101, flex: isMobile ? '0' : '0 0 auto'}}>
               <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
                 <div style={{position: 'relative', width: 'clamp(80px, 20vw, 120px)', height: 'auto'}}>
-              <Image
-                src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
-                alt="Wine Spectator Logo"
+                  <Image
+                    src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
+                    alt="Wine Spectator Logo"
                     width={120}
-                height={40}
-                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(88%) sepia(35%) saturate(1000%) hue-rotate(358deg) brightness(1.1) contrast(0.85)'}}
+                    height={40}
+                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(90%) sepia(30%) saturate(1200%) hue-rotate(355deg) brightness(1.15) contrast(0.9)'}}
                     className="object-contain"
                   />
                 </div>

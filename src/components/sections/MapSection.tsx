@@ -12,7 +12,7 @@ export default function MapSection() {
   const [viewState, setViewState] = useState({
     latitude: 38.297778,
     longitude: -122.286111,
-    zoom: 15,
+    zoom: 16,
     bearing: 0,
     pitch: 0
   })
@@ -45,7 +45,11 @@ export default function MapSection() {
         >
           {/* Map - fills entire container */}
           <Map
-            {...viewState}
+            initialViewState={{
+              latitude: 38.297778,
+              longitude: -122.286111,
+              zoom: 16
+            }}
             onMove={evt => setViewState(evt.viewState)}
             mapStyle="mapbox://styles/mapbox/dark-v11"
             mapboxAccessToken={MAPBOX_TOKEN}
