@@ -54,11 +54,11 @@ export default function Home() {
               <Image
                 src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
                 alt="Wine Spectator Logo"
-                    width={120}
+                width={120}
                 height={40}
-                    style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(92%) sepia(25%) saturate(1100%) hue-rotate(355deg) brightness(1.2) contrast(0.88)'}}
-                    className="object-contain"
-                  />
+                style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain'}}
+                className="object-contain ws-logo-gold"
+              />
                 </div>
               </a>
               <span style={{color: '#ebd493', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1', display: 'flex', alignItems: 'center'}}>×</span>
