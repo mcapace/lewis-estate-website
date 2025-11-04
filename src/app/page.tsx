@@ -56,7 +56,7 @@ export default function Home() {
                 alt="Wine Spectator Logo"
                 width={120}
                 height={40}
-                style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain'}}
+                style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(92%) sepia(25%) saturate(1400%) hue-rotate(355deg) brightness(1.15) contrast(0.9)', WebkitFilter: 'brightness(0) saturate(100%) invert(92%) sepia(25%) saturate(1400%) hue-rotate(355deg) brightness(1.15) contrast(0.9)'}}
                 className="object-contain ws-logo-gold"
               />
                 </div>
