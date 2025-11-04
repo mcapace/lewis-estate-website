@@ -364,3 +364,9 @@ img {
   padding: 0;
   vertical-align: top;
 }
+
+/* Wine Spectator logo color filter for #ebd493 */
+.ws-logo-gold {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(18%) saturate(1300%) hue-rotate(355deg) brightness(1.1) contrast(0.92) !important;
+  -webkit-filter: brightness(0) saturate(100%) invert(92%) sepia(18%) saturate(1300%) hue-rotate(355deg) brightness(1.1) contrast(0.92) !important;
+}
