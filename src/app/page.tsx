@@ -272,9 +272,13 @@ export default function Home() {
                 </div>
               </motion.a>
             </div>
+            <motion.a
+              href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-TastingsCTAButton"
+              style={{textDecoration: 'none', display: 'block'}}
+              className="image-container"
+            >
             <motion.div 
-              className="image-container" 
-              style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '0', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}
+              style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '0', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)', cursor: 'pointer'}}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -296,13 +300,18 @@ export default function Home() {
               />
               </motion.div>
             </motion.div>
+            </motion.a>
           </div>
           
           {/* Culinary Experiences */}
           <div id="culinary-experiences" style={{display: 'flex', flexDirection: 'row', gap: '40px', alignItems: 'center', flexWrap: 'wrap-reverse', maxWidth: '1200px', width: '100%', scrollMarginTop: '80px'}}>
+            <motion.a
+              href="https://www.lewiscellars.com/visit/culinary-experiences?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-CulinaryCTAButton"
+              style={{textDecoration: 'none', display: 'block'}}
+              className="image-container"
+            >
             <motion.div 
-              className="image-container" 
-              style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '0', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)'}}
+              style={{flex: 1, minWidth: '300px', maxWidth: '600px', height: '650px', position: 'relative', background: 'var(--Secondary-CTA-Gold-(Drk-BG), #EFE5DA)', overflow: 'hidden', borderRadius: '0', boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.1)', cursor: 'pointer'}}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -324,6 +333,7 @@ export default function Home() {
               />
               </motion.div>
             </motion.div>
+            </motion.a>
             <div style={{flex: 1, minWidth: '300px', maxWidth: '500px'}}>
               <div style={{color: 'var(--Brand-White, white)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', lineHeight: '18px', letterSpacing: '4.48px', marginBottom: '16px'}}>
                 A Magical Interplay
