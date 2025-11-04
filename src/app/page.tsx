@@ -48,7 +48,7 @@ export default function Home() {
           
           {/* Navigation */}
           <div style={{width: '100%', padding: '15px 20px', position: 'absolute', top: '0px', left: '0px', zIndex: 100, display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.8) 0%, rgba(13, 13, 13, 0) 100%)'}}>
-            <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none', zIndex: 101}}>
+            <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none', zIndex: 101, flex: isMobile ? '0' : '0 0 auto'}}>
               <Image
                 src="/_Assets/WSlogoWhite-stroke (2) (4) (3).png"
                 alt="Wine Spectator Logo"
@@ -59,8 +59,8 @@ export default function Home() {
               />
             </a>
             
-            {/* Desktop Navigation - Hidden on mobile */}
-            <div style={{gap: '20px', flexWrap: 'wrap', justifyContent: 'center', fontSize: '12px', display: isMobile ? 'none' : 'flex'}}>
+            {/* Desktop Navigation - Centered on desktop */}
+            <div style={{gap: '20px', flexWrap: 'wrap', justifyContent: 'center', fontSize: '12px', display: isMobile ? 'none' : 'flex', position: 'absolute', left: '50%', transform: 'translateX(-50%)'}}>
               <a href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderNavigationLink" style={{padding: '8px 0', textDecoration: 'none', cursor: 'pointer'}}>
                 <div style={{color: 'var(--UI-Lightest-Grey, #F4F4F4)', fontSize: '14px', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '400', textTransform: 'uppercase', letterSpacing: '1.44px', transition: 'color 0.3s ease'}} className="hover:text-[#D3A737]">
                   wine tastings
