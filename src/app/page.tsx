@@ -390,7 +390,7 @@ export default function Home() {
             height={850}
             className="object-cover"
           />
-          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0) 40%, rgba(13, 13, 13, 0.3) 60%, rgba(13, 13, 13, 0.7) 80%, rgba(13, 13, 13, 0.95) 100%)'}}></div>
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0) 25%, rgba(13, 13, 13, 0.2) 40%, rgba(13, 13, 13, 0.5) 55%, rgba(13, 13, 13, 0.75) 70%, rgba(13, 13, 13, 0.95) 85%, rgba(13, 13, 13, 1) 100%)'}}></div>
           </div>
           </a>
           
