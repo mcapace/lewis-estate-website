@@ -390,8 +390,8 @@ export default function Home() {
             height={850}
             className="object-cover"
           />
-          {/* Combined gradient: bottom fade + side blending */}
-          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'radial-gradient(ellipse at center, transparent 0%, transparent 30%, rgba(13, 13, 13, 0.1) 50%, rgba(13, 13, 13, 0.3) 70%, rgba(13, 13, 13, 0.6) 85%, rgba(13, 13, 13, 0.9) 95%, rgba(13, 13, 13, 1) 100%), linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0) 25%, rgba(13, 13, 13, 0.2) 40%, rgba(13, 13, 13, 0.5) 55%, rgba(13, 13, 13, 0.75) 70%, rgba(13, 13, 13, 0.95) 85%, rgba(13, 13, 13, 1) 100%)'}}></div>
+          {/* Side blending gradients like hero - subtle vignette effect */}
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'radial-gradient(ellipse 120% 100% at center, transparent 0%, transparent 60%, rgba(13, 13, 13, 0.15) 80%, rgba(13, 13, 13, 0.4) 95%, rgba(13, 13, 13, 0.7) 100%)'}}></div>
           </div>
           </a>
           
