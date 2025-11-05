@@ -154,12 +154,45 @@ html {
     font-size: 14px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 0 !important;
     transition: all 0.3s ease;
     font-family: 'Neue Haas Grotesk Display Std', sans-serif;
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+  }
+  
+  /* Force all CTA buttons with gold background (#D3A737) to have sharp corners */
+  /* Very aggressive selectors to override any conflicting styles */
+  a[style*="#D3A737"],
+  a[style*="background: #D3A737"],
+  a[style*="background:#D3A737"],
+  a[style*="background-color: #D3A737"],
+  a[style*="background-color:#D3A737"] {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  
+  /* Override rounded classes ONLY on CTA buttons */
+  a[style*="#D3A737"].rounded,
+  a[style*="#D3A737"].rounded-sm,
+  a[style*="#D3A737"].rounded-md,
+  a[style*="#D3A737"].rounded-lg,
+  a[style*="#D3A737"].rounded-xl,
+  a[style*="#D3A737"].rounded-2xl,
+  a[style*="#D3A737"].rounded-full {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
   }
   
   .btn-primary:hover {

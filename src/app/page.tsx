@@ -43,7 +43,7 @@ export default function Home() {
               priority
               className="object-cover"
             />
-            <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0.65) 100%)'}}></div>
+            <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0) 40%, rgba(13, 13, 13, 0.3) 60%, rgba(13, 13, 13, 0.7) 80%, rgba(13, 13, 13, 0.95) 100%)'}}></div>
           </div>
           
           {/* Navigation */}
@@ -57,20 +57,9 @@ export default function Home() {
                     width={120}
                 height={40}
                     style={{width: '100%', height: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block'}}
-                    className="object-contain"
-                  />
-                </div>
-              </a>
-              <span style={{color: '#ebd493', fontSize: 'clamp(16px, 3vw, 20px)', fontFamily: 'Neue Haas Grotesk Display Std', fontWeight: '300', lineHeight: '1', display: 'flex', alignItems: 'center'}}>×</span>
-              <a href="https://www.lewiscellars.com/?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=HeaderLogo" style={{display: 'flex', alignItems: 'center', cursor: 'pointer', textDecoration: 'none'}}>
-                <Image
-                  src="/images/logos/assets_50612480d3c642cea40342a99f4dc2b7_44b56dde89a746a4a6c8c35f911348c9.webp"
-                  alt="Lewis Cellars Logo"
-                  width={100}
-                  height={33}
-                  style={{width: 'clamp(65px, 16vw, 100px)', height: 'auto', maxWidth: '100%', objectFit: 'contain'}}
                 className="object-contain"
               />
+                </div>
               </a>
             </div>
             
@@ -206,7 +195,7 @@ export default function Home() {
             </div>
             <motion.a 
               href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-HeroCTAButton" 
-              style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', marginBottom: '24px', borderRadius: '4px'}}
+              style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', marginBottom: '24px', borderRadius: '0'}}
               whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
@@ -277,7 +266,7 @@ export default function Home() {
               </div>
               <motion.a 
                 href="https://www.lewiscellars.com/visit/wine-tastings?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-TastingsCTAButton" 
-                style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', borderRadius: '4px'}}
+                style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', borderRadius: '0'}}
                 whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.2 }}
@@ -361,7 +350,7 @@ export default function Home() {
               </div>
               <motion.a 
                 href="https://www.lewiscellars.com/visit/culinary-experiences?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-CulinaryCTAButton" 
-                style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', borderRadius: '4px'}}
+                style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', borderRadius: '0'}}
                 whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.2 }}
@@ -401,7 +390,7 @@ export default function Home() {
             height={850}
             className="object-cover"
           />
-          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0.15) 0%, rgba(13, 13, 13, 0.5) 100%)'}}></div>
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0) 40%, rgba(13, 13, 13, 0.3) 60%, rgba(13, 13, 13, 0.7) 80%, rgba(13, 13, 13, 0.95) 100%)'}}></div>
           </div>
           </a>
           
@@ -424,7 +413,7 @@ export default function Home() {
               {/* Button - Below image */}
             <motion.a 
               href="https://www.lewiscellars.com/visit/salon-prive?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-SalonPriveCTAButton" 
-              style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', borderRadius: '4px'}}
+              style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', textDecoration: 'none', borderRadius: '0'}}
               whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
@@ -525,7 +514,7 @@ export default function Home() {
             </div>
               <motion.a 
                 href="https://www.lewiscellars.com/collection/all?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-WinesCTAButton" 
-                style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px', textDecoration: 'none', borderRadius: '4px'}}
+                style={{padding: '18px 24px', background: '#D3A737', display: 'inline-block', cursor: 'pointer', marginTop: '0px', textDecoration: 'none', borderRadius: '0'}}
                 whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(211, 167, 55, 0.4)' }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.2 }}

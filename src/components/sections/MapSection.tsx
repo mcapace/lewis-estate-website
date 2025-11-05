@@ -179,7 +179,7 @@ export default function MapSection() {
               transition: 'background-color 0.3s ease',
               width: '100%',
               textAlign: 'center',
-              borderRadius: '4px',
+              borderRadius: '0',
               display: 'block',
               textDecoration: 'none'
             }}
