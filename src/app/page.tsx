@@ -31,9 +31,9 @@ export default function Home() {
       
       <div style={{width: '100%', maxWidth: '1600px', margin: '0 auto', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'flex', overflow: 'visible'}}>
         
-        {/* Hero Section */}
-        <div style={{width: '100%', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'visible', display: 'flex', flexDirection: 'column', zIndex: 0}}>
-          <div style={{width: '100%', height: '100%', position: 'absolute', top: '80px', left: '0px', overflow: 'hidden'}}>
+        {/* Hero Section - Full width like Salon Privé */}
+        <div style={{width: '100vw', height: '100vh', position: 'relative', background: 'var(--Brand-Black, #0D0D0D)', overflow: 'visible', display: 'flex', flexDirection: 'column', zIndex: 0, marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)'}}>
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '80px', left: '0px', overflow: 'visible'}}>
             <Image
               style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', objectFit: 'cover', objectPosition: 'center'}}
               src="/_Assets/ws_lewis_hero.png"
