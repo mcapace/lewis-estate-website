@@ -51,6 +51,28 @@ export default function MapSection() {
               zoom: 16
             }}
             onMove={evt => setViewState(evt.viewState)}
+            onLoad={(event) => {
+              const map = event.target
+              // Hide POI and place labels to prevent showing incorrect location names like "Robert Sinskey Vineyards"
+              const layers = map.getStyle().layers
+              layers.forEach((layer: any) => {
+                // Hide POI label layers and place label layers
+                const layerId = layer.id.toLowerCase()
+                if (
+                  layerId.includes('poi-label') || 
+                  layerId.includes('poi-labels') ||
+                  (layerId.includes('poi') && layer.type === 'symbol') ||
+                  (layerId.includes('place-label') && !layerId.includes('country') && !layerId.includes('state') && !layerId.includes('city')) ||
+                  (layerId.includes('place-labels') && !layerId.includes('country') && !layerId.includes('state') && !layerId.includes('city'))
+                ) {
+                  try {
+                    map.setLayoutProperty(layer.id, 'visibility', 'none')
+                  } catch (e) {
+                    // Layer might not exist or already hidden
+                  }
+                }
+              })
+            }}
             mapStyle="mapbox://styles/mapbox/dark-v11"
             mapboxAccessToken={MAPBOX_TOKEN}
             style={{ width: '100%', height: '100%', position: 'absolute', inset: 0 }}
