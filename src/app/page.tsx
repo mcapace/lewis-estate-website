@@ -377,8 +377,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Salon Privé Section */}
-        <div id="salon-prive" style={{width: '100%', position: 'relative', background: '#0D0D0D', overflow: 'visible', display: 'flex', flexDirection: 'column', scrollMarginTop: '80px'}}>
+        {/* Salon Privé Section - Full width like hero */}
+        <div id="salon-prive" style={{width: '100vw', position: 'relative', background: '#0D0D0D', overflow: 'visible', display: 'flex', flexDirection: 'column', scrollMarginTop: '80px', marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)'}}>
           {/* Image Container - Fixed Height */}
           <a href="https://www.lewiscellars.com/visit/salon-prive?utm_source=winespectator&utm_medium=display&utm_campaign=2025-TROpening-BrandLaunch&utm_content=Homepage-SalonPriveCTAButton" style={{textDecoration: 'none', display: 'block', width: '100%', height: '80vh', position: 'relative', overflow: 'visible', cursor: 'pointer'}}>
           <div style={{width: '100%', height: '100%', position: 'relative', overflow: 'visible'}}>
@@ -390,7 +390,8 @@ export default function Home() {
             height={850}
             className="object-cover"
           />
-          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0) 25%, rgba(13, 13, 13, 0.2) 40%, rgba(13, 13, 13, 0.5) 55%, rgba(13, 13, 13, 0.75) 70%, rgba(13, 13, 13, 0.95) 85%, rgba(13, 13, 13, 1) 100%)'}}></div>
+          {/* Combined gradient: bottom fade + side blending */}
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'radial-gradient(ellipse at center, transparent 0%, transparent 30%, rgba(13, 13, 13, 0.1) 50%, rgba(13, 13, 13, 0.3) 70%, rgba(13, 13, 13, 0.6) 85%, rgba(13, 13, 13, 0.9) 95%, rgba(13, 13, 13, 1) 100%), linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 0) 25%, rgba(13, 13, 13, 0.2) 40%, rgba(13, 13, 13, 0.5) 55%, rgba(13, 13, 13, 0.75) 70%, rgba(13, 13, 13, 0.95) 85%, rgba(13, 13, 13, 1) 100%)'}}></div>
           </div>
           </a>
           
