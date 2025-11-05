@@ -390,8 +390,8 @@ export default function Home() {
             height={850}
             className="object-cover"
           />
-          {/* Side blending gradients like hero - subtle vignette effect */}
-          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'radial-gradient(ellipse 120% 100% at center, transparent 0%, transparent 60%, rgba(13, 13, 13, 0.15) 80%, rgba(13, 13, 13, 0.4) 95%, rgba(13, 13, 13, 0.7) 100%)'}}></div>
+          {/* Side blending - horizontal gradients on left and right edges only */}
+          <div style={{width: '100%', height: '100%', position: 'absolute', top: '0px', left: '0px', background: 'linear-gradient(90deg, rgba(13, 13, 13, 1) 0%, rgba(13, 13, 13, 0.8) 5%, rgba(13, 13, 13, 0) 15%, rgba(13, 13, 13, 0) 85%, rgba(13, 13, 13, 0.8) 95%, rgba(13, 13, 13, 1) 100%)'}}></div>
           </div>
           </a>
           
